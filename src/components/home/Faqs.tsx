@@ -62,9 +62,9 @@ export default function Faqs() {
         {/* CONTENT COLUMN */}
         <div className="md:w-[50%] w-full space-y-6 md:space-y-8">
           {/* Eyebrow badge */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center md:-mb-3 gap-3">
             <div className="w-8 h-px bg-color2" />
-            <span className="text-color2 text-xs tracking-[0.25em] uppercase font-semibold">
+            <span className="text-color2 text-sm  tracking-[0.25em] uppercase font-semibold">
               FAQ's
             </span>
           </div>

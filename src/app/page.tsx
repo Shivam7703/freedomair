@@ -34,7 +34,7 @@ export default function Home() {
       <Testimonials/>
       {/* <Project/> */}
 
-      {/* <Blogs/> */}
+<Blogs isHome={true} />
     </>
   );
 }

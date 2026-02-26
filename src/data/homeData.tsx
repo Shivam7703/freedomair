@@ -593,7 +593,8 @@ export const testimonialData = {
 
 export const blogData = {
   title1: "Blogs & News",
-  title2: "Stay Updated With our Latest News And Blogs",
+  title2: "Stay Updated With our",
+  title3:" Latest News",
   blogs: [
     {
       id: 1,
@@ -718,10 +719,9 @@ export const blogData = {
 
 </div>
 `,
-      date: "Feb 13, 2026",
+      date: "13 Feb 2026",
       img: civil,
       author: "Admin",
-      featured: true,
     },
     {
       id: 2,
@@ -840,7 +840,7 @@ export const blogData = {
 
 </div>
 `,
-      date: "Feb 01, 2025",
+      date: "13 Feb 2026",
       author: "Developer",
       img: banner4,
     },
@@ -984,7 +984,7 @@ export const blogData = {
 
 </div>
 `,
-      date: "Jan 18, 2026",
+      date: "13 Feb 2026",
       img: bhk,
       author: "Admin",
     },
@@ -1139,7 +1139,7 @@ export const blogData = {
 
 </div>
 `,
-      date: "Jan 05, 2026",
+      date: "13 Feb 2026",
       img: bg,
       author: "Admin",
     },

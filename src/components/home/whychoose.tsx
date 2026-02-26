@@ -80,11 +80,11 @@ export default function WhyChoose() {
           className="z-10 sm:space-y-8 space-y-6 max-w-2xl"
         >
           {data?.title1 && (
-            <div className="relative overflow-hidden px-6 py-2.5 rounded-full border-2 w-max text-color2">
-              <h4 className="animate-marquee-right text-xs min-w-max sm:text-sm font-semibold tracking-wider uppercase">
-{data?.title1}
-              </h4>
-            </div>
+            <div className="flex items-center md:-mb-3 gap-3">
+            <div className="w-8 h-px bg-color2" />
+            <span className="text-color2 text-sm  tracking-[0.25em] uppercase font-semibold">
+{data?.title1}            </span>
+          </div>
           )}
           <h2 className="text-zinc-900 font-medium text-3xl md:text-5xl lg:text-6xl leading-tight">
             {data?.title2}

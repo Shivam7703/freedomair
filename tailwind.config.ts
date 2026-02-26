@@ -12,7 +12,7 @@ const config: Config = {
   
       },
       colors: {
-                color1:"#F7F7D5",
+                color1:"#F5F1CD",
         color3:"#FFD600",
         color2:"#E56A17"
       },

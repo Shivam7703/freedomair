@@ -57,7 +57,7 @@ export default function Testimonials() {
         ══════════════════════════════════ */}
         <div className="lg:w-[58%] w-full flex flex-col justify-between px-8 sm:px-12 lg:px-16 py-14 lg:py-20">
           {/* Header row */}
-          <div className="flex flex-wrap justify-between items-end gap-6 mb-10">
+          <div className="flex flex-wrap justify-between items-end gap-x-2 gap-y-5 mb-10">
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <div className="w-8 h-px bg-color2" />
@@ -66,7 +66,7 @@ export default function Testimonials() {
                 </span>
               </div>
 
-              <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl text-white leading-tight max-w-lg">
+              <h2 className="font-medium text-3xl md:text-4xl lg:text-6xl text-white leading-tight max-w-2xl">
                 Valued{" "}
                 <span className="relative inline-block text-color2">
                   Testimonials
@@ -76,7 +76,7 @@ export default function Testimonials() {
             </div>
 
             {/* Nav arrows */}
-            <div className="flex gap-3">
+            <div className="flex gap-2">
               <button
                 className={`${uniqueId}-prev group w-12 h-12 flex items-center justify-center rounded-full border border-white/10 bg-white/5 hover:bg-color2 hover:border-color2 text-white transition-all duration-300`}
               >
