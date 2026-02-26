@@ -4,6 +4,7 @@ import React from "react";
 import { FaAngleDoubleDown, FaWpforms } from "react-icons/fa";
 import { LuHandshake } from "react-icons/lu";
 import { MdOutlineEngineering, MdOutlineSettings } from "react-icons/md";
+import Heading from "../global/heading";
 
 const data = [
   {
@@ -30,18 +31,16 @@ const data = [
 
 export default function WorkProcess() {
   return (
-    <div className="lg:px-20 sm:p-12 p-7 bg-color1">
+    <div className="relative lg:px-20 sm:p-12 p-7 bg-color1">
       {/* Heading Section */}
-      <div className="w-full text-center flex flex-col items-center gap-6 mb-6 ">
-        <div className="relative overflow-hidden px-6 py-2.5 rounded-full border-2 text-color2">
-          <h4 className=" text-xs min-w-max sm:text-sm font-semibold tracking-wider uppercase">
-            Work Process
-          </h4>
-        </div>
-        <h2 className="font-medium text-3xl text-black md:text-5xl max-w-3xl mx-auto">
-          Clear process with expert execution and
-        </h2>
-      </div>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_50%_-10%,rgba(var(--color2-rgb),0.06),transparent)]" />
+      <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-color2/30 to-transparent" />
+      <div className="absolute inset-0 opacity-[0.05]"
+        style={{ backgroundImage: "linear-gradient(#000 1px,transparent 1px),linear-gradient(90deg,#000 1px,transparent 1px)", backgroundSize: "60px 60px" }} />
+{/* Soft color blobs */}
+      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-color2/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[350px] h-[350px] bg-yellow-400/8 rounded-full blur-[100px] pointer-events-none" />
+      <Heading title1={"Work Process"} title2={"Clear process with expert"} title3={"execution and"}  para={""} />
 
       {/* Timeline / Sticky Section */}
       <div className="relative mt-9 md:mt-16 max-w-6xl mx-auto">

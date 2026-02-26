@@ -12,9 +12,9 @@ export default function Banner({ title, para, img, slug }: any) {
 
   return (
     <>
-      <div className="bg-color1 font1 pb-7">
+      <div className="bg-color1 pb-7">
         <AnimatePresence>
-          <div className="w-[90vw] mx-auto md:rounded-[50px] overflow-hidden rounded-2xl h-max relative">
+          <div className="w-full  overflow-hidden h-max relative">
             <Image
               className="w-full h-[44vh] md:h-[40vh] min-h-[440px] lg:h-[32vw] object-cover object-center"
               src={img || banner}

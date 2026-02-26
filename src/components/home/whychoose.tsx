@@ -86,9 +86,9 @@ export default function WhyChoose() {
 {data?.title1}            </span>
           </div>
           )}
-          <h2 className="text-zinc-900 font-medium text-3xl md:text-5xl lg:text-6xl leading-tight">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
             {data?.title2}
-            <span className=" text-color2">
+            <span className="bg-gradient-to-r from-color2 to-yellow-500 bg-clip-text text-transparent">
               {data?.title3}
             </span>
           </h2>

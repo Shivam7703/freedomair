@@ -55,27 +55,7 @@ export const zoomIn = (delay: number, duration: number) => ({
   },
 });
 
-export const slideIn = (
-  direction: "left" | "right" | "up" | "down",
-  type: string,
-  delay: number,
-  duration: number
-) => ({
-  hidden: {
-    x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
-    y: direction === "up" ? "100%" : direction === "down" ? "-100%" : 0,
-  },
-  show: {
-    x: 0,
-    y: 0,
-    transition: {
-      type: type || "tween",
-      delay: delay || 0,
-      duration: duration || 0.5,
-      ease: "easeOut",
-    },
-  },
-});
+
 
 export const staggerContainer = (staggerChildren: number, delayChildren: number = 0) => ({
   hidden: {},
@@ -86,6 +66,35 @@ export const staggerContainer = (staggerChildren: number, delayChildren: number 
     },
   },
 });
+
+/* ── Framer Motion Variants ── */
+export const fadeUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: (i = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.7, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] },
+  }),
+};
+
+export const slideIn = (dir: "left" | "right") => ({
+  hidden: { opacity: 0, x: dir === "left" ? -60 : 60 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] },
+  },
+});
+
+export const nodePop = {
+  hidden: { scale: 0, opacity: 0 },
+  visible: {
+    scale: 1,
+    opacity: 1,
+    transition: { type: "spring", stiffness: 260, damping: 18, delay: 0.3 },
+  },
+};
+
 
 export const sliderText = {
   initial: { opacity: 0, x: -50 },

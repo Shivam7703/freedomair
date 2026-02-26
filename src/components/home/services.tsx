@@ -22,7 +22,7 @@ export default function ServiceSlider() {
       {/* Heading Section */}
       <div className="w-full text-white text-center flex flex-col items-center gap-6 mb-6 px-5 md:mb-16">
         {/* Main Heading */}
-        <h2 className="font-medium text-2xl md:text-5xl max-w-2xl mx-auto ">
+        <h2 className="font-bold text-2xl md:text-5xl max-w-2xl mx-auto ">
           {data.title}
         </h2>
         <p className="sm:text-lg max-w-4xl text-center">{data.para}</p>

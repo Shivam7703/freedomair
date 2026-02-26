@@ -55,7 +55,7 @@ export default function Craft() {
       <div className="w-full h-full text-center flex flex-col items-center min-h-[80vh] justify-between gap-y-4 sm:mb-7 mb-2">
       
         {crafting?.title2 && (
-          <h2 className="text-white text-3xl md:text-5xl max-w-xl">
+          <h2 className="text-white text-3xl md:text-5xl font-bold max-w-xl">
             {crafting.title2}
           </h2>
         )}

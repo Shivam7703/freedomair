@@ -61,14 +61,14 @@ export default function Testimonials() {
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <div className="w-8 h-px bg-color2" />
-                <span className="text-color2 text-xs tracking-[0.25em] uppercase font-semibold">
+                <span className="text-color2 text-sm tracking-[0.25em] uppercase font-semibold">
                   Testimonials
                 </span>
               </div>
 
-              <h2 className="font-medium text-3xl md:text-4xl lg:text-6xl text-white leading-tight max-w-2xl">
+              <h2 className="text-3xl md:text-5xl font-bold text-gray-50 leading-tight max-w-2xl">
                 Valued{" "}
-                <span className="relative inline-block text-color2">
+                <span className="bg-gradient-to-r from-color2 to-yellow-500 bg-clip-text text-transparent">
                   Testimonials
                 </span>{" "}
                 from Our Clients

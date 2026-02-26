@@ -64,9 +64,10 @@ import {
   bhk,
 } from "@/assets";
 
-import { FaFacebookSquare, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaEye, FaFacebookSquare, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { GiPipes } from "react-icons/gi";
+import { GoGoal } from "react-icons/go";
 import { GrLocation } from "react-icons/gr";
 import { IoIosLeaf } from "react-icons/io";
 import { LiaRoadSolid } from "react-icons/lia";
@@ -133,39 +134,30 @@ export const social = [
     href: "https://www.facebook.com/FreedomeAirServicesdelhi",
   },
 ];
-// section1
-export const sliderContent = [
-  {
-    id: 1,
-    img: banner,
-    welcome: "Om ENGINEERS",
-    title: "Turning Blueprints Into Living Landmarks",
-    para:
-      "Building modern spaces through thoughtful design, engineering strength, and architectural vision.",
-    btntext: "Explore More",
-    href: "/services",
-  },
-  {
-    id: 2,
-    img: banner2,
-    welcome: "om ENGINEERS",
-    title: "Building Spaces That Last Generations",
-    para:
-      "Thoughtfully designed projects combining comfort, durability, and timeless value for families.",
-    btntext: "Contact Us",
-    href: "/contact-us",
-  },
-  {
-    id: 3,
-    img: banner3,
-    welcome: "om ENGINEERS",
-    title: "Creating Comfortable Spaces that Feel Like Home",
-    para:
-      "Designing warm, functional environments that support everyday living and lasting comfort.",
-    btntext: "Contact Us",
-    href: "/contact-us",
-  },
-];
+// homeabout
+ export const Homeabout = {
+    img2: banner,
+    title:"About us",
+    title1: "Best Builders In ",
+    title2:"Delhi NCR",
+    para: "Leading innovative, sustainable infrastructure development supporting India's future growth responsibly. We craft spaces that inspire, endure, and elevate communities for generations.",
+    vision: [
+      {
+        heading: "Our Vision",
+        icon:<FaEye />
+,
+        text: "Leading innovative, sustainable infrastructure development supporting India's future growth responsibly. We envision a skyline that reflects our commitment to excellence.",
+      },
+      {
+        heading: "Our Mission",
+        icon: <GoGoal />,
+        text: "Delivering safe, precise infrastructure through ethical practices and modern project management. Every project is a promise kept to our clients and communities.",
+      },
+    ],
+    count:[    { value: "500+", label: "Projects Done" },
+              { value: "98%", label: "Client Satisfaction" },
+              { value: "42+", label: "Years Active" },]
+  };
 
 export const Servicedata = {
   title: "Easy Way To Book (Services)",
@@ -552,8 +544,6 @@ export const crafting = {
     },
   ],
 };
-
-
 
 export const testimonialData = {
   title1: "TESTIMONIALS",
@@ -1207,39 +1197,35 @@ export const aboutBanner = {
   img: banner2,
 };
 
-// export const aboutdata2 = {
-//   img2: banner,
-//   img: about,
-
-//   title1: "WHO ARE WE",
-//   title2: "We Create Comfortable & Liable Spaces",
-//   para:
-//     "The real estate and construction industry recognizes FreedomeAirServices Contracts as its premier excellence-based corporate name. For 30 years the respected company has maintained its dedication to quality as it continues to establish new benchmarks in turning properties into luxurious family residences. If you're looking to turn your vision of a perfect home into reality, FreedomeAirServices Contracts is the builder that will exceed your expectations and deliver a space that is as luxurious as it is functional.",
-//   vision: [
-//     {
-//       id: 1,
-//       icon: <RiSofaFill />,
-
-//       heading: "Superior Quality",
-//       text: "We build structures that provide long-lasting dependability",
-//     },
-//     {
-//       id: 2,
-//       icon: <RiSofaFill />,
-
-//       heading: "On-Time Completion",
-//       text:
-//         "We meet every project deadline, which we have communicated to clients at the start",
-//     },
-//     {
-//       id: 3,
-//       icon: <RiSofaFill />,
-
-//       heading: "Exceeding Expectations",
-//       text: "Your satisfaction is our commitment and highest priority.",
-//     },
-//   ],
-// };
+ export const Aboutabout = {
+    img:banner3,
+    img2: banner,
+    title:"About us",
+    title1: "Best Builders In ",
+    title2:"Delhi NCR",
+    para: "Leading innovative, sustainable infrastructure development supporting India's future growth responsibly. We craft spaces that inspire, endure, and elevate communities for generations.",
+    vision: [
+      {
+        heading: "Our Vision",
+        icon:<FaEye />
+,
+        text: "Leading innovative, sustainable infrastructure development supporting India's future growth responsibly. We envision a skyline that reflects our commitment to excellence.",
+      },
+      {
+        heading: "Our Mission",
+        icon: <GoGoal />,
+        text: "Delivering safe, precise infrastructure through ethical practices and modern project management. Every project is a promise kept to our clients and communities.",
+      },
+       {
+        heading: "Our Goals",
+        icon: <GoGoal />,
+        text: "Delivering safe, precise infrastructure through ethical practices and modern project management. Every project is a promise kept to our clients and communities.",
+      },
+    ],
+    process:[    { value: 99, label: "Success Rate" },
+              { value: 97, label: "Client Satisfaction" },
+              { value: 68, label: "Transparecy" },]
+  };
 
 export const WhychooseData2 = {
   img2: civil,

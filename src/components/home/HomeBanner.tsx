@@ -97,8 +97,8 @@ export default function HomeBanner() {
             transition={{ duration: 1, delay: 0.2 }}
             className="w-full max-w-[680px]"
           >
-            <h1 className="text-3xl md:text-4xl lg:text-6xl font-semibold text-white mb-5 leading-tight">
-              {data.heading1} <span className=" text-color3">{data.heading2}</span>
+            <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-5 leading-tight">
+              {data.heading1} <span className=" bg-gradient-to-r from-color2 to-yellow-500 bg-clip-text text-transparent">{data.heading2}</span>
             </h1>
 
             <p className="text-gray-50 mb-7 leading-relaxed md:text-lg">

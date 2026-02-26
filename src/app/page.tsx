@@ -11,12 +11,13 @@ import CountDown from "@/components/global/Contdown";
 import Craft from "@/components/home/crafting";
 import Faqs from "@/components/home/Faqs";
 import Testimonials from "@/components/global/testimonial";
+import { Homeabout } from "@/data/homeData";
 
 export default function Home() {
   return (
     <>
       <BannerSlider/>
-            <AboutSection/>
+            <AboutSection data={Homeabout} isHome={true}/>
       <ServiceSlider/>
       {/* <Homeoxes/>
       <Latest/>

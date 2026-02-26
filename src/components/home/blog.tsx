@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { blogData as data } from "@/data/homeData";
 import Image from "next/image";
@@ -6,21 +7,15 @@ import {
   FaUser,
 } from "react-icons/fa6";
 import Link from "next/link";
+import Heading from "../global/heading";
 
 export default function Blogs({ isHome }:any) {
   return (
     <section className={`${isHome ? "lg:px-20 md:px-16 sm:p-12 p-6 " : "px-3 pb-5"} bg-color1 text-center relative w-full`}>
-      {data?.title1 && isHome && (
-      <div className="relative overflow-hidden px-6 py-2.5 rounded-full w-max mx-auto border-2 text-color2">
-          <h4 className=" text-xs min-w-max sm:text-sm font-semibold tracking-wider uppercase">
-{data.title1}          </h4>
-        </div>
-      )}
-{isHome && <h2 className="font-medium text-3xl md:my-8 my-6 mb-12 text-black md:text-5xl max-w-3xl mx-auto">
-        {data.title2} <span className="text-color2">{data?.title3}</span>
-      </h2>}
+           <Heading title1={data?.title1} title2={data?.title2} title3={data?.title3}  para={"This error happened while generating the page. Any console logs will be displayed in the terminal window."} />
 
-      <div className={`grid ${!isHome? "" : "lg:grid-cols-3"} sm:grid-cols-2  gap-8 max-w-7xl py-7 mx-auto}`}>
+
+      <div className={`grid ${!isHome? "" : "lg:grid-cols-3"} sm:grid-cols-2  gap-8 max-w-7xl py-7 mx-auto`}>
   {(isHome ? data?.blogs?.slice(0, 3) : data?.blogs)?.map((blogs: any, index: number) => (
  <div
   key={index}

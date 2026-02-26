@@ -70,8 +70,8 @@ export default function Faqs() {
           </div>
 
           {/* Heading */}
-          <h2 className="text-black font-medium text-3xl md:text-5xl leading-[1.1] tracking-tight">
-            {data?.title1} <span className=" text-color2">{data?.title2}</span>
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
+            {data?.title1} <span className=" bg-gradient-to-r from-color2 to-yellow-500 bg-clip-text text-transparent">{data?.title2}</span>
           </h2>
 
           {/* Divider */}
