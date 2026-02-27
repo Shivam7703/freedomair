@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import React from "react";
 import { FaAngleDoubleDown, FaWpforms } from "react-icons/fa";

@@ -109,7 +109,7 @@ export const navItemsArray = [
     ],
   },
   { id: 4, label: "Projects", href: "/projects" },
-  { id: 5, label: "Privacy Policy", href: "/privacy-policy" },
+  { id: 5, label: "Sustainability", href: "/sustainability" },
   { id: 6, label: "Blogs", href: "/blogs" },
   { id: 7, label: "Contact Us", href: "/contact-us" },
 ];
@@ -121,12 +121,10 @@ export const social = [
   },
   {
     icon: <FaInstagram />,
-
     href: "https://www.facebook.com/FreedomeAirServicesdelhi",
   },
   {
     icon: <FaXTwitter />,
-
     href: "https://www.facebook.com/FreedomeAirServicesdelhi",
   },
   {

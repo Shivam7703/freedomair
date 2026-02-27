@@ -10,7 +10,7 @@ function page() {
                   para="Explore design trends, construction tips, and creative solutions.
 Your go-to source for transforming spaces beautifully."
                   slug="blogs"/>
-                  <Blogs/>
+                  <Blogs isHome={false}/>
                   
     </>
    

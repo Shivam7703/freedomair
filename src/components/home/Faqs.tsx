@@ -1,8 +1,6 @@
-"use client";
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import { banner } from "@/assets";
-import { BsArrowUpRightCircleFill } from "react-icons/bs";
 import Faq from "../global/faq";
 
 export default function Faqs() {

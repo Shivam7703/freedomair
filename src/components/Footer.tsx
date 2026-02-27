@@ -1,32 +1,13 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-
 import { RiWhatsappFill } from "react-icons/ri";
-import { FaFacebookSquare, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { logo2 as logo, logo as logo2 } from "@/assets";
+import { logo2 as logo} from "@/assets";
 import Buttonmain from "./global/button";
+import { social } from "@/data/homeData";
 
-export const social = [
-  {
-    icon: <FaFacebookSquare />,
-    href: "https://www.facebook.com/FreedomeAirServicesdelhi",
-  },
-  {
-    icon: <FaInstagram />,
-    href: "https://www.facebook.com/FreedomeAirServicesdelhi",
-  },
-  {
-    icon: <FaXTwitter />,
-    href: "https://www.facebook.com/FreedomeAirServicesdelhi",
-  },
-  {
-    icon: <FaLinkedinIn />,
-    href: "https://www.facebook.com/FreedomeAirServicesdelhi",
-  },
-];
+
 
 export default function Footer({ footer }: any) {
   return (

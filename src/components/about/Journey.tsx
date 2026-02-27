@@ -53,7 +53,7 @@ function TimelineLine() {
   return (
     <div ref={ref} className="hidden lg:block absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-[1px]">
       {/* Ghost track */}
-      <div className="absolute inset-0 bg-white/5" />
+      <div className="absolute inset-0 bg-white/10" />
       {/* Animated fill — origin top */}
       <motion.div
         className="absolute top-0 left-0 w-full h-full origin-top
@@ -269,7 +269,7 @@ export default function WorkProcess() {
             transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
           >
             <div className="w-[1px] h-8 bg-gradient-to-b from-color2 to-transparent" />
-            <FaAngleDoubleDown className="text-color2 text-xs" />
+            <FaAngleDoubleDown className="text-color2 text-lg animate-bounce" />
           </motion.div>
         </motion.div>
 

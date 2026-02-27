@@ -26,19 +26,21 @@ function Homeoxes() {
     },
 ]
   return (
-    <section className=' lg:p-16 !pb-6 w-full p-6 mx-auto font1 bg-color1 flex flex-wrap justify-between gap-y-6 relative'>
+    <section className=' lg:px-16 sm:p-10 w-full p-6 mx-auto  flex flex-wrap justify-between gap-y-6 relative'>
+      <div className='absolute w-full h-1/2 top-0 left-0 bg-color1 -z-10'/>
      {boxesData.map((box, index) => (
   <div
     key={index}
-    className="group md:w-[48%] lg:w-[23%] w-full
+    className="group md:w-[48%] relative lg:w-[23%] w-full
                rounded-2xl p-6
                bg-white
                border border-zinc-100
-               shadow-md hover:shadow-lg 
+               shadow-md hover:shadow-lg overflow-hidden 
                transition-all duration-500
                hover:-translate-y-2"
   >
-   
+   <div className="absolute w-20 h-20 bg-green-500/20 -left-20 -bottom-20 group-hover:rotate-[300deg] group-hover:scale-110 group-hover:left-0 group-hover:bottom-0 transition-all z-0 duration-700"/>
+
 
     {/* Icon */}
     <div className="relative z-10 flex items-center justify-center mb-5">
@@ -68,14 +70,14 @@ function Homeoxes() {
 
     {/* Divider */}
     <div className="relative z-10 my-4 mx-auto h-[2px] w-12
-                    bg-color2 rounded-full
+                    bg-gradient-to-br from-color2  via-color3 to-red-500 rounded-full
                     group-hover:w-20
                     transition-all duration-500" />
 
     {/* Description */}
     <p
-      className="relative z-10 text-center text-sm
-                 text-color3 leading-relaxed"
+      className="relative z-10 text-center text-lg
+                 text-zinc-700 leading-relaxed"
     >
       {box.para}
     </p>

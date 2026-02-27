@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { blogData as data } from "@/data/homeData";
 import Image from "next/image";
@@ -15,7 +14,7 @@ export default function Blogs({ isHome }:any) {
            <Heading title1={data?.title1} title2={data?.title2} title3={data?.title3}  para={"This error happened while generating the page. Any console logs will be displayed in the terminal window."} />
 
 
-      <div className={`grid ${!isHome? "" : "lg:grid-cols-3"} sm:grid-cols-2  gap-8 max-w-7xl py-7 mx-auto`}>
+      <div className={`grid lg:grid-cols-3 sm:grid-cols-2  gap-8 max-w-7xl py-7 mx-auto`}>
   {(isHome ? data?.blogs?.slice(0, 3) : data?.blogs)?.map((blogs: any, index: number) => (
  <div
   key={index}

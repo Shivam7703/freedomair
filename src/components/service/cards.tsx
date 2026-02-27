@@ -2,95 +2,65 @@ import { Servicedata as data } from "@/data/homeData";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import { IoIosArrowRoundForward } from "react-icons/io";
+import Heading from "../global/heading";
 
 function Servicecards() {
   return (
-    <div className="lg:px-28 font1  md:p-20 sm:p-12 p-6 relative bg-color1">
-      <div className="w-full text-center flex flex-col items-center gap-6 mb-16">
-        {/* Badge with Animated Text */}
-        <div className="relative overflow-hidden max-w-40 px-6 py-2.5 rounded-full border-2 text-color2">
-          <h4 className="animate-marquee-right text-xs min-w-max sm:text-sm font-semibold tracking-wider uppercase">
-            Service{" "}
-          </h4>
-        </div>
+    <div className="lg:px-28 md:p-20 sm:p-12 p-6 relative bg-white">
+           <Heading title1={"Our Services"} title2={"Clear process with expert"} title3={"execution and"}  para={""} />
 
-        {/* Main Heading */}
-        <h2 className="font-bold text-3xl text-black md:text-5xl max-w-5xl mx-auto">
-          Our Excellent Efforts
-        </h2>
-      </div>
 
       {/* Timeline Container */}
-      <div className="relative">
-        {/* Center Vertical Line */}
-        <div className="absolute md:left-1/2 left-3 top-0 bottom-0 w-[2px] bg-gradient-to-b from-color2/50 via-color2/90 to-color2/50 -translate-x-1/2 " />
-
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-5 sm:gap-9 lg:gap-12">
         {/* Cards */}
-        {data?.service?.map((pro, index) => {
-          const isOdd = index % 2 !== 0;
-          return <ProCard key={index} num={index + 1} pro={pro} isOdd={isOdd} />;
+        {data?.service?.map((pro:any, index:number) => {
+         return <ProCard
+         service={pro} index={index} />
         })}
       </div>
     </div>
   );
 }
 
-const ProCard = ({ pro, isOdd, num }: any) => (
-  <div
-    className={`flex  md:flex-row flex-row-reverse items-start gap-0 mb-0 md:mb-0 relative group ${
-      isOdd ? "md:flex-row-reverse" : ""
-    }`}
+export const ProCard = ({ service, index }: any) => (
+  <Link
+    href={`/services/${service?.title
+      ?.trim()
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "")}`}
+    className="group block h-full py-4"
   >
-    {/* Image & Content Section */}
-    <div className={`w-[74%] md:w-[48%] ${isOdd ? "md:pl-8 lg:pl-16" : "md:pr-8 lg:pr-16"} mb-10 md:mb-16`}>
-      {/* Image Container */}
-      <div className=" w-full md:rounded-3xl rounded-lg overflow-hidden shadow-lg mb-6">
-        <Image
-          src={pro?.img}
-          alt={pro.title}
-          className="w-full h-52 md:h-80  object-cover 
-                     transition-all duration-700 ease-out
-                     group-hover:scale-110 group-hover:rotate-0 group-hover:brightness-110"
-        />
+    {/* Card with Thick White Border */}
+    <div className="relative h-full bg-white rounded-2xl overflow-hidden p-6 shadow-2xl transition-all duration-500  hover:-translate-y-2">
+      {/* Content Section */}
+
+      <div className="absolute rounded-full h-44 w-44 bottom-[73%] left-[78%] bg-red-500 z-10" />
+      <div className="absolute text-white top-3 right-3 text-4xl font-extrabold z-20">
+        0{index + 1}
       </div>
 
-      {/* Content Below Image */}
-      <Link href={`/services/${pro.title.trim()
-                    .toLowerCase()
-                    .replace(/[^a-z0-9]+/g, "-")
-                    .replace(/^-+|-+$/g, "")}`} className={`space-y-2 ${isOdd ? "md:text-left md:pl-4" : "md:text-right  md:pr-4"}`}>
-        <h3 className="text-2xl md:text-3xl  font-medium text-black transition-colors duration-300 group-hover:text-color2">
-          {pro.title}
-        </h3>
-        
-        <p className={`text-zinc-700 text-base md:text-lg leading-relaxed`}>
-          {pro.text}
-        </p>
+      <div className=" text-3xl rounded-lg p-4 bg-color1 group-hover:bg-color3 w-max group-hover:text-black transition-all shadow-lg text-color2 mb-3 md:mb-4">
+        {service?.icon}
+      </div>
+      <h3 className="text-xl md:text-2xl font-medium text-zinc-900 group-hover:text-color2 transition-colors duration-300">
+        {service?.title}
+      </h3>
+      <div className="bg-color2 h-px w-full my-3 md:my-4"></div>
+      <p className="text-zinc-600 text-sm md:text-lg leading-relaxed mb-5 md:mb-6 line-clamp-3">
+        {service?.text}
+      </p>
 
-      </Link>
-    </div>
-
-    {/* Sticky Number Section */}
-    <div className={`w-[24%] md:w-[48%] sticky top-40 ${
-      isOdd ? "pr-4" : "md:pl-8 lg:pl-16"
-    } pb-16 md:pb-8`}>
-      <div className={`flex items-center w-full gap-3 md:gap-14 ${isOdd ? "md:flex-row-reverse " : "md:justify-start md:-ml-11"}`}>
-        {/* Animated Dot with Pulse */}
-        <div className="relative">
-          <div className="absolute inset-0 bg-color2 rounded-full animate-ping opacity-75" />
-          <div className="relative bg-color2 w-2 h-2 md:w-4 md:h-4 rounded-full shadow-lg" />
+      {/* View Details Button */}
+      <div className="inline-flex items-center gap-2 text-black group-hover:text-color2 font-semibold text-sm md:text-base transition-all duration-300">
+        <span>View Details</span>
+        <div className="w-8 h-8 md:w-9 md:h-9 text-white text-2xl rounded-full bg-black group-hover:bg-color2 flex items-center justify-center transition-all duration-300 group-hover:translate-x-1">
+          <IoIosArrowRoundForward />
         </div>
-
-        {/* Large Number */}
-        <h4 className="font-black text-3xl md:text-8xl lg:text-9xl text-black/40 
-                       leading-none select-none transition-all duration-500 
-                       group-hover:text-color2">
-          {num < 10 ? `0${num}` : num}
-        </h4>
       </div>
     </div>
-  </div>
+  </Link>
 );
-
 
 export default Servicecards;
