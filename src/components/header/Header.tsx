@@ -10,10 +10,11 @@ import Image from "next/image";
 import { logo } from "@/assets";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { usePathname } from "next/navigation";
-import { MdAttachEmail,  } from "react-icons/md";
+import { MdAttachEmail, MdPayment,  } from "react-icons/md";
 import { FaClockRotateLeft,  FaLocationDot } from "react-icons/fa6";
 import { social } from "@/data/homeData";
 import Buttonmain from "../global/button";
+import { motion } from "framer-motion";
 
 const Header = ({ header }: any) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
@@ -94,6 +95,7 @@ const Header = ({ header }: any) => {
           <RightSide onTop={isAtTop} />
         </div>
 
+
         {/* Mobile Section */}
         <div
           className={`flex md:hidden w-screen items-center  justify-between h-20 px-3 bg-color1`}
@@ -103,9 +105,11 @@ const Header = ({ header }: any) => {
               <Image
                 src={logo}
                 alt="logo"
-                className="w-[180px] object-contain"
-              />
+                className="w-[170px] object-contain"
+              />         
             </Link>
+                           <RightSide onTop={isAtTop} />
+
             {isMobileMenuOpen ? (
               <VscChromeClose
                 onClick={handleMobileMenu}
@@ -138,16 +142,70 @@ const Header = ({ header }: any) => {
 
 export default Header;
 
+
 function RightSide(onTop: any) {
   return (
-    <div className="flex gap-6">
+    <div className="flex items-center gap-2">
 
-<a href={"/"} className="w-max">
-  <div className="flex gap-2 group relative text-zinc-800 hover:text-color2 items-center flex-row h-full">
-                   <BiSolidPhoneCall className=" text-5xl p-3 group-hover:bg-zinc-800 text-white bg-color2 duration-200 rounded-full" />
-                              <p className="text-lg !leading-snug"> <span className="text-black ml-1 font1 font-medium"> Call Now</span> <br /> +91 1234566770</p>
-                 </div>
-</a>
-</div>
+      {/* ── Pay Now ── */}
+      <motion.a
+        href="/payment"
+        whileHover={{ y: -3, scale: 1.02 }}
+        whileTap={{ scale: 0.96 }}
+        className="group relative flex items-center gap-2.5
+                   bg-gradient-to-br from-color2 to-yellow-500
+                   px-5 py-2.5 rounded-full overflow-hidden
+                   shadow-[0_4px_20px_rgba(var(--color2-rgb),0.35)]
+                   hover:shadow-[0_8px_30px_rgba(var(--color2-rgb),0.5)]
+                   transition-all duration-300"
+      >
+        {/* Shine sweep */}
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent
+                        -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
+
+        <MdPayment className="text-white text-lg relative z-10" />
+        <span className="text-white sm:text-sm text-xs  font-bold tracking-wide relative z-10 whitespace-nowrap">
+          Pay Now
+        </span>
+      </motion.a>
+
+      {/* ── Divider ── */}
+      <div className="w-px h-9 bg-gray-500 mx-1 hidden sm:block" />
+
+      {/* ── Call Now ── */}
+      <motion.a
+        href="tel:+911234566770"
+        whileHover={{ y: -3 }}
+        whileTap={{ scale: 0.96 }}
+        className="group flex items-center gap-2"
+      >
+        {/* Animated icon ring */}
+        <div className="relative shrink-0">
+          {/* Pulse ring */}
+          <div className="absolute inset-0 rounded-full bg-color2/20
+                          group-hover:scale-150 group-hover:opacity-0
+                          transition-all duration-700 ease-out" />
+          <div className="sm:w-11 sm:h-11 w-10 h-10 rounded-full bg-gradient-to-br from-color2 to-red-500
+                          flex items-center justify-center text-white text-xl
+                          shadow-[0_4px_16px_rgba(var(--color2-rgb),0.4)]
+                          group-hover:shadow-[0_6px_24px_rgba(var(--color2-rgb),0.6)]
+                          transition-shadow duration-300 relative z-10">
+            <BiSolidPhoneCall />
+          </div>
+        </div>
+
+        {/* Text */}
+        <div className="hidden sm:flex flex-col font1">
+          <span className="text-xs text-gray-600 uppercase tracking-[0.18em] font-semibold ml-2  leading-none">
+            Call Us
+          </span>
+          <span className="text-base font-extrabold text-gray-700 group-hover:text-color2
+                           transition-colors duration-300 leading-tight mt-1 whitespace-nowrap">
+            +91 1234566770
+          </span>
+        </div>
+      </motion.a>
+
+    </div>
   );
 }

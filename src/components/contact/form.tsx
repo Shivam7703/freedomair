@@ -8,26 +8,32 @@ import { RiWhatsappFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 import { fadeUp, slideIn } from "@/utils/motion";
 
-
-
 function Contactform() {
   return (
-    <section className="relative font1 bg-color1 py-20 md:py-28 lg:px-20 sm:px-12 px-6 overflow-hidden">
-
-           <div className="max-w-7xl mx-auto relative z-10">
-
+    <section className="relative font1 bg-color1  lg:p-20 sm:p-12 p-3 py-8 overflow-hidden">
+      <div className="max-w-7xl mx-auto relative z-10">
         {/* ── Section heading ── */}
         <motion.div
           className="text-center mb-14 flex flex-col items-center gap-4"
-          initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.4 }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.4 }}
         >
-          <motion.div variants={fadeUp} custom={0}
-            className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-color2/30 bg-color2/8">
+          <motion.div
+            variants={fadeUp}
+            custom={0}
+            className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-color2/30 bg-color2/8"
+          >
             <span className="w-1.5 h-1.5 rounded-full bg-color2 animate-pulse" />
-            <span className="text-color2 text-xs font-bold tracking-[0.2em] uppercase">Contact Us</span>
+            <span className="text-color2 text-xs font-bold tracking-[0.2em] uppercase">
+              Contact Us
+            </span>
           </motion.div>
-          <motion.h2 variants={fadeUp} custom={1}
-            className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
+          <motion.h2
+            variants={fadeUp}
+            custom={1}
+            className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight max-w-2xl mx-auto"
+          >
             Let's Build Something{" "}
             <span className="bg-gradient-to-r from-color2 to-yellow-500 bg-clip-text text-transparent">
               Great Together
@@ -35,17 +41,21 @@ function Contactform() {
           </motion.h2>
           <motion.div
             className="h-[3px] bg-gradient-to-r from-color2 to-yellow-400 rounded-full"
-            initial={{ width: 0 }} whileInView={{ width: 56 }} viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }} />
+            initial={{ width: 0 }}
+            whileInView={{ width: 56 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          />
         </motion.div>
 
         {/* ── Two column layout ── */}
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-
           {/* ── Left: Info ── */}
           <motion.div
             className="flex flex-col gap-7"
-            initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.15 }}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.15 }}
             variants={slideIn("left")}
           >
             {/* Title block */}
@@ -55,8 +65,11 @@ function Contactform() {
                   {contactData?.title}
                 </h3>
               )}
-              <p className="text-gray-800 leading-relaxed">
-                Backed by a strong engineering legacy, we deliver precise execution, transparent processes, and dependable infrastructure solutions focused on quality, safety, and long-term client value.
+              <p className="text-gray-800 text-lg  leading-relaxed">
+                Backed by a strong engineering legacy, we deliver precise
+                execution, transparent processes, and dependable infrastructure
+                solutions focused on quality, safety, and long-term client
+                value.
               </p>
             </div>
 
@@ -67,7 +80,10 @@ function Contactform() {
                   key={index}
                   custom={index}
                   variants={fadeUp}
-                  whileHover={{ y: -4, boxShadow: "0 20px 50px rgba(0,0,0,0.10)" }}
+                  whileHover={{
+                    y: -4,
+                    boxShadow: "0 20px 50px rgba(0,0,0,0.10)",
+                  }}
                   transition={{ type: "spring", stiffness: 280, damping: 18 }}
                   className="group relative bg-white rounded-2xl p-5
                              border border-gray-100
@@ -76,16 +92,20 @@ function Contactform() {
                              overflow-hidden"
                 >
                   {/* Hover shine */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-color2/4 to-transparent
-                                  opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                  <div
+                    className="absolute inset-0 bg-gradient-to-br from-color2/4 to-transparent
+                                  opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                  />
 
                   <div className="flex gap-4 items-start relative z-10">
                     {/* Icon */}
-                    <div className="shrink-0 w-12 h-12 rounded-xl
+                    <div
+                      className="shrink-0 w-12 h-12 rounded-xl
                                     bg-gradient-to-br from-color2 to-red-500
                                     flex items-center justify-center text-white text-xl
                                     shadow-lg group-hover:scale-110 group-hover:rotate-3
-                                    transition-transform duration-300">
+                                    transition-transform duration-300"
+                    >
                       {counts?.icon}
                     </div>
                     {/* Content */}
@@ -95,9 +115,12 @@ function Contactform() {
                       </h4>
                       <div className="space-y-1">
                         {counts?.data?.map((detail: any, i: number) => (
-                          <a key={i} href={detail?.slug}
-                            className="block text-gray-700 text-xs hover:text-color2
-                                       hover:translate-x-1 transition-all duration-300">
+                          <a
+                            key={i}
+                            href={detail?.slug}
+                            className="block text-gray-700  hover:text-color2 break-words 
+                                       hover:translate-x-1 transition-all duration-300"
+                          >
                             {detail?.text}
                           </a>
                         ))}
@@ -118,23 +141,38 @@ function Contactform() {
             </div>
 
             {/* Social icons */}
-            <motion.div variants={fadeUp} custom={3} className="flex items-center gap-3">
+            <motion.div
+              variants={fadeUp}
+              custom={3}
+              className="flex items-center gap-3"
+            >
               {social.map((s: any, i: number) => (
-                <motion.a key={i} href={s.href} target="_blank" rel="noopener noreferrer"
-                  whileHover={{ y: -3, scale: 1.12 }} whileTap={{ scale: 0.95 }}
+                <motion.a
+                  key={i}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ y: -3, scale: 1.12 }}
+                  whileTap={{ scale: 0.95 }}
                   className="w-10 h-10 rounded-xl bg-white border border-gray-200
                              flex items-center justify-center text-gray-500 text-base
                              hover:bg-color2 hover:border-color2 hover:text-white
-                             shadow-sm transition-colors duration-300">
+                             shadow-sm transition-colors duration-300"
+                >
                   {s.icon}
                 </motion.a>
               ))}
-              <motion.a href="https://wa.me/919667622285" target="_blank" rel="noopener noreferrer"
-                whileHover={{ y: -3, scale: 1.12 }} whileTap={{ scale: 0.95 }}
+              <motion.a
+                href="https://wa.me/919667622285"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ y: -3, scale: 1.12 }}
+                whileTap={{ scale: 0.95 }}
                 className="w-10 h-10 rounded-xl bg-white border border-gray-200
                            flex items-center justify-center text-gray-500 text-base
-                           hover:bg-green-500 hover:border-green-500 hover:text-white
-                           shadow-sm transition-colors duration-300">
+                           hover:bg-green-500 hover:border-green-500 hover:text-white 
+                           shadow-sm transition-colors duration-300"
+              >
                 <RiWhatsappFill />
               </motion.a>
             </motion.div>
@@ -142,7 +180,9 @@ function Contactform() {
 
           {/* ── Right: Form ── */}
           <motion.div
-            initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.15 }}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.15 }}
             variants={slideIn("right")}
             className="bg-white rounded-3xl p-8 md:p-10
                        border border-gray-100
@@ -154,13 +194,20 @@ function Contactform() {
 
             {/* Form header */}
             <div className="mb-7">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full
-                              border border-color2/25 bg-color2/6 mb-4">
+              <div
+                className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full
+                              border border-color2/25 bg-color2/6 mb-4"
+              >
                 <span className="w-1.5 h-1.5 rounded-full bg-color2 animate-pulse" />
-                <span className="text-color2 text-[10px] font-bold tracking-[0.2em] uppercase">Let's Collaborate</span>
+                <span className="text-color2 text-[10px] font-bold tracking-[0.2em] uppercase">
+                  Let's Collaborate
+                </span>
               </div>
               <h2 className="text-gray-900 text-2xl md:text-4xl font-bold leading-tight">
-                Contact Us <span className="bg-gradient-to-r from-color2 to-yellow-500 bg-clip-text text-transparent">Today!</span>
+                Contact Us{" "}
+                <span className="bg-gradient-to-r from-color2 to-yellow-500 bg-clip-text text-transparent">
+                  Today!
+                </span>
               </h2>
               <div className="h-[2px] w-12 bg-gradient-to-r from-color2 to-yellow-400 rounded-full mt-3" />
             </div>
@@ -172,43 +219,67 @@ function Contactform() {
             >
               {/* Name */}
               <div className="w-full sm:w-[48%] group">
-                <input type="text" name="name" placeholder="Your Name" required
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
                   className="w-full py-3.5 px-5 rounded-xl border border-gray-200
                              bg-gray-50 placeholder:text-gray-400 text-gray-900 text-sm
                              focus:outline-none focus:border-color2 focus:bg-white focus:ring-2 focus:ring-color2/10
-                             transition-all duration-300" />
+                             transition-all duration-300"
+                />
               </div>
               {/* Email */}
               <div className="w-full sm:w-[48%]">
-                <input type="email" name="email" placeholder="Your Email" required
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
                   className="w-full py-3.5 px-5 rounded-xl border border-gray-200
                              bg-gray-50 placeholder:text-gray-400 text-gray-900 text-sm
                              focus:outline-none focus:border-color2 focus:bg-white focus:ring-2 focus:ring-color2/10
-                             transition-all duration-300" />
+                             transition-all duration-300"
+                />
               </div>
               {/* Phone */}
               <div className="w-full sm:w-[48%]">
-                <input type="tel" name="phone" placeholder="Your Contact No." required
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Your Contact No."
+                  required
                   className="w-full py-3.5 px-5 rounded-xl border border-gray-200
                              bg-gray-50 placeholder:text-gray-400 text-gray-900 text-sm
                              focus:outline-none focus:border-color2 focus:bg-white focus:ring-2 focus:ring-color2/10
-                             transition-all duration-300" />
+                             transition-all duration-300"
+                />
               </div>
               {/* Subject */}
               <div className="w-full sm:w-[48%]">
-                <input type="text" name="subject" placeholder="Subject" required
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  required
                   className="w-full py-3.5 px-5 rounded-xl border border-gray-200
                              bg-gray-50 placeholder:text-gray-400 text-gray-900 text-sm
                              focus:outline-none focus:border-color2 focus:bg-white focus:ring-2 focus:ring-color2/10
-                             transition-all duration-300" />
+                             transition-all duration-300"
+                />
               </div>
               {/* Message */}
               <div className="w-full">
-                <textarea name="message" placeholder="Your Message" required
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  required
                   className="w-full py-3.5 px-5 rounded-xl border border-gray-200
                              bg-gray-50 placeholder:text-gray-400 text-gray-900 text-sm
                              focus:outline-none focus:border-color2 focus:bg-white focus:ring-2 focus:ring-color2/10
-                             transition-all duration-300 h-28 md:h-32 resize-none" />
+                             transition-all duration-300 h-28 md:h-32 resize-none"
+                />
               </div>
 
               {/* Submit */}
@@ -222,7 +293,6 @@ function Contactform() {
               </motion.button>
             </form>
           </motion.div>
-
         </div>
       </div>
     </section>

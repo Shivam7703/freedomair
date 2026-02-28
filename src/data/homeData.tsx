@@ -7,54 +7,8 @@ import {
   cl2,
   cl3,
   cl4,
+  air1, air10,air11,air12,air13,air14,air15,air16,air17,air18,air19,air2,air20,air3,air4,air5,air6,air7,air8,air9,
   logo2,
-  dlf911,
-  dlf912,
-  dlf913,
-  dlf914,
-  dlf931,
-  dlf932,
-  dlf933,
-  dlf934,
-  sewer,
-  sewer2,
-  sewer3,
-  sewer4,
-  sewer5,
-  sewer6,
-  sewer7,
-  sewer8,
-  sewer9,
-  sewer10,
-  sewer11,
-  sewer13,
-  dlf935,
-  dlf936,
-  dlf937,
-  enclave931,
-  enclave932,
-  enclave933,
-  gmda1,
-  gmda2,
-  gmda3,
-  gmda4,
-  other1,
-  other2,
-  other3,
-  sco841,
-  sco842,
-  sec681,
-  sec682,
-  sec683,
-  sec684,
-  sec685,
-  sec686,
-  sec687,
-  sec688,
-  sec689,
-  sec6810,
-  sco843,
-  dlf915,
   pipe,
   drainage,
   road,
@@ -64,7 +18,12 @@ import {
   bhk,
 } from "@/assets";
 
-import { FaEye, FaFacebookSquare, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaEye,
+  FaFacebookSquare,
+  FaInstagram,
+  FaLinkedinIn,
+} from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { GiPipes } from "react-icons/gi";
 import { GoGoal } from "react-icons/go";
@@ -78,8 +37,9 @@ import { RiMailSendLine, RiSofaFill } from "react-icons/ri";
 
 // homepage
 export const navItemsArray = [
-  { id: 1, label: "Home", href: "/" },
+  // { id: 1, label: "Home", href: "/" },
   { id: 2, label: "About Us", href: "/about-us" },
+
   {
     id: 3,
     label: "Services",
@@ -87,31 +47,62 @@ export const navItemsArray = [
     subNav: [
       {
         id: 1,
-        label: "Pipeline Networks",
-        href: "/services/pipeline-networks",
+        label: "Overfly & Landing Permit Assistance",
+        href: "/services/overfly-landing-permit-assistance",
       },
       {
         id: 2,
-        label: "Drainage & Utility Diversions",
-        href: "/services/drainage-&-utility-diversions",
+        label: "Airport Slots",
+        href: "/services/airport-slots",
       },
-      { id: 3, label: "Roads & Footpaths", href: "/services/roads-footpaths" },
+      {
+        id: 3,
+        label: "Ground Handleing Arrangements",
+        href: "/services/ground-handleing-arrangements",
+      },
       {
         id: 4,
-        label: "Civil Structure & Finishing Works",
-        href: "/services/civil-structure-&-finishing-works",
+        label: "Aviation Fuel",
+        href: "/services/aviation-fuel",
       },
       {
         id: 5,
-        label: "Horticulture & Landscaping",
-        href: "/services/horticulture-landscaping",
+        label: "Crew Accomodation & Support",
+        href: "/services/crew-accomodation-support",
+      },
+      {
+        id: 6,
+        label: "On-Site Gourmet Catering",
+        href: "/services/on-site-gourmet-catering",
+      },
+      {
+        id: 7,
+        label: "Customized Solutions",
+        href: "/services/customized-solutions",
+      },
+      {
+        id: 8,
+        label: "Aircraft Managements",
+        href: "/services/aircraft-managements",
       },
     ],
   },
-  { id: 4, label: "Projects", href: "/projects" },
-  { id: 5, label: "Sustainability", href: "/sustainability" },
-  { id: 6, label: "Blogs", href: "/blogs" },
-  { id: 7, label: "Contact Us", href: "/contact-us" },
+
+  { id: 4, label: "Info & Regulations", href: "/info-regulation" },
+  { id: 5, label: "Airport Index", href: "/airport-index" },
+  { id: 6, label: "Contact Us", href: "/contact-us" },
+
+  {
+    id: 7,
+    label: "More",
+    href: "#",
+    subNav: [
+      { id: 1, label: "Sustainability", href: "/sustainability" },
+      { id: 2, label: "Privacy Policy", href: "/privacy-policy" },
+      { id: 3, label: "Blogs", href: "/blogs" },
+      { id: 4, label: "Gallery", href: "/gallery" },
+    ],
+  },
 ];
 
 export const social = [
@@ -133,36 +124,41 @@ export const social = [
   },
 ];
 // homeabout
- export const Homeabout = {
-    img2: banner,
-    title:"About us",
-    title1: "Best Builders In ",
-    title2:"Delhi NCR",
-    para: "Leading innovative, sustainable infrastructure development supporting India's future growth responsibly. We craft spaces that inspire, endure, and elevate communities for generations.",
-    vision: [
-      {
-        heading: "Our Vision",
-        icon:<FaEye />
-,
-        text: "Leading innovative, sustainable infrastructure development supporting India's future growth responsibly. We envision a skyline that reflects our commitment to excellence.",
-      },
-      {
-        heading: "Our Mission",
-        icon: <GoGoal />,
-        text: "Delivering safe, precise infrastructure through ethical practices and modern project management. Every project is a promise kept to our clients and communities.",
-      },
-    ],
-    count:[    { value: "500+", label: "Projects Done" },
-              { value: "98%", label: "Client Satisfaction" },
-              { value: "42+", label: "Years Active" },]
-  };
+export const Homeabout = {
+  img2: banner,
+  title: "About us",
+  title1: "Best Builders In ",
+  title2: "Delhi NCR",
+  para:
+    "Leading innovative, sustainable infrastructure development supporting India's future growth responsibly. We craft spaces that inspire, endure, and elevate communities for generations.",
+  vision: [
+    {
+      heading: "Our Vision",
+      icon: <FaEye />,
+      text:
+        "Leading innovative, sustainable infrastructure development supporting India's future growth responsibly. We envision a skyline that reflects our commitment to excellence.",
+    },
+    {
+      heading: "Our Mission",
+      icon: <GoGoal />,
+      text:
+        "Delivering safe, precise infrastructure through ethical practices and modern project management. Every project is a promise kept to our clients and communities.",
+    },
+  ],
+  count: [
+    { value: "500+", label: "Projects Done" },
+    { value: "98%", label: "Client Satisfaction" },
+    { value: "42+", label: "Years Active" },
+  ],
+};
 
 export const Servicedata = {
   title: "Easy Way To Book (Services)",
-  para:"lorem ipsum and stormwater systems are executed through open-cut and advanced trenchless technologies. sewer, and stormwater systems are executed through open-cut and advanced trenchless technologies.",
+  para:
+    "lorem ipsum and stormwater systems are executed through open-cut and advanced trenchless technologies. sewer, and stormwater systems are executed through open-cut and advanced trenchless technologies.",
   service: [
     {
-      title: "Pipeline Networks",
+      title: "OVERFLY & LANDING PERMIT ASSISTANCE",
       text:
         "Water, sewer, and stormwater systems are executed through open-cut and advanced trenchless technologies.",
 
@@ -170,7 +166,7 @@ export const Servicedata = {
 
       icon: <GiPipes />,
       description:
-        "Our in-house engineering team delivers robust pipeline networks designed for efficiency, safety, and long-term reliability. From planning to commissioning, we manage every stage with precision. Each network is executed using proven materials, accurate alignment, and modern methods to ensure uninterrupted flow and durability.",
+        "Our in-house engineering team delivers robust OVERFLY & LANDING PERMIT ASSISTANCE designed for efficiency, safety, and long-term reliability. From planning to commissioning, we manage every stage with precision. Each network is executed using proven materials, accurate alignment, and modern methods to ensure uninterrupted flow and durability.",
 
       how_we_work: [
         {
@@ -201,7 +197,8 @@ export const Servicedata = {
       faqs: [
         {
           id: 1,
-          que: "How are pipeline networks different from regular construction?",
+          que:
+            "How are OVERFLY & LANDING PERMIT ASSISTANCE different from regular construction?",
           ans:
             " They require precise engineering, depth control, safety planning, and continuous quality checks to ensure long-term performance.",
         },
@@ -233,7 +230,7 @@ export const Servicedata = {
     },
 
     {
-      title: "Drainage & Utility Diversions",
+      title: "AIRPORT SLOTS",
       text:
         "Strategic diversion, rerouting, and restoration of complex urban utility networks with minimal disruptio.",
       img: drainage,
@@ -582,7 +579,7 @@ export const testimonialData = {
 export const blogData = {
   title1: "Blogs & News",
   title2: "Stay Updated With our",
-  title3:" Latest News",
+  title3: " Latest News",
   blogs: [
     {
       id: 1,
@@ -617,7 +614,7 @@ export const blogData = {
   <p>OM Engineers offers comprehensive infrastructure solutions across various verticals:</p>
 
   <ul>
-    <li>Pipeline networks (water, sewer, stormwater)</li>
+    <li>OVERFLY & LANDING PERMIT ASSISTANCE (water, sewer, stormwater)</li>
     <li>Drainage and utility diversions</li>
     <li>Roads and footpaths</li>
     <li>Civil structures and finishing works</li>
@@ -1163,15 +1160,19 @@ export const footer = {
     links: [
       {
         id: 1,
-        label: "Pipeline Networks",
+        label: "OVERFLY & LANDING PERMIT ASSISTANCE",
         href: "/services/pipeline-networks",
       },
       {
         id: 2,
-        label: "Drainage & Utility Diversions",
+        label: "AIRPORT SLOTS",
         href: "/services/drainage-&-utility-diversions",
       },
-      { id: 3, label: "Roads & Footpaths", href: "/services/roads-footpaths" },
+      {
+        id: 3,
+        label: "GROUND HANDLEING ARRANGEMENTS",
+        href: "/services/roads-footpaths",
+      },
       {
         id: 4,
         label: "Civil Structure & Finishing Works",
@@ -1195,94 +1196,40 @@ export const aboutBanner = {
   img: banner2,
 };
 
- export const Aboutabout = {
-    img:banner3,
-    img2: banner,
-    title:"About us",
-    title1: "Best Builders In ",
-    title2:"Delhi NCR",
-    para: "Leading innovative, sustainable infrastructure development supporting India's future growth responsibly. We craft spaces that inspire, endure, and elevate communities for generations.",
-    vision: [
-      {
-        heading: "Our Vision",
-        icon:<FaEye />
-,
-        text: "Leading innovative, sustainable infrastructure development supporting India's future growth responsibly. We envision a skyline that reflects our commitment to excellence.",
-      },
-      {
-        heading: "Our Mission",
-        icon: <GoGoal />,
-        text: "Delivering safe, precise infrastructure through ethical practices and modern project management. Every project is a promise kept to our clients and communities.",
-      },
-       {
-        heading: "Our Goals",
-        icon: <GoGoal />,
-        text: "Delivering safe, precise infrastructure through ethical practices and modern project management. Every project is a promise kept to our clients and communities.",
-      },
-    ],
-    process:[    { value: 99, label: "Success Rate" },
-              { value: 97, label: "Client Satisfaction" },
-              { value: 68, label: "Transparecy" },]
-  };
-
-export const WhychooseData2 = {
-  img2: civil,
-  img: banner4,
-
-  title1: " WHY CHOOSE US",
-  title2: "Smart Design That Matters ",
+export const Aboutabout = {
+  img: banner3,
+  img2: banner,
+  title: "About us",
+  title1: "Best Builders In ",
+  title2: "Delhi NCR",
   para:
-    "We design comfortable environments that look beautiful and serve their purpose to enhance the functional aspects of daily living.",
-  faqs: [
+    "Leading innovative, sustainable infrastructure development supporting India's future growth responsibly. We craft spaces that inspire, endure, and elevate communities for generations.",
+  vision: [
     {
-      id: 1,
-      que: "Unmatched Experience",
-      ans:
-        "With 30 years of industry expertise, FreedomeAirServices Contracts brings a wealth of knowledge to every project, ensuring seamless construction and exceptional results.",
+      heading: "Our Vision",
+      icon: <FaEye />,
+      text:
+        "Leading innovative, sustainable infrastructure development supporting India's future growth responsibly. We envision a skyline that reflects our commitment to excellence.",
     },
     {
-      id: 2,
-      que: "Tailored Solutions",
-      ans:
-        "The company specializes in customizing homes to suit individual tastes, creating spaces that feel uniquely yours.",
+      heading: "Our Mission",
+      icon: <GoGoal />,
+      text:
+        "Delivering safe, precise infrastructure through ethical practices and modern project management. Every project is a promise kept to our clients and communities.",
     },
     {
-      id: 3,
-      que: "Customer-Centric Approach",
-      ans:
-        "FreedomeAirServices Contracts prides itself on delivering not just a service but a partnership, ensuring that every client is heard and their needs are met.",
+      heading: "Our Goals",
+      icon: <GoGoal />,
+      text:
+        "Delivering safe, precise infrastructure through ethical practices and modern project management. Every project is a promise kept to our clients and communities.",
     },
   ],
+  process: [
+    { value: 99, label: "Success Rate" },
+    { value: 97, label: "Client Satisfaction" },
+    { value: 68, label: "Transparecy" },
+  ],
 };
-
-// export const thoughts = {
-//   img: cl1,
-//   title1: " WHY CHOOSE US",
-//   title2: "Smart Design That Matters ",
-//   para:
-//     "We design comfortable environments that look beautiful and serve their purpose to enhance the functional aspects of daily living.",
-//   faqs: [
-//     {
-//       id: 1,
-//       que: "Unmatched Experience",
-//       ans:
-//         "With 30 years of industry expertise, FreedomeAirServices Contracts brings a wealth of knowledge to every project, ensuring seamless construction and exceptional results.",
-//     },
-//     {
-//       id: 2,
-//       que: "Tailored Solutions",
-//       ans:
-//         "The company specializes in customizing homes to suit individual tastes, creating spaces that feel uniquely yours.",
-//     },
-//     {
-//       id: 3,
-//       que: "Customer-Centric Approach",
-//       ans:
-//         "FreedomeAirServices Contracts prides itself on delivering not just a service but a partnership, ensuring that every client is heard and their needs are met.",
-//     },
-//   ],
-// };
-// service page
 
 export const serviceBanner = {
   title: "Our Services",
@@ -1377,169 +1324,264 @@ export const contactData = {
   ],
 };
 
-export const projectData = {
-  projects: [
-    {
-      id: 1,
-      title: "ENCLAVE 93 FLOORS",
-      text:
-        "CONSTRUCTION OF FLOORS & ROUGH FINISHING WORKS – DLF GARDENCITY ENCLAVE, SECTOR 93",
-      imgs: [enclave931, enclave932, enclave933],
-      para: [
-        "Construction of residential Cluster 19 & 20 floors and rough finishing works, contributing to township-scale housing development.",
+export const airport = [
+  {
+    img:air1,
+    airportName: "VIAR / ATQ / Sri Guru Ram Das Jee International Airport",
+    city: "Amritsar",
+    airportOperatingHours: "24 Hours",
+    airportRestrictions: "Runway closure everyday 1100 - 1300 UTC",
+    slotsRequired: "Prior slots approval required",
+    airportFireCategory: "VIII",
+    fuelJetA1Availability: "Available",
+    customsImmigration: "H24",
+    visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
+    catering: "Available from nearest 5 star",
+  },
+  {    img:air2,
+    airportName:
+      "VEGT / GAU / Lokpriya Gopinath Bordoloi International Airport",
+    city: "Guwahati",
+    airportOperatingHours: "24 Hours",
+    airportRestrictions: "Runway closure on Monday and Friday 0750 - 0920 UTC",
+    slotsRequired: "Prior slots approval required",
+    airportFireCategory: "IX",
+    fuelJetA1Availability: "Available",
+    customsImmigration: "H24",
+    visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
+    catering: "Available from nearest 5 star",
+  },
+  {
+        img:air3,
 
-        "The execution contributes directly to the structural readiness and functional framework of the residential units, enabling subsequent finishing, MEP, and interior works, while supporting the overall development objectives of the DLF Gardencity Enclave township.",
-      ],
-      detail: [
-        { heading: "VALUE", info: "RS. 2.00 CR" },
-        { heading: "COMPLETION", info: "2025" },
-        { heading: "CLIENT", info: "DLF LIMITED" },
-      ],
-      cat: "DLF",
-    },
+    airportName: "VILK / LKO / Chaudhary Charan Singh International Airport",
+    city: "Lucknow",
+    airportOperatingHours: "24 Hours",
+    airportRestrictions: "Runway closure every Wednesday 0915 - 1115 UTC",
+    slotsRequired: "Prior slots approval required",
+    airportFireCategory: "IX",
+    fuelJetA1Availability: "Available",
+    customsImmigration: "H24",
+    visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
+    catering: "Available from nearest 5 star",
+  },
+  {    img:air4,
 
-    {
-      id: 2,
-      title: "1000MM DIA SEWER & 1200MM DIA STORM DIVERSION",
-      text: "DIVERSION OF 1000MM DIA SEWER LINE – SHANKAR CHOWK, GURUGRAM",
-      imgs: [
-        sewer,
-        sewer2,
-        sewer3,
-        sewer4,
-        sewer5,
-        sewer6,
-        sewer7,
-        sewer8,
-        sewer9,
-        sewer10,
-        sewer11,
-        sewer13,
-      ],
-      para: [
-        "Diversion of GMDA master sewer line at a depth of 7m using the manual jacking trenchless method, executed under live traffic conditions for subway underpass construction.",
+    airportName: "VIAG / AGR / Pandit Deen Dayal Upadhyay Airport",
+    city: "Agra",
+    airportOperatingHours:
+      "Mon Fri Sun 0730-1000 UTC, Wed 0800-1000 UTC, Tue Thu Sat 0650-0900 UTC",
+    airportRestrictions:
+      "Watch hours of civil air terminal. 4hr prior intimation required for watch extension for emergency/evacuation flight ops and 24hr prior intimation required for other flights.",
+    slotsRequired: "Prior slots approval required",
+    airportFireCategory: "VII",
+    fuelJetA1Availability: "Available",
+    customsImmigration: "On call",
+    visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
+    catering: "Available from nearest 5 star",
+  },
+  {    img:air5,
 
-        "The successful execution of this ensures seamless sewer flow continuity, minimal public inconvenience, and timely support for the subway underpass infrastructure development at Shankar Chowk.",
-      ],
-      detail: [
-        { heading: "VALUE", info: "RS. 3.28 CR" },
-        { heading: "COMPLETION", info: "2025" },
-        { heading: "CLIENT", info: "DLF FOUNDATION " },
-      ],
-      cat: "DLF",
-    },
+    airportName: "VANP / NAG / Dr. Babasaheb Ambedkar International Airport",
+    city: "Nagpur",
+    airportOperatingHours: "24 Hours",
+    airportRestrictions: "NIL",
+    slotsRequired: "YES",
+    airportFireCategory: "IX",
+    fuelJetA1Availability: "Available",
+    customsImmigration: "H24",
+    visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
+    catering: "Available from nearest 5 star",
+  },
+  {    img:air6,
 
-    {
-      id: 3,
-      title: "GMDA PROJECT",
-      text: "EMERGENCY REHABILITATION OF COLLAPSED SEWER LINES – GURUGRAM",
-      imgs: [gmda1, gmda2, gmda3, gmda4],
-      para: [
-        " Immediate rectification of collapsed master sewer lines across multiple high risk zones, restoring functionality under emergency response timelines.",
+    airportName: "VOCI / COK / Cochin International Airport",
+    city: "Kochi",
+    airportOperatingHours: "24 HRS",
+    airportRestrictions:
+      "NOTAM for runway closure from 0830 - 1230 UTC on all Tuesdays",
+    slotsRequired: "Prior slots approval required",
+    airportFireCategory: "IX",
+    fuelJetA1Availability: "Available",
+    customsImmigration: "H24",
+    visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
+    catering: "Available from nearest 5 star",
+  },
+  {    img:air7,
 
-        "The execution of this emergency ensures the swift restoration of sewer functionality, minimized public inconvenience, and safeguarded surrounding infrastructure, reinforcing system reliability under critical conditions.",
-      ],
-      detail: [
-        { heading: "VALUE", info: "RS. 35 LAKHS" },
-        { heading: "COMPLETION", info: "2025" },
-        { heading: "CLIENT", info: "GMDA" },
-      ],
-      cat: "GMDA",
-    },
+    airportName: "VOBL / BLR / Kempegowda International Airport",
+    city: "Bengaluru",
+    airportOperatingHours: "24H",
+    airportRestrictions: "NIL",
+    slotsRequired: "Prior slots approval required",
+    airportFireCategory: "IX",
+    fuelJetA1Availability: "Available",
+    customsImmigration: "H24",
+    visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
+    catering: "Available from nearest 5 star",
+  },
+  {     img:air8,
 
-    {
-      id: 4,
-      title: "SECTOR-68",
-      text:
-        "INTEGRATED DEVELOPMENT WORKS – DLF ARCADE 68, SCO SECTOR 68, GURUGRAM",
-      imgs: [
-        sec681,
-        sec682,
-        sec683,
-        sec684,
-        sec685,
-        sec686,
-        sec687,
-        sec688,
-        sec689,
-        sec6810,
-      ],
-      para: [
-        "End-to-end infrastructure creation comprising roads, footpaths, PHE networks, UGT, STP, LT/HT rooms, and horticulture works, transforming SCO plots into a fully developed commercial hub.",
+    airportName: "VOHS / HYD / Rajiv Gandhi International Airport",
+    city: "Hyderabad",
+    airportOperatingHours: "24 Hours",
+    airportRestrictions: "NIL",
+    slotsRequired: "Prior slots approval required",
+    airportFireCategory: "IX",
+    fuelJetA1Availability: "Available",
+    customsImmigration: "H24",
+    visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
+    catering: "Available from nearest 5 star",
+  },
+  {     img:air9,
 
-        "The successful execution results in a fully developed, service-ready commercial ecosystem with integrated infrastructure, utilities, and landscape elements. It effectively supports retail and office operations while enhancing functionality, accessibility, and the overall urban character of DLF Arcade 68.",
-      ],
-      detail: [
-        { heading: "VALUE", info: "RS. 8.50 CR" },
-        { heading: "COMPLETION", info: "2025" },
-        { heading: "CLIENT", info: "DLF HOME DEVELOPERS LTD." },
-      ],
-      cat: "DLF",
-    },
+    airportName: "VOPB / IXZ / Veer Savarkar International Airport",
+    city: "Port Blair",
+    airportOperatingHours: "Daily 0015-1045 HRS",
+    airportRestrictions: "NIL",
+    slotsRequired: "YES",
+    airportFireCategory: "IX",
+    fuelJetA1Availability: "Available",
+    customsImmigration: "H24",
+    visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
+    catering: "Available from nearest 5 star",
+  },
+  {    img:air10,
 
-    {
-      id: 5,
-      title: "SCO-84",
-      text: "BALANCE CIVIL & FINISHING WORKS – DLF SCO 84, SECTOR 84, GURUGRAM",
-      imgs: [sco841, sco842, sco843],
-      para: [
-        "Completion of civil, UGT, STP, meter room structures, along with finishing works and landscape development.",
+    airportName: "VOCL / CCJ / Calicut International Airport",
+    city: "Kozhikode",
+    airportOperatingHours: "24H",
+    airportRestrictions: "0930 UTC - 1230 UTC (Tue)",
+    slotsRequired: "YES",
+    airportFireCategory: "IX",
+    fuelJetA1Availability: "Available",
+    customsImmigration: "H24",
+    visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
+    catering: "Available from nearest 5 star hotel",
+  },
+  {    img:air11,
 
-        "The execution ensures completion of all balance civil, utility, and finishing works, delivering a ready-to-operate commercial environment. The development aligns with DLF’s design intent, functional planning, and quality benchmarks, ensuring operational efficiency, safety, and long-term asset value.",
-      ],
-      detail: [
-        { heading: "VALUE", info: "RS. 3.50 CR" },
-        { heading: "COMPLETION", info: "2024" },
-        { heading: "CLIENT", info: "DLF HOME DEVELOPERS LTD." },
-      ],
-      cat: "DLF",
-    },
+    airportName: "VIJP / JAI / Jaipur International Airport",
+    airportOperatingHours: "24 Hours",
+    airportRestrictions: "0900-1100 UTC closure",
+    slotsRequired: "YES",
+    airportFireCategory: "VIII",
+    fuelJetA1Availability: "YES",
+    customsImmigration: "H24",
+    visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
+    catering: "Available from Casino flight catering",
+  },
+  {    img:air12,
 
-    {
-      id: 6,
-      title: "DLF SEC-93",
-      text: "PHE WORKS – DLF GARDENCITY ENCLAVE, SECTOR 93, GURUGRAM",
-      imgs: [dlf931, dlf932, dlf933, dlf934, dlf935, dlf936, dlf937],
-      para: [
-        "Installation of complete PHE service networks, RCC boundary walls, feeder pillars, and CSS systems for township expansion.",
+    airportName:
+      "VISR / SXR / Srinagar International Airport (Defence Airfield)",
+    airportOperatingHours: "0230-1600 UTC",
+    airportRestrictions: "Defence clearance required",
+    slotsRequired: "YES",
+    airportFireCategory: "VII",
+    fuelJetA1Availability: "Available",
+    customsImmigration: "On Call",
+    visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
+    catering: "Can be arranged from the nearest 5 star hotel",
+  },
+  {    img:air13,
 
-        "The execution ensures robust, reliable, and scalable PHE infrastructure, facilitating uninterrupted water supply, sewerage, and drainage services. This enables efficient service delivery, supports sustainable growth, and ensures long-term operational sustainability for the expanding DLF Gardencity Enclave township.",
-      ],
-      detail: [
-        { heading: "VALUE", info: "RS. 13.00 CR" },
-        { heading: "COMPLETION", info: "2025" },
-        { heading: "CLIENT", info: "DLF LIMITED" },
-      ],
-      cat: "DLF",
-    },
+    airportName: "VOGA / GOX / Manohar International Airport (Civil Airfield)",
+    airportOperatingHours: "24 Hours",
+    airportRestrictions: "Every Wednesday 0915-1115 UTC closure",
+    slotsRequired: "YES",
+    airportFireCategory: "IX",
+    fuelJetA1Availability: "Available",
+    customsImmigration: "H24",
+    visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
+    catering: "Available from the nearest 5 star",
+  },
+  {    img:air14,
 
-    {
-      id: 7,
-      title: "DLF SEC-91 & SEC-92",
-      text:
-        "PHE AND INFRASTRUCTURE DEVELOPMENT – DLF GARDENCITY,    SECTOR 91 & 92",
-      imgs: [dlf911, dlf912, dlf913, dlf914, dlf915],
-      para: [
-        "Comprehensive PHE works including sewer, stormwater, water supply, and treated water lines, executed through a combination of open-cut excavation and  trenchless techniques across ",
+    airportName: "VOGO / GOI / Goa International Airport (Defence Airfield)",
+    airportOperatingHours: "24 Hours",
+    airportRestrictions: "Every Wednesday 0915-1100 UTC closure",
+    slotsRequired: "YES",
+    airportFireCategory: "IX",
+    fuelJetA1Availability: "Available",
+    customsImmigration: "H24",
+    visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
+    catering: "Available",
+  },
+  {    img:air15,
 
-        "The successful execution delivers a robust, efficient, and future-ready PHE network with reliable water supply, sewerage, and stormwater systems. It supports sustainable urban living through efficient resource management and reduced environmental impact. This infrastructure enhances long-term service reliability across DLF Gardencity, Sector 91 & 92.",
-      ],
-      detail: [
-        { heading: "VALUE", info: "RS. 7.48 CR" },
-        { heading: "COMPLETION", info: "2024" },
-        { heading: "CLIENT", info: "DLF LIMITED" },
-      ],
-      cat: "DLF",
-    },
+    airportName: "VAAH / AMD / Sardar Vallabhbhai Patel International Airport",
+    airportOperatingHours: "24 HR",
+    airportRestrictions: "0530-0930 UTC Wednesdays",
+    slotsRequired: "YES",
+    airportFireCategory: "IX",
+    fuelJetA1Availability: "Available",
+    customsImmigration: "H24",
+    visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
+    catering: "Available",
+  },
+  {    img:air16,
 
-    {
-      id: 8,
-      title: "MORE PROJECTS",
-      text: "",
-      imgs: [other1, other2, other3],
-      para: [""],
-      detail: [],
-      cat: "More",
-    },
-  ],
-};
+    airportName: "VOTV / TRV / Thiruvananthapuram International Airport",
+    airportOperatingHours: "24 HOURS",
+    airportRestrictions:
+      "NOTAM runway closure: Mon, Wed, Thu, Fri 0830-1030 UTC",
+    slotsRequired: "Prior slots approval required",
+    airportFireCategory: "IX",
+    fuelJetA1Availability: "Available",
+    customsImmigration: "H24",
+    visa: "https://indianvisaonline.gov.in/",
+    catering: "Available",
+  },
+  {    img:air17,
+
+    airportName: "VOMM / MAA / Chennai International Airport",
+    airportOperatingHours: "24 HOURS",
+    airportRestrictions:
+      "Arrival not allowed 1400-1500 IST Tue & Sat. Arrival/Departure not allowed 1500-1700 IST Tue & Sat for wide body aircraft.",
+    slotsRequired: "Prior slots approval required",
+    airportFireCategory: "IX",
+    fuelJetA1Availability: "Available",
+    customsImmigration: "H24",
+    visa: "https://indianvisaonline.gov.in/",
+    catering: "Available",
+  },
+  {    img:air18,
+
+    airportName:
+      "VECC / CCU / Netaji Subhash Chandra Bose International Airport",
+    airportOperatingHours: "24 HR",
+    airportRestrictions: "NIL",
+    slotsRequired: "YES",
+    airportFireCategory: "IX",
+    fuelJetA1Availability: "YES",
+    customsImmigration: "H24",
+    visa: "https://indianvisaonline.gov.in/",
+    catering: "Available from Taj SATS",
+  },
+  {    img:air19,
+
+    airportName: "VABB / BOM / Chhatrapati Shivaji International Airport",
+    airportOperatingHours: "24 HR",
+    airportRestrictions:
+      "0800-1100 closure, 1700-2000 & 2115-2315 (General aviation flights not permitted during these hours)",
+    slotsRequired: "YES",
+    airportFireCategory: "IX",
+    fuelJetA1Availability: "Jet A1 fuel available",
+    customsImmigration: "H24",
+    visa: "https://indianvisaonline.gov.in/",
+    catering: "YES",
+  },
+  {    img:air20,
+
+    airportName: "VIDP / DEL / Indira Gandhi International Airport",
+    airportOperatingHours: "24 Hours",
+    airportRestrictions: "NIL",
+    slotsRequired: "Prior ETA/ETD slot approval required",
+    airportFireCategory: "IX",
+    fuelJetA1Availability: "Jet A1 fuel available",
+    customsImmigration: "H24",
+    visa: "https://indianvisaonline.gov.in/",
+    catering: "YES",
+  },
+];
