@@ -50,7 +50,7 @@ function InfoRow({
             rel="noopener noreferrer"
             className="text-sm font-semibold font1 text-color2 hover:text-yellow-500 transition"
           >
-            Apply Online ↗
+            Click Here ↗
           </a>
         ) : (
           <p className="text-sm text-black font-semibold font1 leading-relaxed">
