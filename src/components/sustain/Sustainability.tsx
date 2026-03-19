@@ -2,38 +2,39 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { banner } from "@/assets";
+import { banner, sus } from "@/assets";
 import { FaLeaf, FaRecycle, FaWind, FaSolarPanel } from "react-icons/fa";
 import { MdOutlineWaterDrop, MdOutlineEnergySavingsLeaf } from "react-icons/md";
 import { fadeUp, slideIn } from "@/utils/motion";
+import { GiWorld, GiFuelTank, GiWaterDrop, GiSolarPower } from "react-icons/gi";
 
 const data = {
   badge: "Sustainability",
-  title: "Committed to a",
+  title: "Aviating Towards a",
   titleHighlight: "Greener Future",
   description:
-    "We integrate sustainable practices into every stage of our operations — from fuel-efficient aviation to carbon-neutral ground services — because the sky we fly is the sky we protect.",
-  image: banner,
+    "At Freedom Air Services, we integrate sustainable practices across all aviation operations—from fuel-efficient flight coordination to eco-conscious ground handling—because the skies we serve deserve protection.",
+  image: sus,
   features: [
     {
-      icon: <FaLeaf />,
-      title: "Carbon Neutral Goals",
-      text: "Actively offsetting emissions through certified green programs and reforestation partnerships.",
+        icon:<GiWorld />, // Carbon-neutral/Global impact ke liye
+        title:"Carbon-Neutral Operations",
+        para:"We actively offset emissions through certified carbon reduction programs, eco-friendly flight planning, and partnerships with reforestation and environmental initiatives."
     },
     {
-      icon: <FaWind />,
-      title: "Fuel Efficiency",
-      text: "Modern fleet optimized for maximum fuel efficiency, reducing our carbon footprint per flight.",
+        icon:<GiFuelTank />, // Fuel management ke liye
+        title:"Optimized Fuel Management",
+        para:"Our flight and ground operations are designed to maximize fuel efficiency, reducing the carbon footprint of every aircraft movement while maintaining safety and reliability."
     },
     {
-      icon: <MdOutlineWaterDrop />,
-      title: "Water Conservation",
-      text: "Smart water management across all ground operations, targeting 40% reduction by 2030.",
+        icon:<GiWaterDrop />, // Water/Sustainability ke liye
+        title:"Sustainable Ground Operations",
+        para:"We implement water-saving systems and eco-friendly practices across crew facilities, maintenance hubs, and catering services, targeting a 40% reduction in water consumption by 2030."
     },
     {
-      icon: <MdOutlineEnergySavingsLeaf />,
-      title: "Green Energy",
-      text: "Transitioning all ground facilities to 100% renewable energy sources by 2027.",
+        icon:<GiSolarPower />, // Green Energy/Renewable ke liye
+        title:"Green Energy Integration",
+        para:"Freedom Air Services is transitioning all ground operations and airport facilities to 100% renewable energy by 2027, supporting sustainable and responsible aviation services worldwide."
     },
   ],
 };
@@ -185,7 +186,7 @@ export default function Sustainability() {
                       {f.title}
                     </h4>
                     <p className="text-gray-500 text-xs leading-relaxed">
-                      {f.text}
+                      {f.para}
                     </p>
                   </div>
                 </motion.div>

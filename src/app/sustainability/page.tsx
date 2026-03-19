@@ -10,7 +10,7 @@ function page() {
     <>
       <Banner img ={aboutBanner?.img}
 title={"Sustainability"}
-para={"Designing Spaces With Expert Building and Interior Designs. Experience The Best Builders in Delhi!"}
+para={"Promoting Sustainable Aviation Practices for Efficient and Responsible Air Operations"}
 slug={"sustainability"}/>
 <Homeoxes/>
 <Sustainability/>

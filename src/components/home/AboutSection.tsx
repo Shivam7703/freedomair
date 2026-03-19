@@ -1,10 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { banner } from "@/assets";
 import Buttonmain from "../global/button";
-import { GoGoal } from "react-icons/go";
-import { FaEye } from "react-icons/fa";
 
 interface Props {
   data: any;
@@ -44,7 +41,7 @@ function AboutSection({ data, isHome }: Props) {
               <div className="absolute z-20 bottom-8 left-8">
                 <div className="relative px-6 py-5 rounded-xl border border-white/60 bg-[#0F0E0C]/70 backdrop-blur-xl shadow-[0_8px_40px_rgba(0,0,0,0.4)] before:absolute before:inset-0 before:rounded-xl before:shadow-[inset_0_1px_0_rgba(200,169,110,0.15)] before:pointer-events-none">
                   <div className="text-5xl font-black leading-none tracking-tight bg-gradient-to-br from-[#C8A96E] via-[#E8D5A3] to-[#C8A96E] bg-clip-text text-transparent">
-                    42+
+                    30+
                   </div>
 
                   <p className="text-xs text-color2 font-medium tracking-[0.15em] uppercase mt-1">

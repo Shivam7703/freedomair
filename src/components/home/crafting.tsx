@@ -22,7 +22,7 @@ export default function Craft() {
     if (newImage !== currImg) {
       setPrevImg(currImg);
       setCurrImg(newImage);
-      setAnimationKey((prevKey) => prevKey + 1); // Increment key to force re-render
+      setAnimationKey((prevKey) => prevKey + 1); 
     }
   };
 

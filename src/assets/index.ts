@@ -10,16 +10,19 @@ import about from "@/assets/home/about.jpg";
 import ceo from "@/assets/home/ceo.jpg";
 
 
-import home from "@/assets/home/home.png";
-import man from "@/assets/home/man.png";
+import sus from "@/assets/home/sus.jpg";
 
 // service
+import ser1 from "@/assets/home/ser1.jpg";
+import ser2 from "@/assets/home/ser2.jpg";
+import ser3 from "@/assets/home/ser3.jpg";
+import ser4 from "@/assets/home/ser4.jpg";
+import ser5 from "@/assets/home/ser5.jpg";
+
+
 import civil from "@/assets/home/civil.jpg";
-import pipe from "@/assets/home/pipe.jpg";
 import drainage from "@/assets/home/drainage.jpg";
-import road from "@/assets/home/road.jpg";
 import horiculture from "@/assets/home/horiculture.jpg";
-import certificate from "@/assets/home/certificate.png";
 
 
 
@@ -53,5 +56,5 @@ import air20 from "@/assets/airport/20.jpg";
 
 
 export {
-    ceo, banner, banner2, banner3, banner4 ,  cl1, cl2,cl3,cl4,logo2, logo ,man, home, civil, pipe, drainage, road, horiculture, certificate, bg, bhk,about, air1, air10,air11,air12,air13,air14,air15,air16,air17,air18,air19,air2,air20,air3,air4,air5,air6,air7,air8,air9
+    ceo, banner, banner2, banner3, banner4 ,  cl1, cl2,cl3,cl4,logo2, logo ,sus, civil,ser1,ser2,ser3,ser4,ser5, drainage, horiculture, bg, bhk,about, air1, air10,air11,air12,air13,air14,air15,air16,air17,air18,air19,air2,air20,air3,air4,air5,air6,air7,air8,air9
    }

@@ -4,8 +4,11 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 /* Main Wrapper */
 function Buttonmain({ href, text }: { href: string; text: string }) {
-  const isTel = href.startsWith("tel:");
-
+const isTel =
+  href.startsWith("tel:") ||
+  href.startsWith("https") ||
+  href.startsWith("mailto:") ||
+  href.startsWith("www");
   if (isTel) {
     return (
       <a href={href} className="w-max inline-block group/btn">

@@ -101,33 +101,25 @@ export default function CEOMessage() {
               <span className="inline-flex w-fit items-center gap-2 text-[10px] font-bold uppercase
                                tracking-[0.2em] text-color2 border border-color2/30 bg-color2/10
                                px-4 py-1.5 rounded-full mb-7">
-                Founder's Note
+A Message from Our Founder
               </span>
 
               <p className="text-xl font1  md:text-2xl font-semibold text-white leading-snug mb-7">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit — a foundation
-                built on."
+                "At Freedom Air Services, we started with one simple belief—aviation should be safe, reliable, and accessible. Our journey is built on dedication, discipline, and a commitment to delivering excellence every single day."
               </p>
 
               <div className="space-y-5 text-zinc-200 leading-relaxed">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat over the past three distinguished decades.
+                  Our goal is not just to operate flights but to build trust in every journey. We aim to grow responsibly, innovate continuously, and create opportunities while maintaining the highest standards of safety and service.
+
                 </p>
            
-                <p>
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-                  fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-                  sequi nesciunt — this principle guides every decision made at our firm.
-                </p>
               </div>
 
               {/* Stats row — added hover glow + animated divider line */}
               <div className="grid grid-cols-3 gap-3 my-8">
                 {[
-                  { value: "200+", label: "Projects"     },
+                  { value: "150+", label: "Projects"     },
                   { value: "30+",  label: "Years"        },
                   { value: "98%",  label: "Satisfaction" },
                 ].map((s, i) => (
@@ -155,8 +147,8 @@ export default function CEOMessage() {
 
               <div className="border-l-2 border-color2 pl-5 py-1 mb-8 bg-color2/[0.03] rounded-r-xl">
                 <p className="text-white/80 text-sm italic leading-relaxed">
-                  "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-                  suscipit laboriosam, constructing not just spaces — but legacy."
+                  “Connecting skies with trust, safety, and excellence in every journey we deliver.”
+
                 </p>
               </div>
 

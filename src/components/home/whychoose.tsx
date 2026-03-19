@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "@/utils/motion";
 import { civil } from "@/assets";
-import { HiOutlineFlag, HiOutlineLightBulb } from "react-icons/hi2";
+import { HiOutlineBriefcase, HiOutlineClock, HiOutlineCurrencyDollar, HiOutlineFlag, HiOutlineLightBulb, HiOutlineUsers } from "react-icons/hi2";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -12,46 +12,46 @@ import "swiper/css";
 export const data = {
   img: civil,
   title1: "Why Choose Us",
-  title2: "Choose Your Best Choice",
+  title2: "Choose Excellence. Choose",
   title3: " Freedom Air",
   choose: [
     {
-      icon: HiOutlineLightBulb,
-      heading: "Our Vision",
+      icon: HiOutlineBriefcase,  // Changed from LightBulb to Briefcase for "Industry Expertise"
+      heading: "Deep Industry Expertise",
       para:
-        "Our vision is to become a trusted global name in immigration consulting by guiding people with honesty, clarity, and confidence. We aim to simplify complex immigration processes and help individuals and families build secure futures abroad through ethical practices and informed decision-making.",
+        "With extensive aviation experience, we understand regulatory frameworks and operational procedures, ensuring every flight requirement is handled efficiently and without unnecessary delays.",
       gradient: "from-indigo-500 to-purple-600",
       hoverGradient: "from-indigo-600 to-purple-700",
       glowColor: "bg-indigo-500/30",
     },
     {
-      icon: HiOutlineFlag,
-      heading: "Our Mission",
+      icon: HiOutlineUsers,  // Changed from Flag to Users for "Network"
+      heading: "Strategic Industry Network",
       para:
-        "Our mission is to provide transparent, profile-based immigration guidance tailored to every client's goals. We focus on accuracy, compliance, and continuous support at every stage, ensuring our clients feel informed, supported, and confident as they pursue opportunities across international borders.",
+        "Our strong relationships with aviation authorities and key stakeholders allow us to streamline approvals and facilitate faster coordination for our clients.",
       gradient: "from-emerald-500 to-teal-600",
       hoverGradient: "from-emerald-600 to-teal-700",
       glowColor: "bg-emerald-500/30",
     },
     {
-      icon: HiOutlineLightBulb,
-      heading: "Our Vision",
+      icon: HiOutlineClock,  // Changed from LightBulb to Clock for "24/7 Support"
+      heading: "24/7 Operational Assistance",
       para:
-        "Our vision is to become a trusted global name in immigration consulting by guiding people with honesty, clarity, and confidence. We aim to simplify complex immigration processes and help individuals and families build secure futures abroad through ethical practices and informed decision-making.",
+        "We provide continuous support to address urgent requests, last-minute changes, and operational challenges with prompt and professional solutions.",
       gradient: "from-pink-500 to-rose-600",
       hoverGradient: "from-pink-600 to-rose-700",
       glowColor: "bg-pink-500/30",
     },
     {
-      icon: HiOutlineFlag,
-      heading: "Our Mission",
+      icon: HiOutlineCurrencyDollar,  // Changed from Flag to CurrencyDollar for "Cost-Effective"
+      heading: "Cost-Effective Service Model",
       para:
-        "Our mission is to provide transparent, profile-based immigration guidance tailored to every client's goals. We focus on accuracy, compliance, and continuous support at every stage, ensuring our clients feel informed, supported, and confident as they pursue opportunities across international borders.",
+        "Our pricing structure is competitive and transparent, delivering high-quality aviation solutions while maintaining cost efficiency for international operators.",
       gradient: "from-amber-500 to-orange-600",
       hoverGradient: "from-amber-600 to-orange-700",
       glowColor: "bg-amber-500/30",
     },
-  ],
+  ]
 };
 
 export default function WhyChoose() {

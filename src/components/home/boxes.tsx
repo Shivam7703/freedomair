@@ -1,28 +1,29 @@
 import React from 'react'
 import { BsBagCheck, BsPersonCheck, BsPersonFillCheck } from 'react-icons/bs'
+import { GiEarthAfricaEurope, GiFuelTank, GiCheckMark, GiLightBulb } from 'react-icons/gi'
 import { HiOutlineHomeModern } from 'react-icons/hi2'
 import { IoConstructOutline } from 'react-icons/io5'
 
 function Homeoxes() {
-    const boxesData = [{
-        icon:<HiOutlineHomeModern />,
-        title:"Design Excellence",
-        para:"We create functional, aesthetic designs aligned with client vision, regulations, sustainability principles, and modern architectural standards."
+ const boxesData = [{
+        icon:<GiEarthAfricaEurope />, // Eco-friendly/Global impact ke liye
+        title:"Eco-Friendly Flight Operations",
+        para:"We implement sustainable practices in aviation operations, including optimized fuel usage, emissions monitoring, and green flight planning to reduce environmental impact."
     },
     {
-        icon:<IoConstructOutline />,
-        title:"Quality Construction",
-        para:"Every project is executed using high-grade materials, skilled craftsmanship, and strict quality control to ensure long-lasting structural integrity."
+        icon:<GiFuelTank />, // Fuel/Resource management ke liye
+        title:"Efficient Fuel & Resource Management",
+        para:"By coordinating fuel, ground services, and logistics efficiently, we minimize waste and ensure resources are used responsibly without compromising operational excellence."
     },
     {
-        icon:<BsBagCheck />,
-        title:"Project Management",
-        para:"We manage timelines, budgets, and coordination efficiently, ensuring seamless execution from planning to completion without unnecessary delays."
+        icon:<GiCheckMark />, // Compliance/Standards ke liye
+        title:"Regulatory Compliance & Green Standards",
+        para:"Our operations fully comply with international aviation environmental regulations, carbon emission norms, and airport sustainability requirements, ensuring safe and eco-conscious air services."
     },
     {
-        icon:<BsPersonCheck />,
-        title:"Client-Centric Approach",
-        para:"We prioritize clear communication, transparency, and collaboration to deliver solutions that meet expectations and exceed client satisfaction."
+        icon:<GiLightBulb />, // Innovation/Future ke liye
+        title:"Innovation for a Greener Future",
+        para:"We adopt advanced technologies, digital solutions, and eco-friendly practices to improve operational efficiency while contributing to sustainable and responsible aviation services worldwide."
     },
 ]
   return (

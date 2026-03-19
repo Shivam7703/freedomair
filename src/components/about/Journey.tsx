@@ -1,5 +1,5 @@
 "use client";
-import { banner, banner2, banner3, banner4 } from "@/assets";
+import {banner2, banner3, banner4, bhk } from "@/assets";
 import React from "react";
 import { FaAngleDoubleDown, FaWpforms } from "react-icons/fa";
 import { LuHandshake } from "react-icons/lu";
@@ -10,7 +10,7 @@ import { fadeUp, nodePop, slideIn } from "@/utils/motion";
 
 const data = [
   {
-    img: banner,
+    img: bhk,
     icon: <FaWpforms />,
     heading: "Planning & Assessment",
     year: "2012",

@@ -49,6 +49,26 @@ h4{
   background: #D37B24 !important;
 }
 
+
+
+.animate-expand-from-bottom {
+  animation: expandFromBottom 0.6s ease-out forwards;
+}
+
+@keyframes expandFromBottom {
+  from {
+    height: 0;
+    top: auto;
+    bottom: 0;
+  }
+  to {
+    height: 100%;
+    top: auto;
+    bottom: 0;
+  }
+}
+
+
 .plane-bg{
   background:linear-gradient(0deg, rgba(5, 5, 5, 0.717), rgba(9, 9, 9, 0.196)), url(../assets/home/aeroplane.jpg);
   background-size: cover;
@@ -59,14 +79,7 @@ h4{
 
 
 .static-bg {
-  background:linear-gradient(40deg, rgba(5, 5, 5, 0.89), rgba(9, 9, 9, 0.822)), url(../assets/home/bg.webp);
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.footer-bg {
-  background:linear-gradient(40deg, rgba(5, 5, 5, 0.856), rgba(0, 0, 0, 0.881)), url(../assets/home/footer.jpg);
+  background:linear-gradient(40deg, rgba(5, 5, 5, 0.69), rgba(9, 9, 9, 0.622)), url(../assets/home/bg.webp);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;

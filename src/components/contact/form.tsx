@@ -34,9 +34,9 @@ function Contactform() {
             custom={1}
             className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight max-w-2xl mx-auto"
           >
-            Let's Build Something{" "}
+            Let’s Elevate Your Aviation{" "}
             <span className="bg-gradient-to-r from-color2 to-yellow-500 bg-clip-text text-transparent">
-              Great Together
+              Operations Together
             </span>
           </motion.h2>
           <motion.div
@@ -62,14 +62,11 @@ function Contactform() {
             <div>
               {contactData?.title && (
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-snug mb-3">
-                  {contactData?.title}
+Why should you consider Freedom Air Services?
                 </h3>
               )}
               <p className="text-gray-800 text-lg  leading-relaxed">
-                Backed by a strong engineering legacy, we deliver precise
-                execution, transparent processes, and dependable infrastructure
-                solutions focused on quality, safety, and long-term client
-                value.
+               We provide reliable, seamless, and safe aviation solutions with transparent processes, personalized support, and a commitment to operational excellence for every client.
               </p>
             </div>
 

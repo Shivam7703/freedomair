@@ -1,41 +1,41 @@
 import React from "react";
 import Image from "next/image";
-import { banner } from "@/assets";
+import { banner4 } from "@/assets";
 import Faq from "../global/faq";
 
 export default function Faqs() {
   const data = {
-    img2: banner,
+    img2: banner4,
     title1: "Frequently Asked",
     title2: "Questions",
-    faq: [
+  faq: [
       {
         id: 1,
         que:
-          "Leading innovative, sustainable infrastructure development supporting?",
+          "How quickly can you arrange overflight and landing permits?",
         ans:
-          "Leading innovative, sustainable infrastructure development supporting India's future growth responsibly. We craft spaces that inspire, endure, and elevate communities for generations.",
+          "Permit timelines depend on aircraft type, route, and authority requirements. However, with established regulatory coordination and updated compliance knowledge, most permits are processed efficiently, including urgent and short-notice requests whenever operationally feasible.",
       },
       {
         id: 2,
         que:
-          "Leading innovative, sustainable infrastructure development supporting?",
+          "Do you handle last-minute operational changes or urgent flights?",
         ans:
-          "Leading innovative, sustainable infrastructure development supporting India's future growth responsibly. We craft spaces that inspire, endure, and elevate communities for generations.",
+          "Yes, we specialize in managing time-sensitive operations. Our team actively coordinates with airport authorities, ground handlers, and regulatory bodies to accommodate schedule revisions, technical stops, diversions, and priority flight movements without unnecessary delays.",
       },
       {
         id: 3,
         que:
-          "Leading innovative, sustainable infrastructure development supporting?",
+          "Can you support both private jets and commercial airlines?",
         ans:
-          "Leading innovative, sustainable infrastructure development supporting India's future growth responsibly. We craft spaces that inspire, endure, and elevate communities for generations.",
+          "Absolutely. We provide tailored aviation solutions for private operators, charter flights, cargo carriers, and commercial airlines. Each operation is handled according to aircraft category, mission purpose, and regulatory framework to ensure full compliance and efficiency.",
       },
       {
         id: 4,
         que:
-          "Leading innovative, sustainable infrastructure development supporting?",
+          "What makes your aviation coordination process reliable?",
         ans:
-          "Leading innovative, sustainable infrastructure development supporting India's future growth responsibly. We craft spaces that inspire, endure, and elevate communities for generations.",
+          "Our reliability comes from strong regulatory understanding, strategic airport partnerships, transparent communication, and real-time operational monitoring. This structured approach minimizes risks, avoids procedural delays, and ensures seamless execution from initial request to final flight completion.",
       },
     ],
   };
@@ -107,7 +107,7 @@ export default function Faqs() {
                 {/* inner top shine */}
                 <div className="absolute inset-0 rounded-xl shadow-[inset_0_1px_0_rgba(200,169,110,0.2)] pointer-events-none" />
                 <div className="text-5xl font-black leading-none tracking-tight bg-gradient-to-br from-[#C8A96E] via-[#E8D5A3] to-[#C8A96E] bg-clip-text text-transparent">
-                  100+
+                  150+
                 </div>
                 <p className="text-xs text-color2 font-medium tracking-[0.15em] uppercase mt-1">
                   Satishfied Clients{" "}

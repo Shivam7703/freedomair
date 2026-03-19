@@ -52,13 +52,13 @@ export default function HomeBanner() {
   }, []);
 
   const data = {
-    heading1: "Lorem Ipsum Dollar Conqiutes",
-    heading2:" Hettrink",
+    heading1: "Fly Beyond Limits with Freedom ",
+    heading2:"& Excellence",
     para:
-      "Experience luxury and convenience like never before with Hyperfly, your premier private jet charter service. Whether you're traveling for business or leisure",
+      "Experience refined luxury and seamless comfort with Freedom Air Services, your trusted aviation partner. Whether traveling for business or personal journeys, we deliver precision, privacy, safety, and exceptional performance in every flight.",
     points: [
-      "Experience luxury and convenience like never before",
-      "Premium comfort & world-class safety",
+      "Refined travel without compromise",
+      "Premium comfort with world-class safety",
       "Seamless global connectivity",
     ],
   };

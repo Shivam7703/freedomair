@@ -11,7 +11,7 @@ import Heading from "../global/heading";
 export default function Blogs({ isHome }:any) {
   return (
     <section className={`${isHome ? "lg:px-20 md:px-16 sm:p-12 p-6 " : "px-3 pb-5"} bg-color1 text-center relative w-full`}>
-           <Heading title1={data?.title1} title2={data?.title2} title3={data?.title3}  para={"This error happened while generating the page. Any console logs will be displayed in the terminal window."} />
+           <Heading title1={data?.title1} title2={data?.title2} title3={data?.title3}  para={""} />
 
 
       <div className={`grid lg:grid-cols-3 sm:grid-cols-2  gap-8 max-w-7xl py-7 mx-auto`}>
@@ -81,7 +81,7 @@ export default function Blogs({ isHome }:any) {
           <FaUser className="text-white text-[10px]" />
         </div>
         <span>
-          By <span className="font-semibold text-gray-700">admin</span>
+          By <span className="font-semibold text-gray-700">{blogs.author}</span>
         </span>
       </div>
       <span className="w-1.5 h-1.5 rounded-full bg-color2/40" />

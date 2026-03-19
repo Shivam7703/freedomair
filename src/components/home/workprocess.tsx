@@ -8,23 +8,23 @@ import Heading from "../global/heading";
 const data = [
   {
     icon: <FaWpforms />,
-    heading: "Planning & Assessment",
-    text: "Understanding project requirements, site conditions, timelines, and execution feasibility thoroughly.",
+    heading: "Initial Consultation",
+    text: "Understanding client requirements, aircraft details, and operational timelines clearly.",
   },
   {
     icon: <MdOutlineSettings />,
-    heading: "Design & Engineering",
-    text: "Understanding project requirements, site conditions, timelines, and execution feasibility thoroughly.",
+    heading: "Strategic Planning",
+    text: "Preparing documentation, approvals, and coordination plans with authorities.",
   },
   {
     icon: <MdOutlineEngineering />,
-    heading: "Execution & Supervision",
-    text: "Executing construction activities with strict supervision, safety compliance, and quality control.",
+    heading: "Execution & Coordination",
+    text: "Managing permits, slots, handling, and services efficiently.",
   },
   {
     icon: <LuHandshake />,
-    heading: "Completion & Handover",
-    text: "Final inspections, documentation, and smooth project handover within committed timelines.",
+    heading: "Final Confirmation",
+    text: "Providing updates, confirmations, and ensuring smooth flight completion.",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function WorkProcess() {
 {/* Soft color blobs */}
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-color2/5 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[350px] h-[350px] bg-yellow-400/8 rounded-full blur-[100px] pointer-events-none" />
-      <Heading title1={"Work Process"} title2={"Clear process with expert"} title3={"execution and"}  para={""} />
+      <Heading title1={"Work Process"} title2={"Clear Work Process with "} title3={"Expert Execution"}  para={""} />
 
       {/* Timeline / Sticky Section */}
       <div className="relative mt-9 md:mt-16 max-w-6xl mx-auto">
