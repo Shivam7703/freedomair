@@ -1,5 +1,4 @@
 "use client";
-import { home } from "@/assets";
 import { contactData, social } from "@/data/homeData";
 import React from "react";
 import Image from "next/image";
