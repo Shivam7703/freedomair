@@ -9,6 +9,11 @@ import bhk from "@/assets/home/4bhk.jpg";
 import about from "@/assets/home/about.jpg";
 import ceo from "@/assets/home/ceo.jpg";
 
+import blog1 from "@/assets/home/blog1.jpg";
+import blog2 from "@/assets/home/blog2.jpg";
+import blog3 from "@/assets/home/blog3.jpg";
+import blog4 from "@/assets/home/blog4.jpg";
+
 
 import sus from "@/assets/home/sus.jpg";
 
@@ -56,5 +61,5 @@ import air20 from "@/assets/airport/20.jpg";
 
 
 export {
-    ceo, banner, banner2, banner3, banner4 ,  cl1, cl2,cl3,cl4,logo2, logo ,sus, civil,ser1,ser2,ser3,ser4,ser5, drainage, horiculture, bg, bhk,about, air1, air10,air11,air12,air13,air14,air15,air16,air17,air18,air19,air2,air20,air3,air4,air5,air6,air7,air8,air9
+    ceo, banner, banner2, banner3, banner4 ,blog1, blog2, blog3, blog4, cl1, cl2,cl3,cl4,logo2, logo ,sus, civil,ser1,ser2,ser3,ser4,ser5, drainage, horiculture, bg, bhk,about, air1, air10,air11,air12,air13,air14,air15,air16,air17,air18,air19,air2,air20,air3,air4,air5,air6,air7,air8,air9
    }

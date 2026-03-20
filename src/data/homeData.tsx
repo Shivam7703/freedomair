@@ -19,7 +19,12 @@ import {
   ser3,
   ser4,
   ser5,
+  blog1,
+  blog2,
+  blog3,
+  blog4,
 } from "@/assets";
+import { BsFillFuelPumpFill } from "react-icons/bs";
 
 import {
   FaEye,
@@ -31,12 +36,14 @@ import { FaXTwitter } from "react-icons/fa6";
 import { GiPipes } from "react-icons/gi";
 import { GoGoal } from "react-icons/go";
 import { GrLocation } from "react-icons/gr";
-import { IoIosLeaf } from "react-icons/io";
+import { IoIosLeaf, IoIosSettings } from "react-icons/io";
+import { IoAirplane } from "react-icons/io5";
 import { LiaRoadSolid } from "react-icons/lia";
 import { LuPhone } from "react-icons/lu";
-import { MdOutlineAltRoute } from "react-icons/md";
+import { MdFastfood, MdFlightLand, MdOutlineAltRoute, MdOutlineSupportAgent } from "react-icons/md";
 import { PiCityBold } from "react-icons/pi";
 import { RiMailSendLine, RiSofaFill } from "react-icons/ri";
+import { TbBuildingAirport, TbCircuitGround } from "react-icons/tb";
 
 // homepage
 export const navItemsArray = [
@@ -168,7 +175,8 @@ export const Servicedata = {
 
       img: ser1,
 
-      icon: <GiPipes />,
+      icon: <MdFlightLand />
+,
       description:
         "We provide complete support for obtaining flight clearances across international airspace. Our team manages documentation, coordinates with aviation authorities, and ensures timely approvals to avoid operational delays. With strong regulatory knowledge and global connections, we help operators maintain smooth, compliant, and efficient flight movements worldwide.",
 para2:"We simplify complex aviation processes, ensuring smooth approvals and seamless flight operations for everyone.",
@@ -240,7 +248,7 @@ para2:"We simplify complex aviation processes, ensuring smooth approvals and sea
       text:
         " We secure airport slot approvals on time, coordinating closely with authorities to ensure smooth arrivals and departures as scheduled.",
       img: drainage,
-      icon: <MdOutlineAltRoute />,
+      icon: <TbBuildingAirport />,
       description:
         "We provide end-to-end support for obtaining airport slots at domestic and international airports. Our team coordinates with airport authorities, schedules flights efficiently, and ensures compliance with local regulations. With extensive industry connections and experience, we help operators maintain on-time departures, reduce delays, and optimize airport operations.",
         para2:"We simplify complex airport slot management processes, ensuring timely approvals and smooth operations for every flight.",
@@ -311,7 +319,7 @@ para2:"We simplify complex aviation processes, ensuring smooth approvals and sea
       text:
         "We coordinate complete ground handling support, including aircraft parking, baggage handling, catering, and ramp services efficiently.",
       img: ser2,
-      icon: <LiaRoadSolid />,
+      icon: <TbCircuitGround />,
       description:
         "We provide complete ground handling solutions, including airport fees, baggage handling, ramp services, passenger assistance, and aircraft maintenance coordination. Our expert team ensures all operations are safe, efficient, and compliant with international aviation standards.",
         para2:"We manage all aspects of ground operations, ensuring smooth, timely, and reliable support for every aircraft and passenger.",
@@ -382,7 +390,8 @@ para2:"We simplify complex aviation processes, ensuring smooth approvals and sea
       text:
         " We organize reliable fuel supply at competitive rates, ensuring timely refueling services for uninterrupted and safe flight operations.",
       img: ser3,
-      icon: <PiCityBold />,
+      icon: <BsFillFuelPumpFill />
+,
       description:
         "Freedom Air Services assists foreign airlines with aviation fuel arrangements, ensuring an uninterrupted fuel supply at all Indian airports. Leveraging strategic partnerships, we provide competitive pricing while maintaining safety, quality, and operational efficiency for every client.",
         para2:"We simplify aviation fuel management, ensuring timely availability, cost-effectiveness, and smooth operations for all aircraft.",
@@ -453,7 +462,8 @@ para2:"We simplify complex aviation processes, ensuring smooth approvals and sea
       text:
         " We arrange comfortable crew accommodation, transportation, and local assistance to ensure convenience, safety, and stress-free layovers.",
       img: horiculture,
-      icon: <IoIosLeaf />,
+      icon: <MdOutlineSupportAgent />
+,
       description:
         "We prioritize the comfort and convenience of flight crews. Freedom Air Services arranges quality hotels, airport transfers, and any additional support needed to ensure a smooth, stress-free stay during layovers.",
         para2:"We simplify crew logistics, providing safe accommodation, timely transport, and personalized support to enhance crew efficiency and satisfaction.",
@@ -524,7 +534,8 @@ para2:"We simplify complex aviation processes, ensuring smooth approvals and sea
       text:
         " Freedom Air Services assists airlines in arranging on-site catering tailored to specific dietary preferences and operational requirements. We ensure high-quality, safe, and timely meals to meet crew and passenger expectations.",
       img: ser4,
-      icon: <IoIosLeaf />,
+      icon: <MdFastfood />
+,
       description:
         "Freedom Air Services assists airlines in arranging on-site catering tailored to specific dietary preferences and operational requirements. We ensure high-quality, safe, and timely meals to meet crew and passenger expectations.",
         para2:"We simplify airline catering, delivering customized meal solutions that are fresh, timely, and aligned with dietary needs for every flight operation.",
@@ -595,7 +606,8 @@ para2:"We simplify complex aviation processes, ensuring smooth approvals and sea
       text:
         "At Freedom Air Services, we provide personalized solutions for airlines based on their specific requirements. From ad hoc charter flights to long-term flight series, we offer flexible support, including credit services for regular clients, ensuring smooth and efficient operations.",
       img: ser5,
-      icon: <IoIosLeaf />,
+      icon: <IoIosSettings />
+,
       description:
         "At Freedom Air Services, we provide personalized solutions for airlines based on their specific requirements. From ad hoc charter flights to long-term flight series, we offer flexible support, including credit services for regular clients, ensuring smooth and efficient operations.",
         para2:"We analyze each airline’s needs and provide tailored solutions that optimize operations, reduce costs, and ensure seamless execution across all flight services.",
@@ -667,7 +679,8 @@ para2:"We simplify complex aviation processes, ensuring smooth approvals and sea
       text:
         "Freedom Air Services provides complete aircraft management solutions for private and commercial operators. From flight planning and crew management to maintenance oversight and regulatory compliance, we ensure your aircraft operates efficiently, safely, and on schedule.",
       img: bhk,
-      icon: <IoIosLeaf />,
+      icon: <IoAirplane />
+,
       description:
         "Freedom Air Services provides complete aircraft management solutions for private and commercial operators. From flight planning and crew management to maintenance oversight and regulatory compliance, we ensure your aircraft operates efficiently, safely, and on schedule.",
         para2:"We handle all aspects of aircraft operations, allowing operators to focus on their missions while we manage logistics, compliance, and operational efficiency.",
@@ -1117,7 +1130,7 @@ export const blogData = {
 </div>
 `,
       date: "13 March 2026",
-      img: civil,
+      img: blog1,
       author: "Admin",
     },
     {
@@ -1358,7 +1371,7 @@ export const blogData = {
 </div>
 `,
       date: "18 March 2026",
-      img: civil,
+      img: blog2,
       author: "Admin",
     },
 
@@ -1567,7 +1580,7 @@ export const blogData = {
 </div>
 `,
       date: "18 March 2026",
-      img: civil,
+      img: blog3,
       author: "Admin",
     },
 
@@ -1752,7 +1765,7 @@ export const blogData = {
 </div>
 `,
       date: "18 March 2026",
-      img: civil,
+      img: blog4,
       author: "Admin",
     },
   ],

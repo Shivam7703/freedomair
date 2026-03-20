@@ -36,12 +36,12 @@ export const ProCard = ({ service, index }: any) => (
     <div className="relative h-full bg-white rounded-2xl overflow-hidden p-6 shadow-2xl transition-all duration-500  hover:-translate-y-2">
       {/* Content Section */}
 
-      <div className="absolute rounded-full h-44 w-44 bottom-[73%] left-[78%] bg-red-500 z-10" />
+      <div className="absolute rounded-full h-44 w-44 bottom-[73%] left-[78%] bg-color2 z-10" />
       <div className="absolute text-white top-3 right-3 text-4xl font-extrabold z-20">
         0{index + 1}
       </div>
 
-      <div className=" text-3xl rounded-lg p-4 bg-color1 group-hover:bg-color3 w-max group-hover:text-black transition-all shadow-lg text-color2 mb-3 md:mb-4">
+      <div className=" text-3xl rounded-lg p-4 bg-color1 group-hover:bg-color2 w-max group-hover:text-white transition-all shadow-lg text-color2 mb-3 md:mb-4">
         {service?.icon}
       </div>
       <h3 className="text-xl md:text-2xl font-medium text-zinc-900 group-hover:text-color2 transition-colors duration-300">

@@ -93,7 +93,10 @@ export default function Blogs({ isHome }:any) {
     {/* Title */}
     <Link
       href={`/blogs/${encodeURIComponent(
-        blogs.title.toLowerCase().replace(/\s+/g, "-")
+        blogs.title.toLowerCase()
+  .replace(/[^a-z0-9\s-]/g, "")  
+  .trim()
+  .replace(/\s+/g, "-")
       )}`}
     >
       <h2

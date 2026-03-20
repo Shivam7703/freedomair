@@ -27,7 +27,7 @@ const Page = ({ params }: Props) => {
 
   const singleBlog = blogData.blogs.find((blog: any) => {
     const blogSlug = blog.title.toLowerCase()
-  .replace(/[^a-z0-9\s-]/g, "")  // remove punctuation
+  .replace(/[^a-z0-9\s-]/g, "")  
   .trim()
   .replace(/\s+/g, "-");
     return blogSlug === decodedSlug;
