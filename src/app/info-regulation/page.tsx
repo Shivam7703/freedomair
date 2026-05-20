@@ -9,7 +9,7 @@ function page() {
     <>
       <Banner img ={aboutBanner?.img}
 title={"Info & Regulations"}
-para={ "Stay informed with accurate guidelines, compliance updates, and essential aviation regulations for smooth and safe operations worldwide."}
+para={ "Minimum time frames, clearance procedures, and compliance requirements for operations in Indian airspace."}
 slug={"Info-Regulations"}/>
        <InfoRegulation/>
  </>

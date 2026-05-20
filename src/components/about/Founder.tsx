@@ -105,13 +105,12 @@ A Message from Our Founder
               </span>
 
               <p className="text-xl font1  md:text-2xl font-semibold text-white leading-snug mb-7">
-                "At Freedom Air Services, we started with one simple belief—aviation should be safe, reliable, and accessible. Our journey is built on dedication, discipline, and a commitment to delivering excellence every single day."
+"At Freedom Air Services, we started with one simple belief—aviation support should be safe, reliable, and accessible. Our journey is built on dedication, discipline, and a commitment to delivering excellence every single operations."
               </p>
 
               <div className="space-y-5 text-zinc-200 leading-relaxed">
                 <p>
-                  Our goal is not just to operate flights but to build trust in every journey. We aim to grow responsibly, innovate continuously, and create opportunities while maintaining the highest standards of safety and service.
-
+Our goal is not just to assist flights, but to build trust in every operations. We aim to grow responsibly, innovate continuously, and create opportunities while maintaining the highest standards of safety and service.
                 </p>
            
               </div>

@@ -67,6 +67,17 @@ export const staggerContainer = (staggerChildren: number, delayChildren: number 
   },
 });
 
+
+export const slideIn = (dir: "left" | "right") => ({
+  hidden: { opacity: 0, x: dir === "left" ? -60 : 60 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] },
+  },
+});
+
+
 /* ── Framer Motion Variants ── */
 export const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -77,14 +88,6 @@ export const fadeUp = {
   }),
 };
 
-export const slideIn = (dir: "left" | "right") => ({
-  hidden: { opacity: 0, x: dir === "left" ? -60 : 60 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] },
-  },
-});
 
 export const nodePop = {
   hidden: { scale: 0, opacity: 0 },
