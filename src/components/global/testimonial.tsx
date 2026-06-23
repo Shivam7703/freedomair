@@ -237,7 +237,7 @@ export default function Testimonials() {
               {/* CTA — red like the image */}
               <button
                 type="button"
-                className="group w-full flex items-center justify-center gap-3 bg-color2 hover:bg-color2/70 text-black font-bold text-sm tracking-[0.2em] uppercase py-4 rounded-xl transition-all duration-300 shadow-[0_8px_30px_rgba(200,169,110,0.3)] hover:shadow-[0_12px_40px_rgba(200,169,110,0.45)] hover:-translate-y-0.5 mt-2"
+                className="group w-full flex items-center justify-center gap-3 bg-color2 hover:bg-orange-700 text-black font-bold text-sm tracking-[0.2em] uppercase py-4 rounded-xl transition-all duration-300 shadow-[0_8px_30px_rgba(200,169,110,0.3)]  hover:-translate-y-0.5 mt-2"
               >
                 <HiOutlinePaperAirplane className="text-lg group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
                 Search Now
