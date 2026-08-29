@@ -26,11 +26,11 @@ export default function Footer({ footer }: any) {
           <div className="grid grid-cols-3 pb-5 sm:grid-cols-6 gap-8 lg:grid-cols-12">
 
             {/* Logo and About */}
-            <div className="col-span-3 md:px-5 pb-4 flex flex-col">
+            <div className="col-span-3 md:pr-5 pb-4 flex flex-col">
               <Image
                 src={logo}
                 alt="logo"
-                className="w-full max-w-[80vw] object-contain"
+                className="max-w-52 w-[80vw] object-contain"
                 width={150}
                 height={50}
               />

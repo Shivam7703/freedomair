@@ -16,9 +16,7 @@ export default function Home() {
       <BannerSlider/>
             <AboutSection data={Homeabout} isHome={true}/>
       <ServiceSlider/>
-     
-      
-      <CountDown/>
+      {/* <CountDown/> */}
       <Craft/>
       <WorkProcess/>
       <WhyChoose/>

@@ -19,7 +19,6 @@ function page() {
         <p className="mb-2">We may collect the following:</p>
         <ul className="list-disc pl-6 space-y-1">
           <li><strong>Personal Information:</strong> Name, email, phone number, company details, and aviation service requirements.</li>
-          <li><strong>Technical Data:</strong> IP address, browser type, device information, and website usage patterns.</li>
           <li><strong>Operational Data:</strong> Flight schedules, crew and aircraft info, and service requests submitted via Contact Us.</li>
         </ul>
       </div>
@@ -96,9 +95,9 @@ function page() {
           For questions regarding this Privacy Policy or how your information is handled, contact us at:
         </p>
         <ul className="list-disc pl-6 space-y-1">
-          <li>Email: (*****)</li>
-          <li>Phone: (*****)</li>
-          <li>Address: (*****)</li>
+          <li>Email: admin@freedomair.aero</li>
+          <li>Phone: +91 98100 65042</li>
+          <li>Address: C-49 3rd Floor, Lajpat Nagar - II, New Delhi – 110024, India</li>
         </ul>
       </div>
 

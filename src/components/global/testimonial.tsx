@@ -58,7 +58,7 @@ export default function Testimonials() {
         <div className="lg:w-[58%] w-full flex flex-col justify-between px-8 sm:px-12 lg:px-16 py-14 lg:py-20">
           {/* Header row */}
           <div className="flex flex-wrap justify-between items-end gap-x-2 gap-y-5 mb-10">
-            <div className="space-y-4">
+            {/* <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <div className="w-8 h-px bg-color2" />
                 <span className="text-color2 text-sm tracking-[0.25em] uppercase font-semibold">
@@ -73,7 +73,7 @@ export default function Testimonials() {
                 </span>{" "}
                 from Our Clients
               </h2>
-            </div>
+            </div> */}
 
             {/* Nav arrows */}
             <div className="flex gap-2">

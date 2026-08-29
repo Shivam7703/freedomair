@@ -137,8 +137,8 @@ export const social = [
 export const Homeabout = {
   img2: banner,
   title: "About us",
-  title1: "Leading Aviation Service Provider in ",
-  title2: "New Delhi",
+  title1: "Leading Aviation Service ",
+  title2: " Provider",
   para:
     "Established in 1997 and headquartered in New Delhi, Freedom Air Services Pvt. Ltd. is recognized as one of the leading aviation service providers in the region. With a strong nationwide footprint and trusted global network, we proudly represent India across the international aviation industry.",
   vision: [
@@ -155,11 +155,11 @@ export const Homeabout = {
         "To deliver seamless, secure, and efficient aviation solutions through expertise, integrity, and strategic global partnerships, ensuring uncompromised quality and client-focused service excellence.",
     },
   ],
-  count: [
-    { value: "150+", label: "Projects Done" },
-    { value: "150+", label: "Satisfied Clients" },
-    { value: "30+", label: "Years Active" },
-  ],
+  // count: [
+  //   { value: "150+", label: "Projects Done" },
+  //   { value: "150+", label: "Satisfied Clients" },
+  //   { value: "30+", label: "Years Active" },
+  // ],
 };
 
 export const Servicedata = {
@@ -1786,11 +1786,11 @@ export const Aboutabout = {
         "We aim to grow responsibly, innovate continuously, our commitment to excellence and customer satisfaction, ensuring a seamless and hassel-free experience, maintaining the highest standards of safety and service. ",
     },
   ],
-  process: [
-    { value: 99, label: "Success Rate" },
-    { value: 99, label: "Client Satisfaction" },
-    { value: 100, label: "Transparecy" },
-  ],
+  // process: [
+  //   { value: 99, label: "Success Rate" },
+  //   { value: 99, label: "Client Satisfaction" },
+  //   { value: 100, label: "Transparecy" },
+  // ],
 };
 
 export const serviceBanner = {

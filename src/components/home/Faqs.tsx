@@ -102,9 +102,8 @@ export default function Faqs() {
             </div>
 
             {/* Experience Badge */}
-            <div className="absolute z-20 bottom-8 left-8">
+            {/* <div className="absolute z-20 bottom-8 left-8">
               <div className="relative px-6 py-5 rounded-xl border border-white/20 bg-black/70 backdrop-blur-xl shadow-[0_8px_40px_rgba(0,0,0,0.5)]">
-                {/* inner top shine */}
                 <div className="absolute inset-0 rounded-xl shadow-[inset_0_1px_0_rgba(200,169,110,0.2)] pointer-events-none" />
                 <div className="text-5xl font-black leading-none tracking-tight bg-gradient-to-br from-[#C8A96E] via-[#E8D5A3] to-[#C8A96E] bg-clip-text text-transparent">
                   150+
@@ -113,14 +112,14 @@ export default function Faqs() {
                   Satishfied Clients{" "}
                 </p>
               </div>
-            </div>
+            </div> */}
 
             {/* Floating stat pill */}
-            <div className="absolute z-20 top-6 -right-4 md:-right-3 px-4 py-3 rounded-xl bg-color3 shadow-[0_8px_30px_rgba(200,169,110,0.4)]">
+            {/* <div className="absolute z-20 top-6 -right-4 md:-right-3 px-4 py-3 rounded-xl bg-color3 shadow-[0_8px_30px_rgba(200,169,110,0.4)]">
               <p className="text-black text-xs font-bold tracking-[0.12em] uppercase">
                 500+ Projects
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

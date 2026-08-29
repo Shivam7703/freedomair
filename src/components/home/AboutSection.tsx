@@ -51,13 +51,13 @@ function AboutSection({ data, isHome }: Props) {
               </div>
             )}
 
-            {isHome && (
+            {/* {isHome && (
               <div className="absolute z-20 top-6 bg-color3 -right-4 md:-right-3 px-4 py-3 rounded-xl shadow-[0_8px_30px_rgba(200,169,110,0.3)]">
                 <p className="text-[#0F0E0C] text-xs font-bold tracking-[0.12em] uppercase">
                   500+ Projects
                 </p>
               </div>
-            )}
+            )} */}
 
             {!isHome && (
               <div className="absolute z-20 top-6 ">
@@ -129,7 +129,7 @@ function AboutSection({ data, isHome }: Props) {
           </div>
 
           {/* Stats */}
-          {isHome && 
+          {/* {isHome && 
           <div className="grid grid-cols-3 gap-4">
             {data?.count.map((stat:any, i:number) => (
               <div key={i} className="text-center">
@@ -142,41 +142,7 @@ function AboutSection({ data, isHome }: Props) {
               </div>
             ))}
           </div>
-          }
-
-        {!isHome && (
-  <div className="flex flex-col gap-5 w-full">
-    {data?.process.map((stat: any, i: number) => (
-      <div key={i} className="group">
-        {/* Label & Value Row */}
-        <div className="flex items-center justify-between mb-1.5">
-          <p className="text-lg font-semibold capitalize tracking-widest text-gray-600 font1 group-hover:text-black transition-colors duration-300">
-            {stat.label}
-          </p>
-          <span className="text-lg font-semibold text-zinc-700 group-hover:text-color2">
-            {stat.value}%
-          </span>
-        </div>
-
-        {/* Track */}
-        <div className="relative h-2 w-full bg-zinc-200 shadow-sm rounded-full overflow-hidden ">
-          {/* Filled Bar */}
-          <div
-            className="h-full rounded-full bg-gradient-to-r from-color2 to-color3
-                       relative overflow-hidden
-                       transition-all duration-1000 ease-out"
-            style={{ width: `${stat.value}%` }}
-          >
-            {/* Shimmer */}
-            <span className="absolute inset-0 w-full h-full
-                             bg-gradient-to-r from-transparent via-white/35  to-transparent
-                             -translate-x-full animate-[shimmer_2s_infinite]" />
-          </div>
-        </div>
-      </div>
-    ))}
-  </div>
-)}
+          } */}
 
           {/* CTA */}
           {isHome && 

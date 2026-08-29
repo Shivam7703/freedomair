@@ -19,7 +19,7 @@ slug={aboutBanner.slug}/>
 <AboutSection data={Aboutabout} isHome={false}/>
 <CEOMessage/>
 <Journey/>
-      <CountDown/>
+      {/* <CountDown/> */}
       <WhyChoose/>
 <Team/>
     </>

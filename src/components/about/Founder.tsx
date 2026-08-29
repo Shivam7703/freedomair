@@ -116,7 +116,7 @@ export default function CEOMessage() {
               </div>
 
               {/* Stats row — added hover glow + animated divider line */}
-              <div className="grid grid-cols-3 gap-3 my-8">
+              {/* <div className="grid grid-cols-3 gap-3 my-8">
                 {[
                   { value: "150+", label: "Projects" },
                   { value: "30+", label: "Years" },
@@ -128,21 +128,19 @@ export default function CEOMessage() {
                                hover:border-color2/40 hover:bg-color2/5
                                transition-all duration-300 group"
                   >
-                    {/* Radial hover glow */}
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500
                                     bg-[radial-gradient(ellipse_80%_80%_at_50%_110%,rgba(139,90,43,0.15),transparent)]" />
                     <p className="text-2xl font-black bg-gradient-to-br from-color2 to-color3
                                   bg-clip-text text-transparent relative z-10">
                       {s.value}
                     </p>
-                    {/* Animated underline */}
                     <div className="h-px w-6 mx-auto bg-color2/30 my-1.5 group-hover:w-10 transition-all duration-300 rounded-full" />
                     <p className="text-[10px] text-zinc-300 uppercase tracking-widest relative z-10">
                       {s.label}
                     </p>
                   </div>
                 ))}
-              </div>
+              </div> */}
 
               <div className="border-l-2 border-color2 pl-5 py-1 mb-8 bg-color2/[0.03] rounded-r-xl">
                 <p className="text-white/80 text-sm italic leading-relaxed">
