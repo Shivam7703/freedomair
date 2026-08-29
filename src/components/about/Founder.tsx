@@ -76,7 +76,7 @@ export default function CEOMessage() {
                     {[
                       { icon: <FaLinkedin />, href: "#" },
                       { icon: <FaInstagram />, href: "https://www.instagram.com/cityspace.contracts?igsh=MXh6Y2Q5dWJ6c3pzOA==" },
-                      { icon: <HiOutlineMail />, href: "mailto:info@cityspace.construction" },
+                      { icon: <HiOutlineMail />, href: "mailto:admin@freedomair.aero " },
                     ].map((s, i) => (
                       <a
                         key={i}
@@ -101,26 +101,26 @@ export default function CEOMessage() {
               <span className="inline-flex w-fit items-center gap-2 text-[10px] font-bold uppercase
                                tracking-[0.2em] text-color2 border border-color2/30 bg-color2/10
                                px-4 py-1.5 rounded-full mb-7">
-A Message from Our Founder
+                A Message from Our Founder
               </span>
 
               <p className="text-xl font1  md:text-2xl font-semibold text-white leading-snug mb-7">
-"At Freedom Air Services, we started with one simple belief—aviation support should be safe, reliable, and accessible. Our journey is built on dedication, discipline, and a commitment to delivering excellence every single operations."
+                "At Freedom Air Services, we started with one simple belief—aviation support should be safe, reliable, and accessible. Our journey is built on dedication, discipline, and a commitment to delivering excellence every single operations."
               </p>
 
               <div className="space-y-5 text-zinc-200 leading-relaxed">
                 <p>
-Our goal is not just to assist flights, but to build trust in every operations. We aim to grow responsibly, innovate continuously, and create opportunities while maintaining the highest standards of safety and service.
+                  Our goal is not just to assist flights, but to build trust in every operations. We aim to grow responsibly, innovate continuously, and create opportunities while maintaining the highest standards of safety and service.
                 </p>
-           
+
               </div>
 
               {/* Stats row — added hover glow + animated divider line */}
               <div className="grid grid-cols-3 gap-3 my-8">
                 {[
-                  { value: "150+", label: "Projects"     },
-                  { value: "30+",  label: "Years"        },
-                  { value: "98%",  label: "Satisfaction" },
+                  { value: "150+", label: "Projects" },
+                  { value: "30+", label: "Years" },
+                  { value: "98%", label: "Satisfaction" },
                 ].map((s, i) => (
                   <div key={i}
                     className="relative text-center rounded-2xl py-5 px-3 overflow-hidden

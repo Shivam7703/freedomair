@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { RiWhatsappFill } from "react-icons/ri";
-import { logo2 as logo} from "@/assets";
+import { logo2 as logo } from "@/assets";
 import Buttonmain from "./global/button";
 import { social } from "@/data/homeData";
 
@@ -56,7 +56,7 @@ export default function Footer({ footer }: any) {
                   </a>
                 ))}
                 <a
-                  href="https://wa.me/919667622285"
+                  href="https://wa.me/918826292951"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-9 h-9 rounded-lg bg-white/5 border border-white/10
@@ -113,26 +113,26 @@ export default function Footer({ footer }: any) {
               <div className="space-y-3 mt-1">
                 <p className="text-base text-gray-200 flex items-start gap-2">
                   <strong className="text-white/90 shrink-0">Phone:</strong>
-                  <a href="tel:+919667622285" className="hover:text-color2 transition-colors duration-300">
-                    +91 9667622285
+                  <a href="tel:+91 8826 2929 51" className="hover:text-color2 transition-colors duration-300">
+                    +91 8826 2929 51
                   </a>
                 </p>
                 <p className="text-base text-gray-200 flex items-start gap-2">
                   <strong className="text-white/90 shrink-0">E-mail:</strong>
                   <a
-                    href="mailto:info@FreedomeAirServices.construction"
+                    href="mailto:admin@freedomair.aero "
                     className="hover:text-color2 transition-colors duration-300 break-all"
                   >
-                    info@FreedomeAirServices.construction
+                    admin@freedomair.aero
                   </a>
                 </p>
                 <p className="text-base text-gray-200 flex items-start gap-2">
                   <strong className="text-white/90 shrink-0">Address:</strong>
                   <a
-                    href="https://www.google.com/maps/place/FreedomeAirServices/@28.5330789,77.2413416,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce1905d089649:0x1b43338513750efe!8m2!3d28.5330789!4d77.2413416!16s%2Fg%2F11wxqn0h78?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D"
+                    href="https://www.google.com/maps/place/Freedom+Air+Services/@28.5724888,77.2314122,15z/data=!4m10!1m2!2m1!1sC-49,+3rd+Floor,+Lajpat+nagar+%E2%80%93+II,+New+Delhi+%E2%80%93+110024!3m6!1s0x390ce30077e0858d:0xc798ac10cb1c9112!8m2!3d28.5714385!4d77.2383556!15sCjpDLTQ5LCAzcmQgRmxvb3IsIExhanBhdCBuYWdhciDigJMgSUksIE5ldyBEZWxoaSDigJMgMTEwMDI0kgETYXZpYXRpb25fY29uc3VsdGFudOABAA!16s%2Fg%2F11x6wn3qz3?entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D"
                     className="hover:text-color2 transition-colors duration-300 capitalize leading-relaxed"
                   >
-                    2nd Floor, M Block Market, Greater Kailash 2, M 32, W Block Rd,
+                    Third floor, C-49, Main Road, Block C, Lajpat Nagar II, Defence Colony, New Delhi, Delhi 110024 W Block Rd,
                     New Delhi, Delhi 110048
                   </a>
                 </p>

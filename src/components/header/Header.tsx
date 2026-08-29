@@ -174,7 +174,7 @@ function RightSide(onTop: any) {
 
       {/* ── Call Now ── */}
       <motion.a
-        href="tel:+911234566770"
+        href="tel:+91 8826 2929 51"
         whileHover={{ y: -3 }}
         whileTap={{ scale: 0.96 }}
         className="group flex items-center gap-2"

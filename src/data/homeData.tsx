@@ -7,7 +7,7 @@ import {
   cl2,
   cl3,
   cl4,
-  air1, air10,air11,air12,air13,air14,air15,air16,air17,air18,air19,air2,air20,air3,air4,air5,air6,air7,air8,air9,
+  air1, air10, air11, air12, air13, air14, air15, air16, air17, air18, air19, air2, air20, air3, air4, air5, air6, air7, air8, air9,
   logo2,
   drainage,
   civil,
@@ -90,11 +90,11 @@ export const navItemsArray = [
         label: "Customized Aviation Solutions",
         href: "/services/customized-aviation-solutions",
       },
-      {
-        id: 8,
-        label: "Aircraft Managements",
-        href: "/services/aircraft-managements",
-      },
+      // {
+      //   id: 8,
+      //   label: "Aircraft Managements",
+      //   href: "/services/aircraft-managements",
+      // },
     ],
   },
 
@@ -168,482 +168,482 @@ export const Servicedata = {
     "We provide reliable, efficient, and comprehensive aviation support tailored to your needs, ensuring smooth operations, timely coordination, and professional assistance across domestic and international routes.",
   service: [
     {
-  title: "Overfly and Landing Permit Assistance",
-  para: "Quick approvals and smooth flight clearances across global airspace.",
-  text: "We arrange required flight permits quickly and accurately, ensuring smooth approvals for both domestic and international operations without delays.",
+      title: "Overfly and Landing Permit Assistance",
+      para: "Quick approvals and smooth flight clearances across global airspace.",
+      text: "We arrange required flight permits quickly and accurately, ensuring smooth approvals for both domestic and international operations without delays.",
 
-  img: ser1,
+      img: ser1,
 
-  icon: <MdFlightLand />,
+      icon: <MdFlightLand />,
 
-  description: "We provide complete flight support, including overfly and landing clearances globally. Our team manages documentation, coordinates with aviation authorities, and ensures timely approvals to avoid operational delays. With strong regulatory knowledge and global connections, we help operators maintain smooth, compliant, and efficient flight movements worldwide.",
+      description: "We provide complete flight support, including overfly and landing clearances globally. Our team manages documentation, coordinates with aviation authorities, and ensures timely approvals to avoid operational delays. With strong regulatory knowledge and global connections, we help operators maintain smooth, compliant, and efficient flight movements worldwide.",
 
-  para2: "We simplify complex aviation processes, ensuring smooth approvals and seamless flight operations for everyone.",
+      para2: "We simplify complex aviation processes, ensuring smooth approvals and seamless flight operations for everyone.",
 
-  how_we_work: [
-    {
-      id: 1,
-      heading: "Consultation & Requirement Analysis",
-      para: "We begin by understanding operational plans, aircraft type, route, and specific permit requirements. This ensures a customized strategy to meet all regulatory and operational needs.",
-    },
-    {
-      id: 2,
-      heading: "Documentation Preparation",
-      para: "Our team prepares all necessary documents, forms, and applications accurately. Proper documentation reduces delays, ensures compliance with aviation authorities, and speeds up the permit approval process.",
-    },
-    {
-      id: 3,
-      heading: "Coordination with Authorities",
-      para: "We liaise directly with civil aviation authorities, airspace regulators, and relevant agencies to submit applications, track progress, and resolve queries efficiently, ensuring timely approvals.",
-    },
-    {
-      id: 4,
-      heading: "Permit Delivery & Support",
-      para: "Once permits are approved, we provide all clearances and guidance for smooth flight operations. Ongoing support ensures compliance and resolves any last-minute challenges.",
-    },
-  ],
+      how_we_work: [
+        {
+          id: 1,
+          heading: "Consultation & Requirement Analysis",
+          para: "We begin by understanding operational plans, aircraft type, route, and specific permit requirements. This ensures a customized strategy to meet all regulatory and operational needs.",
+        },
+        {
+          id: 2,
+          heading: "Documentation Preparation",
+          para: "Our team prepares all necessary documents, forms, and applications accurately. Proper documentation reduces delays, ensures compliance with aviation authorities, and speeds up the permit approval process.",
+        },
+        {
+          id: 3,
+          heading: "Coordination with Authorities",
+          para: "We liaise directly with civil aviation authorities, airspace regulators, relevant agencies, and using our global network to submit applications, track progress, and resolve queries efficiently, ensuring timely approvals.",
+        },
+        {
+          id: 4,
+          heading: "Permit Delivery & Support",
+          para: "Once permits are approved, we provide all clearances and guidance for smooth flight operations. Ongoing support ensures compliance and resolves any last-minute challenges.",
+        },
+      ],
 
-  faqs: [
-    {
-      id: 1,
-      que: "What is an overfly permit, and why is it needed?",
-      ans: "An overfly permit allows a foreign registered aircraft to legally fly through another country's airspace. It ensures compliance with international aviation laws.",
+      faqs: [
+        {
+          id: 1,
+          que: "What is an overfly permit, and why is it needed?",
+          ans: "An overfly permit allows a foreign registered aircraft to legally fly through another country's airspace. It ensures compliance with international aviation laws.",
+        },
+        {
+          id: 2,
+          que: "How long does it take to get landing and overfly permits?",
+          ans: "Processing times vary by country. Some take a few hours, others several days. Early applications and proper documentation help ensure faster approvals, meeting concerned authorities directives.",
+        },
+        {
+          id: 3,
+          que: "Can I get permits without expert assistance?",
+          ans: "Yes, but mistakes or missing documents can cause delays or refusals. Expert support ensures accuracy, faster processing, and compliance with aviation authorities.",
+        },
+        {
+          id: 4,
+          que: "Which countries require mandatory permits for overflight or landing?",
+          ans: "Almost every country requires permits, especially outside operators' home country. Certain regions have stricter regulations, proper planning prevents fines and avoids operational risks.",
+        },
+        {
+          id: 5,
+          que: "Do you provide support for last-minute flights?",
+          ans: "Our team navigates through regulatory requirements, and streamlines the process, ensuring efficient and timely approvals of urgent requests, maintaining full compliance and operational safety.",
+        },
+      ],
     },
-    {
-      id: 2,
-      que: "How long does it take to get landing and overfly permits?",
-      ans: "Processing times vary by country. Some take a few hours, others several days. Early applications and proper documentation help ensure faster approvals, meeting concerned authorities directives.",
-    },
-    {
-      id: 3,
-      que: "Can I get permits without expert assistance?",
-      ans: "Yes, but mistakes or missing documents can cause delays or refusals. Expert support ensures accuracy, faster processing, and compliance with aviation authorities.",
-    },
-    {
-      id: 4,
-      que: "Which countries require mandatory permits for overflight or landing?",
-      ans: "Almost every country requires permits, especially outside operators' home country. Certain regions have stricter regulations, proper planning prevents fines and avoids operational risks.",
-    },
-    {
-      id: 5,
-      que: "Do you provide support for last-minute flights?",
-      ans: "Our team navigates through regulatory requirements, and streamlines the process, ensuring efficient and timely approvals of urgent requests, maintaining full compliance and operational safety.",
-    },
-  ],
-},
-
- {
-  title: "Airport Slots",
-  para: "Secure, timely, and hassle-free airport slots for smooth flight operations worldwide.",
-  text: " We secure airport slot approvals on time, coordinating closely with authorities to ensure smooth arrivals and departures as scheduled.",
-  img: drainage,
-  icon: <TbBuildingAirport />,
-  description: "We provide end-to-end support towards securing requested airport slots at domestic and international airports. Our team coordinates with authorities concerned efficiently, and ensures compliance with local regulations. Ensures a tailored slot application strategy aligned with airport availability and regulations.",
-  para2: "We simplify complex airport slot management processes, ensuring timely approvals and smooth operations for every flight.",
-  how_we_work: [
-    {
-      id: 1,
-      heading: "Flight Planning & Requirement Analysis",
-      para: "We begin by understanding the flight schedule, aircraft type, and destination airport requirements.",
-    },
-    {
-      id: 2,
-      heading: "Slot Application Preparation",
-      para: "Our team prepares and submits all necessary forms and applications accurately. Correct documentation and timing increase the chances of securing preferred slots efficiently.",
-    },
-    {
-      id: 3,
-      heading: "Coordination with Airport Authorities",
-      para: "We liaise directly with airport slot coordinators, air traffic control, and relevant agencies to confirm slot availability, resolve conflicts, and ensure timely approvals for your operations.",
-    },
-    {
-      id: 4,
-      heading: "Slot Confirmation & Support",
-      para: "Once slots are approved, we provide confirmation and guidance for smooth airport operations. Ongoing support ensures adjustments are made for schedule changes or last-minute requirements.",
-    },
-  ],
-  faqs: [
-    {
-      id: 1,
-      que: "How are airport slots allocated?",
-      ans: "Slots are allocated based on airport capacity, flight schedules, and traffic management rules. Early planning and expert coordination improve the chances of preferred timings.",
-    },
-    {
-      id: 2,
-      que: "Can slots be changed after approval?",
-      ans: "Yes, but changes are subject to airport authority approval and availability. Timely requests and proper communication minimize disruptions.",
-    },
-    {
-      id: 3,
-      que: "Are slots mandatory at all airports?",
-      ans: "Yes, due to heavy traffic and parking constraints, prior slot approval is mandatory at all airports.",
-    },
-    {
-      id: 4,
-      que: "How do peak hours affect slot availability?",
-      ans: "High-demand hours, especially at major hubs, reduce slot options. Advanced planning and alternative timings help secure approvals efficiently.",
-    },
-    {
-      id: 5,
-      que: "Does Freedom Air Services handle multi-leg or connecting flight?",
-      ans: "Absolutely. We manage complex routes, ensuring all slots align for departures, arrivals, and transit airports, providing seamless operations across the entire flight plan.",
-    },
-  ],
-},
-
-   {
-  title: "Ground Handling Arrangements",
-  para: "Professional ground support ensuring smooth operations every time.",
-  text: "We coordinate complete ground handling support, including aircraft parking, baggage handling, catering, and ramp services efficiently.",
-  img: ser2,
-  icon: <TbCircuitGround />,
-  description: "Coordinating with authorities concerned at each airport, we assist with comprehensive ground handling solutions, including airport fees, baggage handling, ramp services, passenger assistance, catering, and aircraft maintenance coordination. Our expert team ensures all operations are safe, efficient, and compliant with international aviation standards.",
-  para2: "We manage all aspects of ground operations, ensuring smooth, timely, and reliable support for every aircraft and passenger.",
-  how_we_work: [
-    {
-      id: 1,
-      heading: "Flight & Ground Requirement Analysis",
-      para: "Based on the flight schedule, passenger needs, cargo requirements, and airport specifics. This allows us to plan a comprehensive ground handling strategy tailored to your operations.",
-    },
-    {
-      id: 2,
-      heading: "Coordination with Airport Authorities",
-      para: "Our team liaises with airport staff, ground crew, and local authorities to arrange all fees, clearances, and permissions for smooth operations.",
-    },
-    {
-      id: 3,
-      heading: "On-Ground Handling Services",
-      para: "We supervise baggage handling, ramp services, fuelling, passenger boarding assistance, and aircraft maintenance support, ensuring safety, timeliness, and operational efficiency.",
-    },
-    {
-      id: 4,
-      heading: "Continuous Monitoring & Support",
-      para: "Throughout the turnaround, we monitor operations, manage challenges, and provide immediate solutions to ensure flawless service and compliance with aviation standards.",
-    },
-  ],
-  faqs: [
-    {
-      id: 1,
-      que: "What is included in ground handling services?",
-      ans: "It covers passenger assistance, baggage management, ramp services, fuelling coordination, airport fees, catering coordination and maintenance support to ensure smooth flight operations.",
-    },
-    {
-      id: 2,
-      que: "Are these services mandatory at every airport?",
-      ans: "Ground handling is mandatory, and always suggested for safety, efficiency, and compliances.",
-    },
-    {
-      id: 3,
-      que: "Can ground handling support cargo flight too?",
-      ans: "Yes. Our services extend to cargo operations as well, including loading/unloading, storage coordination, and customs documentation support.",
-    },
-    {
-      id: 4,
-      que: "How does Freedom Air Services ensures quality?",
-      ans: "Freedom Air represent the interest of operator, liaise with all concerned agencies, ensuring that all contracted services are maintained to achieve on time movements, supervise every step, and make sure all documentation are as per operators' specific requirements, also in accordance to the ICAO/IATA recommended practices.",
-    },
-    {
-      id: 5,
-      que: "Can last-minute ground handling be arranged?",
-      ans: "Absolutely. Our team specializes in urgent and ad hoc operations, ensuring smooth support even for emergency, medical evacuation and diverted flights.",
-    },
-  ],
-},
 
     {
-  title: "Aviation Fuel Provision",
-  para: "Reliable fuel supply solutions for seamless flight operations across India.",
-  text: " We organize reliable fuel supply at competitive rates, ensuring timely refueling services for uninterrupted and safe flight operations.",
-  img: ser3,
-  icon: <BsFillFuelPumpFill />,
-  description: "Freedom Air Services assists with aviation fuel arrangements, ensuring an uninterrupted fuel supply at all Indian airports. Leveraging strategic partnerships, we provide competitive pricing while maintaining safety, quality, and operational efficiency for every client.",
-  para2: "We simplify aviation fuel management, ensuring timely availability, cost-effectiveness, and smooth operations for all aircraft.",
-  how_we_work: [
-    {
-      id: 1,
-      heading: "Requirement Analysis & Planning",
-      para: "We start by understanding your fuel needs, aircraft type, route, and operational schedules. This helps us plan precise fuel arrangements tailored to your operations.",
+      title: "Airport Slots",
+      para: "Secure, timely, and hassle-free airport slots for smooth flight operations worldwide.",
+      text: " We secure airport slot approvals on time, coordinating closely with authorities to ensure smooth arrivals and departures as scheduled.",
+      img: drainage,
+      icon: <TbBuildingAirport />,
+      description: "We provide end-to-end support towards securing requested airport slots at domestic and international airports. Our team coordinates with authorities concerned efficiently, and ensures compliance with local regulations. Ensures a tailored slot application strategy aligned with airport availability and regulations.",
+      para2: "We simplify complex airport slot management processes, ensuring timely approvals and smooth operations for every flight.",
+      how_we_work: [
+        {
+          id: 1,
+          heading: "Flight Planning & Requirement Analysis",
+          para: "We begin by understanding the flight schedule, aircraft type, and destination airport requirements.",
+        },
+        {
+          id: 2,
+          heading: "Slot Application Preparation",
+          para: "Our team prepares and submits all necessary forms and applications accurately. Correct documentation and timing increase the chances of securing preferred slots efficiently.",
+        },
+        {
+          id: 3,
+          heading: "Coordination with Airport Authorities",
+          para: "We liaise directly with airport slot coordinators, air traffic control, and relevant agencies to confirm slot availability, resolve conflicts, and ensure timely approvals for your operations.",
+        },
+        {
+          id: 4,
+          heading: "Slot Confirmation & Support",
+          para: "Once slots are approved, we provide confirmation and guidance for smooth airport operations. Ongoing support ensures adjustments are made for schedule changes or last-minute requirements.",
+        },
+      ],
+      faqs: [
+        {
+          id: 1,
+          que: "How are airport slots allocated?",
+          ans: "Slots are allocated based on airport capacity, flight schedules, and traffic management rules. Early planning and expert coordination improve the chances of preferred timings.",
+        },
+        {
+          id: 2,
+          que: "Can slots be changed after approval?",
+          ans: "Yes, but changes are subject to airport authority approval and availability. Timely requests and proper communication minimize disruptions.",
+        },
+        {
+          id: 3,
+          que: "Are slots mandatory at all airports?",
+          ans: "Yes, due to heavy traffic and parking constraints, prior slot approval is mandatory at all airports.",
+        },
+        {
+          id: 4,
+          que: "How do peak hours affect slot availability?",
+          ans: "High-demand hours, especially at major hubs, reduce slot options. Advanced planning and alternative timings help secure approvals efficiently.",
+        },
+        {
+          id: 5,
+          que: "Does Freedom Air Services handle multi-leg or connecting flight?",
+          ans: "Absolutely. We manage complex routes, ensuring all slots align for departures, arrivals, and transit airports, providing seamless operations across the entire flight plan.",
+        },
+      ],
     },
-    {
-      id: 2,
-      heading: "Supplier Coordination & Pricing",
-      para: "We coordinate with certified fuel suppliers across India to secure competitive rates and ensure quality compliance, minimizing operational costs without compromising safety.",
-    },
-    {
-      id: 3,
-      heading: "Logistics & Delivery Management",
-      para: "Our team manages the logistics of fuel delivery, scheduling refuelling at the right time and location, avoiding delays and ensuring smooth airport operations.",
-    },
-    {
-      id: 4,
-      heading: "Monitoring & Ongoing Support",
-      para: "We continuously monitor fuel supply, usage, and regulatory compliance. Our team addresses any last-minute changes or urgent requirements to maintain seamless flight operations.",
-    },
-  ],
-  faqs: [
-    {
-      id: 1,
-      que: "Can Freedom Air manage fuel for multiple airports simultaneously?",
-      ans: "Yes. We coordinate with suppliers across all major Indian airports to ensure timely fuel delivery for multi-location operations.",
-    },
-    {
-      id: 2,
-      que: "Are the fuel prices competitive?",
-      ans: "Absolutely. Our partnerships and bulk arrangements allow us to offer clients cost-effective pricing without compromising quality.",
-    },
-    {
-      id: 3,
-      que: "Does the services include quality checks?",
-      ans: "Yes. We ensure aviation fuel meets strict quality standards and regulatory requirements before delivery.",
-    },
-    {
-      id: 4,
-      que: "How quickly can emergency fuel be arranged?",
-      ans: "Our team can arrange fuel deliveries in urgent such situation.",
-    },
-    {
-      id: 5,
-      que: "Is this service available for all type of aircrafts?",
-      ans: "Yes. We cater to commercial, charter, and private aircraft, ensuring fuel availability tailored to different aircraft types and capacities.",
-    },
-  ],
-},
 
     {
-  title: "Crew Accommodation and Support",
-  para: "Comfortable stays and seamless support for your crew at every airport.",
-  text: " We arrange comfortable crew accommodation, transportation, and local assistance to ensure convenience, safety, and stress-free layovers.",
-  img: horiculture,
-  icon: <MdOutlineSupportAgent />,
-  description: "We prioritize the comfort and convenience of flight crews. Freedom Air arranges quality hotels, airport transfers, and any additional support needed to ensure a smooth, stress-free stay during layovers.",
-  para2: "We simplify crew logistics, providing safe accommodation, timely transport, and personalized support to enhance crew efficiency and satisfaction.",
-  how_we_work: [
-    {
-      id: 1,
-      heading: "Requirement Assessment & Planning",
-      para: "We start by understanding crew schedules, flight duration, and special requirements. This allows us to plan hotel bookings, transfers, and other facilities tailored to each crew.",
+      title: "Ground Handling Arrangements",
+      para: "Professional ground support ensuring smooth operations every time.",
+      text: "We coordinate complete ground handling support, including aircraft parking, baggage handling, catering, and ramp services efficiently.",
+      img: ser2,
+      icon: <TbCircuitGround />,
+      description: "Coordinating with authorities concerned at each airport, we assist with comprehensive ground handling solutions, including airport fees, baggage handling, ramp services, passenger assistance, catering, and aircraft maintenance coordination. Our expert team ensures all operations are safe, efficient, and compliant with international aviation standards.",
+      para2: "We manage all aspects of ground operations, ensuring smooth, timely, and reliable support for every aircraft and passenger.",
+      how_we_work: [
+        {
+          id: 1,
+          heading: "Flight & Ground Requirement Analysis",
+          para: "Based on the flight schedule, passenger needs, cargo requirements, and airport specifics. This allows us to plan a comprehensive ground handling strategy tailored to your operations.",
+        },
+        {
+          id: 2,
+          heading: "Coordination with Airport Authorities",
+          para: "Our team liaises with airport staff, ground crew, and local authorities to arrange all fees, clearances, and permissions for smooth operations.",
+        },
+        {
+          id: 3,
+          heading: "On-Ground Handling Services",
+          para: "We supervise baggage handling, ramp services, fuelling, passenger boarding assistance, and aircraft maintenance support, ensuring safety, timeliness, and operational efficiency.",
+        },
+        {
+          id: 4,
+          heading: "Continuous Monitoring & Support",
+          para: "Throughout the turnaround, we monitor operations, manage challenges, and provide immediate solutions to ensure flawless service and compliance with aviation standards.",
+        },
+      ],
+      faqs: [
+        {
+          id: 1,
+          que: "What is included in ground handling services?",
+          ans: "It covers passenger assistance, baggage management, ramp services, fuelling coordination, airport fees, catering coordination and maintenance support to ensure smooth flight operations.",
+        },
+        {
+          id: 2,
+          que: "Are these services mandatory at every airport?",
+          ans: "Ground handling is mandatory, and always suggested for safety, efficiency, and compliances.",
+        },
+        {
+          id: 3,
+          que: "Can ground handling support cargo flight too?",
+          ans: "Yes. Our services extend to cargo operations as well, including loading/unloading, storage coordination, and customs documentation support.",
+        },
+        {
+          id: 4,
+          que: "How does Freedom Air Services ensures quality?",
+          ans: "Freedom Air represent the interest of operator, liaise with all concerned agencies, ensuring that all contracted services are maintained to achieve on time movements, supervise every step, and make sure all documentation are as per operators' specific requirements, also in accordance to the ICAO/IATA recommended practices.",
+        },
+        {
+          id: 5,
+          que: "Can last-minute ground handling be arranged?",
+          ans: "Absolutely. Our team specializes in urgent and ad hoc operations, ensuring smooth support even for emergency, medical evacuation and diverted flights.",
+        },
+      ],
     },
-    {
-      id: 2,
-      heading: "Hotel & Transport Arrangement",
-      para: "We select and book hotels that meet safety, comfort, and convenience standards. Transport is arranged to ensure timely pick-ups and drop-offs to / from airports.",
-    },
-    {
-      id: 3,
-      heading: "Additional Crew Support",
-      para: "Our team addresses any special needs such as dietary preferences, medical assistance, or communication support, ensuring crews feel cared for during their stay.",
-    },
-    {
-      id: 4,
-      heading: "Monitoring & Feedback",
-      para: "We maintain contact with crews during their stay to resolve any issues promptly and ensure continuous satisfaction and smooth operations.",
-    },
-  ],
-  faqs: [
-    {
-      id: 1,
-      que: "Do you provide hotel bookings for all crew types?",
-      ans: "Yes. We arrange accommodations for pilots, cabin crew, and ground staff, prioritizing comfort, convenience, and proximity to airports, and accordance to the required category and budget.",
-    },
-    {
-      id: 2,
-      que: "Are transport services included with hotel arrangements?",
-      ans: "Crew transport basically arranged separately.",
-    },
-    {
-      id: 3,
-      que: "Can special requirements be accommodated?",
-      ans: "Yes. We handle dietary restrictions, medical needs, and other personalized requests to ensure crew comfort.",
-    },
-    {
-      id: 4,
-      que: "Do you provide support for international layover?",
-      ans: "Yes, our service extends across India and international destinations where crew may require local assistance.",
-    },
-    {
-      id: 5,
-      que: "Is this service available for short-notice flights?",
-      ans: "Yes. We specialize in urgent crew arrangements, ensuring hotels, transport, and support are arranged quickly for unexpected schedules etc.",
-    },
-  ],
-},
-
-     {
-  title: "On-site Gourmet Catering",
-  para: "Delicious, customized catering solutions for airline crews and passengers.",
-  text: " Freedom Air Services assists airlines in arranging on-site catering tailored to specific dietary preferences and operational requirements. We ensure high-quality, safe, and timely meals to meet crew and passenger expectations.",
-  img: ser4,
-  icon: <MdFastfood />,
-  description: "Freedom Air Services assists airlines in arranging on-site catering tailored to specific dietary preferences and operational requirements. We ensure high-quality, safe, and timely meals to meet crew and passenger expectations.",
-  para2: "We simplify airline catering, delivering customized meal solutions that are fresh, timely, and aligned with dietary needs for every flight operation.",
-  how_we_work: [
-    {
-      id: 1,
-      heading: "Requirement Assessment & Menu Planning",
-      para: "We start by understanding crew or passenger dietary needs, flight schedules, and cuisine preferences. This allows us to design menus that meet airline requirements efficiently.",
-    },
-    {
-      id: 2,
-      heading: "Vendor Coordination & Quality Control",
-      para: "We liaise with certified catering vendors to prepare meals according to airline standards. Each meal undergoes quality checks to ensure freshness, hygiene, and compliance with food safety regulations.",
-    },
-    {
-      id: 3,
-      heading: "On-site Preparation & Delivery",
-      para: "Our team ensures meals are prepared on-site when required and delivered on time at the airport or aircraft, maintaining optimal temperature and presentation.",
-    },
-    {
-      id: 4,
-      heading: "Continuous Support & Feedback",
-      para: "We monitor catering services and gather feedback from crew and passengers to make adjustments for future flights, ensuring consistent satisfaction and high service standards.",
-    },
-  ],
-  faqs: [
-    {
-      id: 1,
-      que: "Can you handle special dietary requirements?",
-      ans: "Yes. We accommodate vegetarian, vegan, gluten-free, halal, kosher, and other specific dietary needs for all flights.",
-    },
-    {
-      id: 2,
-      que: "Is catering available for international and domestic flights?",
-      ans: "Absolutely. Our service is flexible and can manage meals for flights within India or international operations.",
-    },
-    {
-      id: 3,
-      que: "How is quality and hygiene ensured?",
-      ans: "We work only with certified vendors and follow strict food safety protocols to maintain high-quality, fresh meals.",
-    },
-    {
-      id: 4,
-      que: "Can last-minute catering requests be handled?",
-      ans: "Yes, we always try to handle urgent catering requests, however the certified catering vendors need minimum 12 hours prior order, ensuring meals are prepared and delivered without compromising quality.",
-    },
-    {
-      id: 5,
-      que: "Do you cater to both crew and passengers?",
-      ans: "Yes. We provide customized meals for airline crews and passengers, ensuring satisfaction for all onboard.",
-    },
-  ],
-},
 
     {
-  title: "Customized Aviation Solutions",
-  para: "Tailored services designed to meet every airline's unique operational needs.",
-  text: "At Freedom Air Services, we provide personalized solutions for airlines based on their specific requirements. From ad hoc charter flights to long-term flight series, we offer flexible support, including credit services for regular clients, ensuring smooth and efficient operations.",
-  img: ser5,
-  icon: <IoIosSettings />,
-  description: "At Freedom Air Services, we provide personalized solutions for airlines based on their specific requirements. From ad hoc charter flights to long-term flight series, we offer flexible support, including credit services for regular clients, ensuring smooth and efficient operations.",
-  para2: "We analyze each airline's needs and provide tailored solutions that optimize operations, reduce costs, and ensure seamless execution across all flight services.",
-  how_we_work: [
-    {
-      id: 1,
-      heading: "Requirement Analysis & Planning",
-      para: "We assess the airline's operational needs, flight schedules, and service preferences to design solutions that are customized for each specific route or flight series.",
+      title: "Aviation Fuel Provision",
+      para: "Reliable fuel supply solutions for seamless flight operations across India.",
+      text: " We organize reliable fuel supply at competitive rates, ensuring timely refueling services for uninterrupted and safe flight operations.",
+      img: ser3,
+      icon: <BsFillFuelPumpFill />,
+      description: "Freedom Air Services assists with aviation fuel arrangements, ensuring an uninterrupted fuel supply at all Indian airports. Leveraging strategic partnerships, we provide competitive pricing while maintaining safety, quality, and operational efficiency for every client.",
+      para2: "We simplify aviation fuel management, ensuring timely availability, cost-effectiveness, and smooth operations for all aircraft.",
+      how_we_work: [
+        {
+          id: 1,
+          heading: "Requirement Analysis & Planning",
+          para: "We start by understanding your fuel needs, aircraft type, route, and operational schedules. This helps us plan precise fuel arrangements tailored to your operations.",
+        },
+        {
+          id: 2,
+          heading: "Supplier Coordination & Pricing",
+          para: "We coordinate with certified fuel suppliers to secure competitive rates and ensure quality compliance, minimizing operational costs without compromising safety.",
+        },
+        {
+          id: 3,
+          heading: "Logistics & Delivery Management",
+          para: "Our team manages the logistics of fuel delivery, scheduling refuelling at the right time and location, avoiding delays and ensuring smooth airport operations.",
+        },
+        {
+          id: 4,
+          heading: "Monitoring & Ongoing Support",
+          para: "We continuously monitor fuel supply, usage, and regulatory compliance. Our team addresses any last-minute changes or urgent requirements to maintain seamless flight operations.",
+        },
+      ],
+      faqs: [
+        {
+          id: 1,
+          que: "Can Freedom Air manage fuel for multiple airports simultaneously?",
+          ans: "Yes. We coordinate with suppliers across all major airports to ensure timely fuel delivery for multi-location operations.",
+        },
+        {
+          id: 2,
+          que: "Are the fuel prices competitive?",
+          ans: "Absolutely. Our partnerships and bulk arrangements allow us to offer clients cost-effective pricing without compromising quality.",
+        },
+        {
+          id: 3,
+          que: "Does the services include quality checks?",
+          ans: "Yes. We ensure aviation fuel meets strict quality standards and regulatory requirements before delivery.",
+        },
+        {
+          id: 4,
+          que: "How quickly can emergency fuel be arranged?",
+          ans: "Our team can arrange fuel deliveries in urgent such situation.",
+        },
+        {
+          id: 5,
+          que: "Is this service available for all type of aircrafts?",
+          ans: "Yes. We cater to commercial, charter, and private aircraft, ensuring fuel availability tailored to different aircraft types and capacities. However prior arrangements needs to be made or check availability for Avgas 100 LL requirement, because of not available at most of airport locations.",
+        },
+      ],
     },
-    {
-      id: 2,
-      heading: "Service Customization & Strategy",
-      para: "Based on analysis, we tailor our services—including permits, ground support, fuelling and catering - to meet exact requirements, ensuring efficiency and cost-effectiveness.",
-    },
-    {
-      id: 3,
-      heading: "Implementation & Coordination",
-      para: "Our team executes the customized plan, coordinating with authorities, vendors, and airport teams to deliver smooth operations and meet all operational deadlines.",
-    },
-    {
-      id: 4,
-      heading: "Continuous Support & Optimization",
-      para: "We monitor performance, gather feedback, and provide ongoing adjustments to enhance operational efficiency, improve service delivery, and maintain long-term client satisfaction.",
-    },
-  ],
-  faqs: [
-    {
-      id: 1,
-      que: "What makes these solutions customized?",
-      ans: "We tailor every service - permits, ground support, fuelling and catering - to match the airline's specific operational and scheduling requirements.",
-    },
-    {
-      id: 2,
-      que: "Can regular clients get credit services?",
-      ans: "Yes. Frequent clients can avail of credit facilities, ensuring smooth operations and financial flexibility for ongoing flights.",
-    },
-    {
-      id: 3,
-      que: "Are these services suitable for ad hoc flights?",
-      ans: "Absolutely. All given services applicable to ad-hoc flights too.",
-    },
-    {
-      id: 4,
-      que: "Can long-term flight series be managed?",
-      ans: "Yes. We provide comprehensive supports services and execution for regular flights too, ensuring consistent service quality across all operations.",
-    },
-    {
-      id: 5,
-      que: "How do you ensure operational efficiency?",
-      ans: "Through detailed planning, continuous monitoring, and proactive coordination with vendors, authorities, and airport teams, we optimize every aspect of flight operations.",
-    },
-  ],
-},
 
     {
-  title: "Aircraft Managements",
-  para: "Comprehensive solutions to ensure safe, efficient, and seamless aircraft operations.",
-  text: "Freedom Air Services provides complete aircraft management solutions for private and commercial operators. From flight planning and crew management to maintenance oversight and regulatory compliance, we ensure your aircraft operates efficiently, safely, and on schedule.",
-  img: bhk,
-  icon: <IoAirplane />,
-  description: "Freedom Air Services provides complete aircraft management solutions for private and commercial operators. From flight planning and crew management to maintenance oversight and regulatory compliance, we ensure aircraft operates efficiently, safely, and on schedule.",
-  para2: "We handle all aspects of aircraft operations, allowing operators to focus on their missions while we manage logistics, compliance, and operational efficiency.",
-  how_we_work: [
-    {
-      id: 1,
-      heading: "Flight Planning & Scheduling",
-      para: "We plan according to customers' specific requirement, or develop detailed flight schedules, considering routes, airport slots, fuel requirements, and regulatory approvals to optimize aircraft utilization and efficiency.",
+      title: "Crew Accommodation and Support",
+      para: "Comfortable stays and seamless support for your crew at every airport.",
+      text: " We arrange comfortable crew accommodation, transportation, and local assistance to ensure convenience, safety, and stress-free layovers.",
+      img: horiculture,
+      icon: <MdOutlineSupportAgent />,
+      description: "We prioritize the comfort and convenience of flight crews. Freedom Air arranges quality hotels, airport transfers, and any additional support needed to ensure a smooth, stress-free stay during layovers.",
+      para2: "We simplify crew logistics, providing safe accommodation, timely transport, and personalized support to enhance crew efficiency and satisfaction.",
+      how_we_work: [
+        {
+          id: 1,
+          heading: "Requirement Assessment & Planning",
+          para: "We start by understanding crew schedules, flight duration, and special requirements. This allows us to plan hotel bookings, transfers, and other facilities tailored to each crew.",
+        },
+        {
+          id: 2,
+          heading: "Hotel & Transport Arrangement",
+          para: "We select and book hotels that meet safety, comfort, and convenience standards. Transport is arranged to ensure timely pick-ups and drop-offs to / from airports.",
+        },
+        {
+          id: 3,
+          heading: "Additional Crew Support",
+          para: "Our team addresses any special needs such as dietary preferences, medical assistance, or communication support, ensuring crews feel cared for during their stay.",
+        },
+        {
+          id: 4,
+          heading: "Monitoring & Feedback",
+          para: "We maintain contact with crews during their stay to resolve any issues promptly and ensure continuous satisfaction and smooth operations.",
+        },
+      ],
+      faqs: [
+        {
+          id: 1,
+          que: "Do you provide hotel bookings for all crew types?",
+          ans: "Yes. We arrange accommodations for pilots, cabin crew, and ground staff, prioritizing comfort, convenience, and proximity to airports, and accordance to the required category and budget.",
+        },
+        {
+          id: 2,
+          que: "Are transport services included with hotel arrangements?",
+          ans: "Crew transport basically arranged separately.",
+        },
+        {
+          id: 3,
+          que: "Can special requirements be accommodated?",
+          ans: "Yes. We handle dietary restrictions, medical needs, and other personalized requests to ensure crew comfort.",
+        },
+        {
+          id: 4,
+          que: "Do you provide support for international layover?",
+          ans: "Yes, our service extends across India and international destinations where crew may require local assistance.",
+        },
+        {
+          id: 5,
+          que: "Is this service available for short-notice flights?",
+          ans: "Yes. We specialize in urgent crew arrangements, ensuring hotels, transport, and support are arranged quickly for unexpected schedules etc.",
+        },
+      ],
     },
+
     {
-      id: 2,
-      heading: "Crew Management & Coordination",
-      para: "Our team manages pilot and crew assignments, training requirements, rest schedules, and travel arrangements to ensure seamless operations and adherence to aviation regulations.",
+      title: "On-site Gourmet Catering",
+      para: "Delicious, customized catering solutions for airline crews and passengers.",
+      text: " Freedom Air Services assists airlines in arranging on-site catering tailored to specific dietary preferences and operational requirements. We ensure high-quality, safe, and timely meals to meet crew and passenger expectations.",
+      img: ser4,
+      icon: <MdFastfood />,
+      description: "Freedom Air Services assists airlines in arranging on-site catering tailored to specific dietary preferences and operational requirements. We ensure high-quality, safe, and timely meals to meet crew and passenger expectations.",
+      para2: "We simplify airline catering, delivering customized meal solutions that are fresh, timely, and aligned with dietary needs for every flight operation.",
+      how_we_work: [
+        {
+          id: 1,
+          heading: "Requirement Assessment & Menu Planning",
+          para: "We start by understanding crew or passenger dietary needs, flight schedules, and cuisine preferences. This allows us to design menus that meet airline requirements efficiently.",
+        },
+        {
+          id: 2,
+          heading: "Vendor Coordination & Quality Control",
+          para: "We liaise with certified catering vendors to prepare meals according to airline standards. Each meal undergoes quality checks to ensure freshness, hygiene, and compliance with food safety regulations.",
+        },
+        {
+          id: 3,
+          heading: "On-site Preparation & Delivery",
+          para: "Our team ensures meals are prepared on-site when required and delivered on time at the airport or aircraft, maintaining optimal temperature and presentation.",
+        },
+        {
+          id: 4,
+          heading: "Continuous Support & Feedback",
+          para: "We monitor catering services and gather feedback from crew and passengers to make adjustments for future flights, ensuring consistent satisfaction and high service standards.",
+        },
+      ],
+      faqs: [
+        {
+          id: 1,
+          que: "Can you handle special dietary requirements?",
+          ans: "Yes. We accommodate vegetarian, vegan, gluten-free, halal, kosher, and other specific dietary needs for all flights.",
+        },
+        {
+          id: 2,
+          que: "Is catering available for international and domestic flights?",
+          ans: "Absolutely. Our service is flexible and can manage meals for flights within India or international operations.",
+        },
+        {
+          id: 3,
+          que: "How is quality and hygiene ensured?",
+          ans: "We work only with certified vendors and follow strict food safety protocols to maintain high-quality, fresh meals.",
+        },
+        {
+          id: 4,
+          que: "Can last-minute catering requests be handled?",
+          ans: "Yes, we always try to handle urgent catering requests, however the certified catering vendors need minimum 12 hours prior order, ensuring meals are prepared and delivered without compromising quality.",
+        },
+        {
+          id: 5,
+          que: "Do you cater to both crew and passengers?",
+          ans: "Yes. We provide customized meals for airline crews and passengers, ensuring satisfaction for all onboard.",
+        },
+      ],
     },
+
     {
-      id: 3,
-      heading: "Maintenance & Compliance Oversight",
-      para: "We contract for maintenance schedules, also to coordinate inspections, and to ensure regulatory compliance with aviation authorities to maintain aircraft safety and operational readiness.",
+      title: "Customized Aviation Solutions",
+      para: "Tailored services designed to meet every airline's unique operational needs.",
+      text: "At Freedom Air Services, we provide personalized solutions for airlines based on their specific requirements. From ad hoc charter flights to long-term flight series, we offer flexible support, including credit services for regular clients, ensuring smooth and efficient operations.",
+      img: ser5,
+      icon: <IoIosSettings />,
+      description: "At Freedom Air Services, we provide personalized solutions for airlines based on their specific requirements. From ad hoc charter flights to long-term flight series, we offer flexible support, including credit services for regular clients, ensuring smooth and efficient operations.",
+      para2: "We analyze each airline's needs and provide tailored solutions that optimize operations, reduce costs, and ensure seamless execution across all flight services.",
+      how_we_work: [
+        {
+          id: 1,
+          heading: "Requirement Analysis & Planning",
+          para: "We assess the airline's operational needs, flight schedules, and service preferences to design solutions that are customized for each specific route or flight series.",
+        },
+        {
+          id: 2,
+          heading: "Service Customization & Strategy",
+          para: "Based on analysis, we tailor our services—including permits, ground support, fuelling and catering - to meet exact requirements, ensuring efficiency and cost-effectiveness.",
+        },
+        {
+          id: 3,
+          heading: "Implementation & Coordination",
+          para: "Our team executes the customized plan, coordinating with authorities, vendors, and airport teams to deliver smooth operations and meet all operational deadlines.",
+        },
+        {
+          id: 4,
+          heading: "Continuous Support & Optimization",
+          para: "We monitor performance, gather feedback, and provide ongoing adjustments to enhance operational efficiency, improve service delivery, and maintain long-term client satisfaction.",
+        },
+      ],
+      faqs: [
+        {
+          id: 1,
+          que: "What makes these solutions customized?",
+          ans: "We tailor every service - permits, ground support, fuelling and catering - to match the airline's specific operational and scheduling requirements.",
+        },
+        {
+          id: 2,
+          que: "Can regular clients get credit services?",
+          ans: "Yes. Frequent clients can avail of credit facilities, ensuring smooth operations and financial flexibility for ongoing flights.",
+        },
+        {
+          id: 3,
+          que: "Are these services suitable for ad hoc flights?",
+          ans: "Absolutely. All given services applicable to ad-hoc flights too.",
+        },
+        {
+          id: 4,
+          que: "Can long-term flight series be managed?",
+          ans: "Yes. We provide comprehensive supports services and execution for regular flights too, ensuring consistent service quality across all operations.",
+        },
+        {
+          id: 5,
+          que: "How do you ensure operational efficiency?",
+          ans: "Through detailed planning, continuous monitoring, and proactive coordination with vendors, authorities, and airport teams, we optimize every aspect of flight operations.",
+        },
+      ],
     },
-    {
-      id: 4,
-      heading: "Operational Support & Monitoring",
-      para: "We provide real-time operational support, track flights, manage any delays or contingencies, and ensure smooth coordination between crew, ground staff, and airport authorities.",
-    },
-  ],
-  faqs: [
-    {
-      id: 1,
-      que: "Does aircraft management cover both private and commercial planes?",
-      ans: "We can provide tailored management solutions for all aircraft types, ensuring safety, compliance, and operational efficiency.",
-    },
-    {
-      id: 2,
-      que: "Can you handle crew assignments and training?",
-      ans: "We can manage pilots, cabin crew, and ground staff, including training, scheduling, and compliance with aviation regulations.",
-    },
-    {
-      id: 3,
-      que: "Are maintenance and inspections included in the service?",
-      ans: "We coordinate for maintenance, safety checks, and regulatory inspections to keep aircraft fully operational and airworthy.",
-    },
-    {
-      id: 4,
-      que: "Do you provide real-time flight monitoring?",
-      ans: "Our team tracks flights, monitors operations, and provides operational support, slot issues, or any any such requirements.",
-    },
-    {
-      id: 5,
-      que: "Can operators outsource the entire management of their aircraft?",
-      ans: "We can offer end-to-end management, from scheduling and fuel arrangements to crew and regulatory compliance, providing peace of mind and operational efficiency.",
-    },
-  ],
-},
+
+    // {
+    //   title: "Aircraft Managements",
+    //   para: "Comprehensive solutions to ensure safe, efficient, and seamless aircraft operations.",
+    //   text: "Freedom Air Services provides complete aircraft management solutions for private and commercial operators. From flight planning and crew management to maintenance oversight and regulatory compliance, we ensure your aircraft operates efficiently, safely, and on schedule.",
+    //   img: bhk,
+    //   icon: <IoAirplane />,
+    //   description: "Freedom Air Services provides complete aircraft management solutions for private and commercial operators. From flight planning and crew management to maintenance oversight and regulatory compliance, we ensure aircraft operates efficiently, safely, and on schedule.",
+    //   para2: "We handle all aspects of aircraft operations, allowing operators to focus on their missions while we manage logistics, compliance, and operational efficiency.",
+    //   how_we_work: [
+    //     {
+    //       id: 1,
+    //       heading: "Flight Planning & Scheduling",
+    //       para: "We plan according to customers' specific requirement, or develop detailed flight schedules, considering routes, airport slots, fuel requirements, and regulatory approvals to optimize aircraft utilization and efficiency.",
+    //     },
+    //     {
+    //       id: 2,
+    //       heading: "Crew Management & Coordination",
+    //       para: "Our team manages pilot and crew assignments, training requirements, rest schedules, and travel arrangements to ensure seamless operations and adherence to aviation regulations.",
+    //     },
+    //     {
+    //       id: 3,
+    //       heading: "Maintenance & Compliance Oversight",
+    //       para: "We contract for maintenance schedules, also to coordinate inspections, and to ensure regulatory compliance with aviation authorities to maintain aircraft safety and operational readiness.",
+    //     },
+    //     {
+    //       id: 4,
+    //       heading: "Operational Support & Monitoring",
+    //       para: "We provide real-time operational support, track flights, manage any delays or contingencies, and ensure smooth coordination between crew, ground staff, and airport authorities.",
+    //     },
+    //   ],
+    //   faqs: [
+    //     {
+    //       id: 1,
+    //       que: "Does aircraft management cover both private and commercial planes?",
+    //       ans: "We can provide tailored management solutions for all aircraft types, ensuring safety, compliance, and operational efficiency.",
+    //     },
+    //     {
+    //       id: 2,
+    //       que: "Can you handle crew assignments and training?",
+    //       ans: "We can manage pilots, cabin crew, and ground staff, including training, scheduling, and compliance with aviation regulations.",
+    //     },
+    //     {
+    //       id: 3,
+    //       que: "Are maintenance and inspections included in the service?",
+    //       ans: "We coordinate for maintenance, safety checks, and regulatory inspections to keep aircraft fully operational and airworthy.",
+    //     },
+    //     {
+    //       id: 4,
+    //       que: "Do you provide real-time flight monitoring?",
+    //       ans: "Our team tracks flights, monitors operations, and provides operational support, slot issues, or any any such requirements.",
+    //     },
+    //     {
+    //       id: 5,
+    //       que: "Can operators outsource the entire management of their aircraft?",
+    //       ans: "We can offer end-to-end management, from scheduling and fuel arrangements to crew and regulatory compliance, providing peace of mind and operational efficiency.",
+    //     },
+    //   ],
+    // },
   ],
 };
 
@@ -687,7 +687,7 @@ export const testimonialData = {
   title1: "TESTIMONIALS",
   title2: "Here's what our satisfied clients are saying",
 
- testimonials: [
+  testimonials: [
     {
       id: 1,
       title: "Shivam Goyal",
@@ -1674,30 +1674,30 @@ export const blogData = {
 export const footer = {
   logo: logo2,
   text:
-    "OM Engineers deliver innovative infrastructure solutions with decades of expertise, committed to quality, safety, and client satisfaction.",
+    "At Freedom Air Services, we began with a simple belief: aviation support should be safe, reliable, and accessible. Our journey is driven by dedication, discipline, and an unwavering commitment to excellence in every operation we undertake.",
   socials: {
     facebook: "https://www.facebook.com/",
     twitter: "https://twitter.com/",
     instagram:
       "https://www.instagram.com/FreedomeAirServices.contracts?igsh=MXh6Y2Q5dWJ6c3pzOA==",
-    linkedin: "https://www.linkedin.com/school//",
-    youtube: "https://www.youtube.com/c/",
+    linkedin: "https://www.linkedin.com/",
+    youtube: "https://www.youtube.com/",
   },
-  copyrightText: "Copyrights © 2026 . Designed and Manage by ",
+  copyrightText: "Copyright © 2026 . Designed and Managed by ",
   list1: {
     title: "Quick Links",
     links: [
       { id: 2, label: "About Us", href: "/about-us" },
 
-  {
-    id: 3,
-    label: "Services",
-    href: "/services",
-  },
+      {
+        id: 3,
+        label: "Services",
+        href: "/services",
+      },
 
-  { id: 4, label: "Info & Regulations", href: "/info-regulation" },
-  { id: 5, label: "Airport Index", href: "/airport-index" },
-  { id: 6, label: "Contact Us", href: "/contact-us" },
+      { id: 4, label: "Info & Regulations", href: "/info-regulation" },
+      { id: 5, label: "Airport Index", href: "/airport-index" },
+      { id: 6, label: "Contact Us", href: "/contact-us" },
       { id: 7, label: "Privacy Policy", href: "/privacy-policy" },
     ],
   },
@@ -1705,7 +1705,7 @@ export const footer = {
   list2: {
     title: "Services",
     links: [
-       {
+      {
         id: 1,
         label: "Overfly & Landing Permit Assistance",
         href: "/services/overfly-and-landing-permit-assistance",
@@ -1740,11 +1740,11 @@ export const footer = {
         label: "Customized Aviation Solutions",
         href: "/services/customized-aviation-solutions",
       },
-      {
-        id: 8,
-        label: "Aircraft Managements",
-        href: "/services/aircraft-managements",
-      },
+      // {
+      //   id: 8,
+      //   label: "Aircraft Managements",
+      //   href: "/services/aircraft-managements",
+      // },
     ],
   },
 };
@@ -1811,7 +1811,7 @@ export const contactBanner = {
 };
 
 export const contactData = {
-  title: "Reasons to Choose OM Engineers",
+  title: "Reasons to Choose Freedom Air Services",
   points: [
     {
       id: 1,
@@ -1851,13 +1851,13 @@ export const contactData = {
       para: "Contact No.",
       data: [
         {
-          text: "+91 1234567890",
-          slug: "tel:+911234567890",
+          text: "+91 8826 2929 51",
+          slug: "tel:+91 8826 2929 51",
         },
-        {
-          text: "+91 1234567890",
-          slug: "tel:+911234567890",
-        },
+        // {
+        //   text: "+91 8826 2929 51",
+        //   slug: "tel:+91 8826 2929 51",
+        // },
       ],
     },
     {
@@ -1866,8 +1866,8 @@ export const contactData = {
       para: "E-mail Address",
       data: [
         {
-          text: "info@FreedomeAirServices.com",
-          slug: "mailto:info@FreedomeAirServices.com",
+          text: "admin@freedomair.aero ",
+          slug: "mailto:admin@freedomair.aero ",
         },
       ],
     },
@@ -1877,9 +1877,9 @@ export const contactData = {
       para: "Office Address",
       data: [
         {
-          text: "2nd Floor, M Block Market, Greater Kailash 2, M 32,",
+          text: "Third floor, C-49, Main Road, Block C, Lajpat Nagar II, Defence Colony, New Delhi, Delhi 110024",
           slug:
-            "https://www.google.com/maps/place/FreedomeAirServices/@28.5330789,77.2413416,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce1905d089649:0x1b43338513750efe!8m2!3d28.5330789!4d77.2413416!16s%2Fg%2F11wxqn0h78",
+            "https://www.google.com/maps/place/Freedom+Air+Services/@28.5724888,77.2314122,15z/data=!4m10!1m2!2m1!1sC-49,+3rd+Floor,+Lajpat+nagar+%E2%80%93+II,+New+Delhi+%E2%80%93+110024!3m6!1s0x390ce30077e0858d:0xc798ac10cb1c9112!8m2!3d28.5714385!4d77.2383556!15sCjpDLTQ5LCAzcmQgRmxvb3IsIExhanBhdCBuYWdhciDigJMgSUksIE5ldyBEZWxoaSDigJMgMTEwMDI0kgETYXZpYXRpb25fY29uc3VsdGFudOABAA!16s%2Fg%2F11x6wn3qz3?entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D",
         },
       ],
     },
@@ -1888,7 +1888,7 @@ export const contactData = {
 
 export const airport = [
   {
-    img:air1,
+    img: air1,
     airportName: "VIAR / ATQ / Sri Guru Ram Das Jee International Airport",
     city: "Amritsar",
     airportOperatingHours: "24 Hours",
@@ -1900,7 +1900,8 @@ export const airport = [
     visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
     catering: "Available from nearest 5 star",
   },
-  {    img:air2,
+  {
+    img: air2,
     airportName:
       "VEGT / GAU / Lokpriya Gopinath Bordoloi International Airport",
     city: "Guwahati",
@@ -1914,7 +1915,7 @@ export const airport = [
     catering: "Available from nearest 5 star",
   },
   {
-        img:air3,
+    img: air3,
 
     airportName: "VILK / LKO / Chaudhary Charan Singh International Airport",
     city: "Lucknow",
@@ -1927,7 +1928,8 @@ export const airport = [
     visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
     catering: "Available from nearest 5 star",
   },
-  {    img:air4,
+  {
+    img: air4,
 
     airportName: "VIAG / AGR / Pandit Deen Dayal Upadhyay Airport",
     city: "Agra",
@@ -1942,7 +1944,8 @@ export const airport = [
     visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
     catering: "Available from nearest 5 star",
   },
-  {    img:air5,
+  {
+    img: air5,
 
     airportName: "VANP / NAG / Dr. Babasaheb Ambedkar International Airport",
     city: "Nagpur",
@@ -1955,7 +1958,8 @@ export const airport = [
     visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
     catering: "Available from nearest 5 star",
   },
-  {    img:air6,
+  {
+    img: air6,
 
     airportName: "VOCI / COK / Cochin International Airport",
     city: "Kochi",
@@ -1969,7 +1973,8 @@ export const airport = [
     visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
     catering: "Available from nearest 5 star",
   },
-  {    img:air7,
+  {
+    img: air7,
 
     airportName: "VOBL / BLR / Kempegowda International Airport",
     city: "Bengaluru",
@@ -1982,7 +1987,8 @@ export const airport = [
     visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
     catering: "Available from nearest 5 star",
   },
-  {     img:air8,
+  {
+    img: air8,
 
     airportName: "VOHS / HYD / Rajiv Gandhi International Airport",
     city: "Hyderabad",
@@ -1995,7 +2001,8 @@ export const airport = [
     visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
     catering: "Available from nearest 5 star",
   },
-  {     img:air9,
+  {
+    img: air9,
 
     airportName: "VOPB / IXZ / Veer Savarkar International Airport",
     city: "Port Blair",
@@ -2008,7 +2015,8 @@ export const airport = [
     visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
     catering: "Available from nearest 5 star",
   },
-  {    img:air10,
+  {
+    img: air10,
 
     airportName: "VOCL / CCJ / Calicut International Airport",
     city: "Kozhikode",
@@ -2021,7 +2029,8 @@ export const airport = [
     visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
     catering: "Available from nearest 5 star hotel",
   },
-  {    img:air11,
+  {
+    img: air11,
 
     airportName: "VIJP / JAI / Jaipur International Airport",
     airportOperatingHours: "24 Hours",
@@ -2033,7 +2042,8 @@ export const airport = [
     visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
     catering: "Available from Casino flight catering",
   },
-  {    img:air12,
+  {
+    img: air12,
 
     airportName:
       "VISR / SXR / Srinagar International Airport (Defence Airfield)",
@@ -2046,7 +2056,8 @@ export const airport = [
     visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
     catering: "Can be arranged from the nearest 5 star hotel",
   },
-  {    img:air13,
+  {
+    img: air13,
 
     airportName: "VOGA / GOX / Manohar International Airport (Civil Airfield)",
     airportOperatingHours: "24 Hours",
@@ -2058,7 +2069,8 @@ export const airport = [
     visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
     catering: "Available from the nearest 5 star",
   },
-  {    img:air14,
+  {
+    img: air14,
 
     airportName: "VOGO / GOI / Goa International Airport (Defence Airfield)",
     airportOperatingHours: "24 Hours",
@@ -2070,7 +2082,8 @@ export const airport = [
     visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
     catering: "Available",
   },
-  {    img:air15,
+  {
+    img: air15,
 
     airportName: "VAAH / AMD / Sardar Vallabhbhai Patel International Airport",
     airportOperatingHours: "24 HR",
@@ -2082,7 +2095,8 @@ export const airport = [
     visa: "https://indianvisaonline.gov.in/evisa/tvoa.html",
     catering: "Available",
   },
-  {    img:air16,
+  {
+    img: air16,
 
     airportName: "VOTV / TRV / Thiruvananthapuram International Airport",
     airportOperatingHours: "24 HOURS",
@@ -2095,7 +2109,8 @@ export const airport = [
     visa: "https://indianvisaonline.gov.in/",
     catering: "Available",
   },
-  {    img:air17,
+  {
+    img: air17,
 
     airportName: "VOMM / MAA / Chennai International Airport",
     airportOperatingHours: "24 HOURS",
@@ -2108,7 +2123,8 @@ export const airport = [
     visa: "https://indianvisaonline.gov.in/",
     catering: "Available",
   },
-  {    img:air18,
+  {
+    img: air18,
 
     airportName:
       "VECC / CCU / Netaji Subhash Chandra Bose International Airport",
@@ -2121,7 +2137,8 @@ export const airport = [
     visa: "https://indianvisaonline.gov.in/",
     catering: "Available from Taj SATS",
   },
-  {    img:air19,
+  {
+    img: air19,
 
     airportName: "VABB / BOM / Chhatrapati Shivaji International Airport",
     airportOperatingHours: "24 HR",
@@ -2134,7 +2151,8 @@ export const airport = [
     visa: "https://indianvisaonline.gov.in/",
     catering: "YES",
   },
-  {    img:air20,
+  {
+    img: air20,
 
     airportName: "VIDP / DEL / Indira Gandhi International Airport",
     airportOperatingHours: "24 Hours",

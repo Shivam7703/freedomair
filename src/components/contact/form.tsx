@@ -159,7 +159,7 @@ Why should you consider Freedom Air Services?
                 </motion.a>
               ))}
               <motion.a
-                href="https://wa.me/919667622285"
+                href="https://wa.me/918826292951"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -3, scale: 1.12 }}

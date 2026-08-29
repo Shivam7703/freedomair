@@ -257,8 +257,7 @@ export default function WorkProcess() {
             variants={fadeUp}
             custom={2}
           >
-            A decade-long journey of precision, passion, and pioneering aviation standards that set us apart.
-          </motion.p>
+A three decade-long journey of precision, passion, and pioneering aviation standards that set us apart.          </motion.p>
 
           {/* Scroll cue */}
           <motion.div

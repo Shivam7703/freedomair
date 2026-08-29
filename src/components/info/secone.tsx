@@ -281,8 +281,8 @@ export default function InfoRegulation() {
             CAA India requires approx. 15-20 days time to issue DGR Approval to carry DGR by Air to and through Indian Airspace.
           </p>
           <p className="text-sm text-slate-500 mb-3">
-            🔗 <a href="https://dgca.gov.in/digigov-portal/jsp/dgca/common/login.jsp" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">
-              https://dgca.gov.in/digigov-portal/jsp/dgca/common/login.jsp
+            🔗 <a href="https://www.dgca.gov.in/digigov-portal/?baseLocale=en_US?page=jsp/dgca/InventoryList/RegulationGuidance/Rules/CarriageDangerousGoods2003/CarriageDangerousGoods2026.pdf#:~:text=Dangerous%20Goods)%20Rules-,%2C,-2026" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">
+              https://www.dgca.gov.in/digigov-portal/?baseLocale=en_US?page=jsp/dgca/InventoryList/RegulationGuidance/Rules/CarriageDangerousGoods2003/CarriageDangerousGoods2026.pdf#:~:text=Dangerous%20Goods)%20Rules-,%2C,-2026
             </a>
           </p>
           <p className="text-sm text-slate-400">

@@ -44,7 +44,7 @@ export const data = {
     },
     {
       icon: HiOutlineCurrencyDollar,  // Changed from Flag to CurrencyDollar for "Cost-Effective"
-      heading: "Cost-Effective Service Model",
+      heading: "Cost-Effective Service Model, meeting the authorities guidelines.",
       para:
         "Our pricing structure is competitive and transparent, delivering high-quality aviation solutions while maintaining cost efficiency for international operators.",
       gradient: "from-amber-500 to-orange-600",
@@ -145,8 +145,8 @@ export default function WhyChoose() {
 
                         {/* Heading */}
                         <h3
-                          className="text-2xl sm:text-3xl font-medium text-zinc-900
-                                     group-hover:text-zinc-500 transition-colors duration-500"
+                          className="text-lg sm:text-xl font-medium text-zinc-900
+                                     group-hover:text-zinc-600 transition-colors duration-500"
                         >
                           {item.heading}  
                           <div
