@@ -22,7 +22,7 @@ export default function Home() {
       <WhyChoose/>
       <Faqs/>
     
-      <Testimonials/>
+      {/* <Testimonials/> */}
 <Blogs isHome={true} />
     </>
   );
