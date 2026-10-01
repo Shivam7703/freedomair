@@ -3,6 +3,7 @@ import CEOMessage from '@/components/about/Founder'
 import Journey from '@/components/about/Journey'
 import Team from '@/components/about/team'
 import Banner from '@/components/global/banner'
+import AboutBanner from '@/components/global/banner2'
 import CountDown from '@/components/global/Contdown'
 import AboutSection from '@/components/home/AboutSection'
 import WhyChoose from '@/components/home/whychoose'
@@ -12,10 +13,11 @@ import React from 'react'
 function page() {
   return (
     <>
-      <Banner img ={aboutBanner?.img}
+    <AboutBanner/>
+      {/* <Banner img ={aboutBanner?.img}
 title={aboutBanner.title}
 para={aboutBanner.para}
-slug={aboutBanner.slug}/>
+slug={aboutBanner.slug}/> */}
 <AboutSection data={Aboutabout} isHome={false}/>
 <CEOMessage/>
 <Journey/>
