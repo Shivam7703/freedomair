@@ -33,6 +33,7 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 import { GiPipes } from "react-icons/gi";
 import { GoGoal } from "react-icons/go";
 import { GrLocation } from "react-icons/gr";
@@ -122,7 +123,7 @@ export const social = [
   },
   {
     icon: <FaInstagram />,
-    href: "https://www.facebook.com/FreedomeAirServicesdelhi",
+    href: "https://www.instagram.com/freedomairservices_pvt_ltd/",
   },
   {
     icon: <FaXTwitter />,
@@ -1679,7 +1680,7 @@ export const footer = {
     facebook: "https://www.facebook.com/",
     twitter: "https://twitter.com/",
     instagram:
-      "https://www.instagram.com/FreedomeAirServices.contracts?igsh=MXh6Y2Q5dWJ6c3pzOA==",
+      "https://www.instagram.com/freedomairservices_pvt_ltd/",
     linkedin: "https://www.linkedin.com/",
     youtube: "https://www.youtube.com/",
   },
@@ -1727,8 +1728,8 @@ export const footer = {
       },
       {
         id: 5,
-        label: "Crew Accomodation and Support",
-        href: "/services/crew-accomodation-and-support",
+        label: "Crew Accommodation and Support",
+        href: "/services/crew-accommodation-and-support",
       },
       {
         id: 6,
@@ -1811,75 +1812,32 @@ export const contactBanner = {
 };
 
 export const contactData = {
-  title: "Reasons to Choose Freedom Air Services",
-  points: [
-    {
-      id: 1,
-      text:
-        "Each project receives unique designs made of premium materials at our company to create modern spaces with lasting elegance.",
-    },
-    {
-      id: 2,
-      text:
-        "Our experienced team has multiple years of expertise in both home designs and construction operations to deliver projects that fulfill all high criteria.",
-    },
-    {
-      id: 3,
-      text:
-        "We conduct detailed client interaction, which allows us to transform vision into personalized designs compatible with their lifestyle demands.",
-    },
-    {
-      id: 4,
-      text:
-        "We employ innovative technology along with strategic planning to create living environments that function perfectly while being beautiful and creating comfort.",
-    },
-    {
-      id: 5,
-      text:
-        "We take full responsibility for planning along with execution to deliver an entirely smooth design and building process that requires no stress and has perfect management.",
-    },
-    {
-      id: 6,
-      text:
-        "We deliver impressive project outcomes through creative designs with professionalism and strong dedication to building stunning projects that stand out from others in quality and detailed craftsmanship.",
-    },
-  ],
   details: [
     {
-      id: 1,
-      icon: <LuPhone />,
-      para: "Contact No.",
+      icon: <FiPhone />, // Aapka phone icon
+      para: "Contact Numbers",
       data: [
-        {
-          text: "+91 8826 2929 51",
-          slug: "tel:+91 8826 2929 51",
-        },
-        // {
-        //   text: "+91 8826 2929 51",
-        //   slug: "tel:+91 8826 2929 51",
-        // },
+        { text: "Operations: +91 88262 92951", slug: "tel:+918826292951" },
+        { text: ": +911166606104", slug: "tel:+911166606104" },
+        { text: "Accounts: +911146546209", slug: "tel:+911146546209" },
       ],
     },
     {
-      id: 2,
-      icon: <RiMailSendLine />,
-      para: "E-mail Address",
+      icon: <FiMail />, // Aapka email icon
+      para: "E-mail Addresses",
       data: [
-        {
-          text: "admin@freedomair.aero ",
-          slug: "mailto:admin@freedomair.aero ",
-        },
+        { text: "ops@freedomair.aero", slug: "mailto:ops@freedomair.aero" },
+        { text: "ops@freedomair.in", slug: "mailto:ops@freedomair.in" },
+        { text: "ops.freedomair@gmail.com", slug: "mailto:ops.freedomair@gmail.com" },
       ],
     },
     {
-      id: 3,
-      icon: <GrLocation />,
-      para: "Office Address",
+      icon: <FiMapPin />, // Aapka map icon
+      para: "Our Location",
       data: [
         {
-          text: "Third floor, C-49, Main Road, Block C, Lajpat Nagar II, Defence Colony, New Delhi, Delhi 110024",
-          slug:
-            "https://www.google.com/maps/place/Freedom+Air+Services/@28.5724888,77.2314122,15z/data=!4m10!1m2!2m1!1sC-49,+3rd+Floor,+Lajpat+nagar+%E2%80%93+II,+New+Delhi+%E2%80%93+110024!3m6!1s0x390ce30077e0858d:0xc798ac10cb1c9112!8m2!3d28.5714385!4d77.2383556!15sCjpDLTQ5LCAzcmQgRmxvb3IsIExhanBhdCBuYWdhciDigJMgSUksIE5ldyBEZWxoaSDigJMgMTEwMDI0kgETYXZpYXRpb25fY29uc3VsdGFudOABAA!16s%2Fg%2F11x6wn3qz3?entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D",
+          text: "C-49, III Floor, Lajpat Nagar – II, New Delhi – 110024, INDIA",
+          slug: "https://www.google.com/maps/place/Freedom+Air+Services/@28.5714385,77.2339782,17z/data=!4m10!1m2!2m1!1sC-49,+III+Floor,+Lajpat+Nagar+%E2%80%93+II,+New+Delhi+%E2%80%93+110024,+INDIA!3m6!1s0x390ce30077e0858d:0xc798ac10cb1c9112!8m2!3d28.5714385!4d77.2383556!15sCkFDLTQ5LCBJSUkgRmxvb3IsIExhanBhdCBOYWdhciDigJMgSUksIE5ldyBEZWxoaSDigJMgMTEwMDI0LCBJTkRJQZIBE2F2aWF0aW9uX2NvbnN1bHRhbnTgAQA!16s%2Fg%2F11x6wn3qz3?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D",
         },
       ],
     },

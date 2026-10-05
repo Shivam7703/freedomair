@@ -1,4 +1,4 @@
-
+// info-regulation/page.tsx
 import Banner from '@/components/global/banner'
 import InfoRegulation from '@/components/info/secone'
 import { aboutBanner} from '@/data/homeData'

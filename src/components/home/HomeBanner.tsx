@@ -10,7 +10,7 @@ import Buttonmain from "../global/button";
 /* -------------------------------------------------------------------------- */
 
 const QUOTE_HREF = "#contact"; // Request a quote link
-const WHATSAPP_HREF = "https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20need%20a%20quote"; // put your number
+const WHATSAPP_HREF = "https://wa.me/918826292951?text="; // put your number
 
 const container: Variants = {
   hidden: {},

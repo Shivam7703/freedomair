@@ -30,7 +30,7 @@ export default function Banner({ title, para, img, slug }: any) {
                 transition={{ easings: ["easeIn", "easeOut"] }}
                 className=" flex flex-col justify-center items-center h-full max-md:p-[8%] w-full text-center"
               >
-                <motion.h2 className="lg:text-7xl font-bold max-w-5xl mx-auto mb-8 text-3xl">
+                <motion.h2 className="lg:text-6xl font-bold max-w-4xl mx-auto mb-8 text-3xl">
                   {title}
                 </motion.h2>
 

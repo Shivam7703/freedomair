@@ -75,7 +75,7 @@ export default function CEOMessage() {
                   <div className="flex gap-2.5">
                     {[
                       { icon: <FaLinkedin />, href: "#" },
-                      { icon: <FaInstagram />, href: "https://www.instagram.com/cityspace.contracts?igsh=MXh6Y2Q5dWJ6c3pzOA==" },
+                      { icon: <FaInstagram />, href: "https://www.instagram.com/freedomairservices_pvt_ltd/" },
                       { icon: <HiOutlineMail />, href: "mailto:admin@freedomair.aero " },
                     ].map((s, i) => (
                       <a

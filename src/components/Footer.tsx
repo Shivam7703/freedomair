@@ -111,29 +111,42 @@ export default function Footer({ footer }: any) {
                 Contact Us
               </h5>
               <div className="space-y-3 mt-1">
-                <p className="text-base text-gray-200 flex items-start gap-2">
+                <p className="text-base text-gray-200 space-x-2">
                   <strong className="text-white/90 shrink-0">Phone:</strong>
-                  <a href="tel:+91 8826 2929 51" className="hover:text-color2 transition-colors duration-300">
-                    +91 8826 2929 51
+                  <a href="tel:+91 8826292951" className="hover:text-color2 transition-colors duration-300">
+                    +91 88262 92951
+                  </a>,  <a href="tel:+91 1166606104" className="hover:text-color2 transition-colors duration-300">
+                     +91 1166 606104
+                  </a>, <a href="tel:+91 1146546209" className="hover:text-color2 transition-colors duration-300">
+                     +91 1146 546209
                   </a>
                 </p>
-                <p className="text-base text-gray-200 flex items-start gap-2">
+                <p className="text-base text-gray-200  space-x-2">
                   <strong className="text-white/90 shrink-0">E-mail:</strong>
                   <a
-                    href="mailto:admin@freedomair.aero "
+                    href="mailto:ops@freedomair.aero"
                     className="hover:text-color2 transition-colors duration-300 break-all"
                   >
-                    admin@freedomair.aero
-                  </a>
+                    ops@freedomair.aero, 
+                  </a>,  <a
+                    href="mailto:ops@freedomair.in"
+                    className="hover:text-color2 transition-colors duration-300 break-all"
+                  >
+                    ops@freedomair.in
+                  </a>,  <a
+                    href="mailto:ops.freedomair@gmail.com"
+                    className="hover:text-color2 transition-colors duration-300 break-all"
+                  >
+                      ops.freedomair@gmail.com
+                  </a>,
                 </p>
                 <p className="text-base text-gray-200 flex items-start gap-2">
                   <strong className="text-white/90 shrink-0">Address:</strong>
                   <a
-                    href="https://www.google.com/maps/place/Freedom+Air+Services/@28.5724888,77.2314122,15z/data=!4m10!1m2!2m1!1sC-49,+3rd+Floor,+Lajpat+nagar+%E2%80%93+II,+New+Delhi+%E2%80%93+110024!3m6!1s0x390ce30077e0858d:0xc798ac10cb1c9112!8m2!3d28.5714385!4d77.2383556!15sCjpDLTQ5LCAzcmQgRmxvb3IsIExhanBhdCBuYWdhciDigJMgSUksIE5ldyBEZWxoaSDigJMgMTEwMDI0kgETYXZpYXRpb25fY29uc3VsdGFudOABAA!16s%2Fg%2F11x6wn3qz3?entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D"
+                    href="https://www.google.com/maps/place/Freedom+Air+Services/@28.5714385,77.2339782,17z/data=!4m10!1m2!2m1!1sC-49,+III+Floor,+Lajpat+Nagar+%E2%80%93+II,+New+Delhi+%E2%80%93+110024,+INDIA!3m6!1s0x390ce30077e0858d:0xc798ac10cb1c9112!8m2!3d28.5714385!4d77.2383556!15sCkFDLTQ5LCBJSUkgRmxvb3IsIExhanBhdCBOYWdhciDigJMgSUksIE5ldyBEZWxoaSDigJMgMTEwMDI0LCBJTkRJQZIBE2F2aWF0aW9uX2NvbnN1bHRhbnTgAQA!16s%2Fg%2F11x6wn3qz3?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
                     className="hover:text-color2 transition-colors duration-300 capitalize leading-relaxed"
                   >
-                    Third floor, C-49, Main Road, Block C, Lajpat Nagar II, Defence Colony, New Delhi, Delhi 110024 W Block Rd,
-                    New Delhi, Delhi 110048
+                    C-49, III Floor, Lajpat Nagar – II, New Delhi – 110024, INDIA
                   </a>
                 </p>
               </div>

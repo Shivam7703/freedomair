@@ -174,7 +174,7 @@ function RightSide(onTop: any) {
 
       {/* ── Call Now ── */}
       <motion.a
-        href="tel:+91 8826 2929 51"
+        href="tel:+91 88262 92951"
         whileHover={{ y: -3 }}
         whileTap={{ scale: 0.96 }}
         className="group flex items-center gap-2"
@@ -200,12 +200,11 @@ function RightSide(onTop: any) {
             Call Us
           </span>
           <span className="text-base font-extrabold text-gray-700 group-hover:text-color2
-                           transition-colors duration-300 leading-tight mt-1 whitespace-nowrap">
-            +91 1234566770
+               transition-colors duration-300 leading-tight mt-1 whitespace-nowrap">
+            +91 88262 92951
           </span>
         </div>
       </motion.a>
-
     </div>
   );
 }

@@ -59,82 +59,84 @@ function Contactform() {
           >
             {/* Title block */}
             <div>
-              {contactData?.title && (
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-snug mb-3">
 Why should you consider Freedom Air Services?
                 </h3>
-              )}
+              
               <p className="text-gray-800 text-lg  leading-relaxed">
                We provide reliable, seamless, and safe aviation solutions with transparent processes, personalized support, and a commitment to operational excellence for every client.
               </p>
             </div>
 
             {/* Contact detail cards */}
-            <div className="grid sm:grid-cols-2 gap-4">
-              {contactData?.details?.map((counts: any, index: number) => (
-                <motion.div
-                  key={index}
-                  custom={index}
-                  variants={fadeUp}
-                  whileHover={{
-                    y: -4,
-                    boxShadow: "0 20px 50px rgba(0,0,0,0.10)",
-                  }}
-                  transition={{ type: "spring", stiffness: 280, damping: 18 }}
-                  className="group relative bg-white rounded-2xl p-5
-                             border border-gray-100
-                             shadow-[0_4px_20px_rgba(0,0,0,0.06)]
-                             hover:border-color2/20 transition-colors duration-300
-                             overflow-hidden"
-                >
-                  {/* Hover shine */}
-                  <div
-                    className="absolute inset-0 bg-gradient-to-br from-color2/4 to-transparent
-                                  opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                  />
+           {/* Contact detail cards */}
+<div className="grid sm:grid-cols-2 gap-4">
+  {contactData?.details?.map((counts: any, index: number) => (
+    <motion.div
+      key={index}
+      custom={index}
+      variants={fadeUp}
+      whileHover={{
+        y: -4,
+        boxShadow: "0 20px 50px rgba(0,0,0,0.10)",
+      }}
+      transition={{ type: "spring", stiffness: 280, damping: 18 }}
+      className="group relative bg-white rounded-2xl p-5
+                 border border-gray-100
+                 shadow-[0_4px_20px_rgba(0,0,0,0.06)]
+                 hover:border-color2/20 transition-colors duration-300
+                 overflow-hidden"
+    >
+      {/* Hover shine */}
+      <div
+        className="absolute inset-0 bg-gradient-to-br from-color2/4 to-transparent
+                   opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+      />
 
-                  <div className="flex gap-4 items-start relative z-10">
-                    {/* Icon */}
-                    <div
-                      className="shrink-0 w-12 h-12 rounded-xl
-                                    bg-gradient-to-br from-color2 to-red-500
-                                    flex items-center justify-center text-white text-xl
-                                    shadow-lg group-hover:scale-110 group-hover:rotate-3
-                                    transition-transform duration-300"
-                    >
-                      {counts?.icon}
-                    </div>
-                    {/* Content */}
-                    <div>
-                      <h4 className="text-gray-900 font-bold text-sm mb-2 leading-tight">
-                        {counts?.para}
-                      </h4>
-                      <div className="space-y-1">
-                        {counts?.data?.map((detail: any, i: number) => (
-                          <a
-                            key={i}
-                            href={detail?.slug}
-                            className="block text-gray-700  hover:text-color2 break-words 
-                                       hover:translate-x-1 transition-all duration-300"
-                          >
-                            {detail?.text}
-                          </a>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
+      <div className="flex gap-4 items-start relative z-10">
+        {/* Icon */}
+        <div
+          className="shrink-0 w-12 h-12 rounded-xl
+                     bg-gradient-to-br from-color2 to-red-500
+                     flex items-center justify-center text-white text-xl
+                     shadow-lg group-hover:scale-110 group-hover:rotate-3
+                     transition-transform duration-300"
+        >
+          {counts?.icon}
+        </div>
+        {/* Content */}
+        <div>
+          <h4 className="text-gray-900 font-bold text-sm mb-2 leading-tight">
+            {counts?.para}
+          </h4>
+          <div className="space-y-1.5 text-sm text-gray-700">
+            {counts?.data?.map((detail: any, i: number) => (
+              <a
+                key={i}
+                href={detail?.slug}
+                target={detail?.slug?.startsWith("http") ? "_blank" : "_self"}
+                rel={detail?.slug?.startsWith("http") ? "noopener noreferrer" : undefined}
+                className="block hover:text-color2 break-words 
+                           hover:translate-x-1 transition-all duration-300"
+              >
+                {detail?.text}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
 
-                  {/* Bottom accent line */}
-                  <motion.div
-                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-color2 to-yellow-400 origin-left"
-                    initial={{ scaleX: 0 }}
-                    whileInView={{ scaleX: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
-                  />
-                </motion.div>
-              ))}
-            </div>
+      {/* Bottom accent line */}
+      <motion.div
+        className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-color2 to-yellow-400 origin-left"
+        initial={{ scaleX: 0 }}
+        whileInView={{ scaleX: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
+      />
+    </motion.div>
+  ))}
+</div>
 
             {/* Social icons */}
             <motion.div
