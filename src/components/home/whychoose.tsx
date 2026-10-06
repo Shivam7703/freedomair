@@ -67,9 +67,9 @@ export default function WhyChoose() {
         {/* Background Image */}
         {data?.img && (
           <Image
-            title="Best immigration consultants in Delhi"
+            title="Freedom Air Services operations team coordinating flight permits and ground handling in New Delhi"
             src={data?.img}
-            alt="Best immigration consultants in Delhi"
+            alt="Freedom Air Services operations team coordinating flight permits and ground handling in New Delhi"
             className="absolute top-0 left-0 md:h-[100%] h-0 w-full -z-0 sm:w-[40%] max-w-[500px] object-cover"
           />
         )}
@@ -81,10 +81,10 @@ export default function WhyChoose() {
         >
           {data?.title1 && (
             <div className="flex items-center md:-mb-3 gap-3">
-            <div className="w-8 h-px bg-color2" />
-            <span className="text-color2 text-sm  tracking-[0.25em] uppercase font-semibold">
-{data?.title1}            </span>
-          </div>
+              <div className="w-8 h-px bg-color2" />
+              <span className="text-color2 text-sm  tracking-[0.25em] uppercase font-semibold">
+                {data?.title1}            </span>
+            </div>
           )}
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
             {data?.title2}
@@ -148,10 +148,10 @@ export default function WhyChoose() {
                           className="text-lg sm:text-xl font-medium text-zinc-900
                                      group-hover:text-zinc-600 transition-colors duration-500"
                         >
-                          {item.heading}  
+                          {item.heading}
                           <div
-                          className={`w-14 group-hover:w-28 h-[2px] mt-2 duration-300 bg-gradient-to-r ${item.gradient} rounded-full`}
-                        />
+                            className={`w-14 group-hover:w-28 h-[2px] mt-2 duration-300 bg-gradient-to-r ${item.gradient} rounded-full`}
+                          />
                         </h3>
                       </div>
 
@@ -161,7 +161,7 @@ export default function WhyChoose() {
                       </p>
 
                       {/* Bottom accent */}
-                     
+
                     </div>
                   </div>
                 </SwiperSlide>

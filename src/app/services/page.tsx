@@ -80,7 +80,7 @@ export default function Page() {
       <Banner
         img={serviceBanner?.img}
         title={serviceBanner.title}
-        para={serviceBanner.para}
+        para={"Permits, airport slots, ground handling, fuel, crew support and catering for operators flying in India. One team, one point of contact."}
         slug={serviceBanner.slug}
       />
       <Servicecards />

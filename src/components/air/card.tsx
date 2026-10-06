@@ -1,230 +1,315 @@
 "use client";
-import React, { useState } from "react";
-import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
+import React, { memo, useState } from "react";
 import {
-  MdOutlineFlightTakeoff,
   MdOutlineBlock,
-  MdOutlineLocationCity,
+  MdOutlineLocationOn,
+  MdOutlineFlightTakeoff,
+  MdOutlineMap,
 } from "react-icons/md";
 import {
   FaClock,
   FaFire,
-  FaGasPump,
   FaPassport,
   FaUtensils,
-  FaChevronDown,
+  FaRulerHorizontal,
 } from "react-icons/fa";
 import { BsAirplane } from "react-icons/bs";
 
-/* ──────────────────────────────────────────
-   Premium Info Row
-────────────────────────────────────────── */
-function InfoRow({
+/* ───────── helpers ───────── */
+const isEmpty = (v?: string) =>
+  !v || v.trim() === "" || v.trim() === "-" || v.trim().toLowerCase() === "not listed";
+
+type Tone = "default" | "good" | "bad" | "warn";
+
+const toneClass: Record<Tone, string> = {
+  default: "text-gray-900",
+  good: "text-green-700",
+  bad: "text-red-600",
+  warn: "text-amber-600",
+};
+
+// YES / H24 -> good, NO / N/A -> bad
+function yesNoTone(v?: string): Tone {
+  const s = (v || "").trim().toLowerCase();
+  if (s.startsWith("yes") || s.startsWith("h24")) return "good";
+  if (s === "no" || s === "n/a" || s === "na" || s.startsWith("no,")) return "bad";
+  return "default";
+}
+
+function prettyYesNo(v?: string) {
+  const s = (v || "").trim();
+  return s.toLowerCase() === "n/a" ? "Not Available" : s;
+}
+
+function fireLabel(v?: string) {
+  if (isEmpty(v)) return "";
+  const s = v!.trim();
+  return /^[ivx]+$/i.test(s) ? `CAT ${s.toUpperCase()}` : `Fire: ${s}`;
+}
+
+/* ───────── Expandable text (long single text) ───────── */
+function CollapsibleText({ text, limit = 90 }: { text: string; limit?: number }) {
+  const [open, setOpen] = useState(false);
+  const long = text.length > limit;
+
+  return (
+    <>
+      <span className={!open && long ? "line-clamp-2" : ""}>{text}</span>
+      {long && (
+        <button
+          onClick={() => setOpen((v) => !v)}
+          className="mt-0.5 block text-[10px] font-semibold text-color2 hover:underline"
+        >
+          {open ? "Show less" : "Show more"}
+        </button>
+      )}
+    </>
+  );
+}
+
+/* ───────── Expandable list (hours split by ;) ───────── */
+function CollapsibleList({ items, limit = 2 }: { items: string[]; limit?: number }) {
+  const [open, setOpen] = useState(false);
+  const list = open ? items : items.slice(0, limit);
+
+  return (
+    <>
+      <ul className="space-y-0.5">
+        {list.map((it, i) => (
+          <li key={i}>{it}</li>
+        ))}
+      </ul>
+      {items.length > limit && (
+        <button
+          onClick={() => setOpen((v) => !v)}
+          className="mt-0.5 block text-[10px] font-semibold text-color2 hover:underline"
+        >
+          {open ? "Show less" : `+${items.length - limit} more`}
+        </button>
+      )}
+    </>
+  );
+}
+
+/* ───────── Fact tile ───────── */
+function Fact({
   icon,
   label,
-  value,
-  isLink = false,
+  full = false,
+  empty = false,
+  tone = "default",
+  children,
 }: {
   icon: React.ReactNode;
   label: string;
-  value: string;
-  isLink?: boolean;
+  full?: boolean;
+  empty?: boolean;
+  tone?: Tone;
+  children?: React.ReactNode;
 }) {
   return (
-    <div className="flex items-start gap-4 py-3 border-b border-gray-100 last:border-0">
-      <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-color2/10 to-yellow-400/10 
-                      flex items-center justify-center text-color2 text-sm shadow-sm">
-        {icon}
+    <div
+      className={`rounded-lg bg-gray-50 border border-gray-100 px-2.5 py-2 ${
+        full ? "col-span-2" : ""
+      }`}
+    >
+      <div className="flex items-center gap-1.5 text-[10px] uppercase tracking-wider text-gray-500 font-semibold mb-0.5">
+        <span className="text-color2 text-[11px]">{icon}</span>
+        {label}
+      </div>
+      <div
+        className={`text-xs leading-snug break-words font1 ${
+          empty ? "text-gray-400 font-medium" : `${toneClass[tone]} font-semibold`
+        }`}
+      >
+        {empty ? "Not Listed" : children}
+      </div>
+    </div>
+  );
+}
+
+/* ───────── Airport Card ───────── */
+function AirportCardBase({ airport }: { airport: any }) {
+  const parts = (airport.airportName || "").split(" / ");
+  const icao = parts[0] || "";
+  const iata = parts[1] || "";
+  const name = parts.slice(2).join(" ") || airport.airportName;
+
+  const fire = fireLabel(airport.airportFireCategory);
+
+  const hoursItems = isEmpty(airport.airportOperatingHours)
+    ? []
+    : String(airport.airportOperatingHours)
+        .split(";")
+        .map((s) => s.trim())
+        .filter(Boolean);
+
+  const restriction = String(airport.airportRestrictions || "").trim();
+  const restrictionTone: Tone = /^nil$/i.test(restriction)
+    ? "good"
+    : /^(available on request|nil \(as per ats\))$/i.test(restriction)
+    ? "default"
+    : "warn";
+
+  const ciq = String(airport.ciqAvailability || "");
+
+  const mapUrl = airport.address
+    ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+        `${name} ${airport.address}`
+      )}`
+    : "";
+
+  return (
+    <div
+      className="bg-white rounded-2xl overflow-hidden border border-gray-200
+                 shadow-sm hover:shadow-lg hover:-translate-y-1
+                 transition-[transform,box-shadow] duration-300 flex flex-col
+                 [content-visibility:auto] [contain-intrinsic-size:auto_460px]"
+    >
+      {/* HEADER */}
+      <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-color2/80 md:h-52 h-36 p-2 flex flex-col justify-between relative">
+      <div>
+        <div className="flex items-center justify-between gap-2 mb-2.5">
+          <div className="flex gap-1.5">
+            <span className="px-2 py-1 bg-color2 text-white text-[10px] font-bold rounded-md">
+              {icao}
+            </span>
+            {iata && (
+              <span className="px-2 py-1 bg-white/10 text-white text-[10px] font-bold rounded-md border border-white/25">
+                {iata}
+              </span>
+            )}
+          </div>
+
+          {fire && (
+            <span className="flex items-center gap-1 px-2 py-1 bg-red-500/90 text-white text-[10px] font-bold rounded-md">
+              <FaFire className="text-[9px]" />
+              {fire}
+            </span>
+          )}
+        </div>
+
+        <h3 className="text-white text-sm font-bold leading-snug line-clamp-2 min-h-[2.5rem]">
+          {name}
+        </h3>
+</div><div>
+        {airport.airportType && (
+          <p className="mt-1 text-[10px] font-semibold uppercase tracking-wider text-yellow-300/90">
+            {airport.airportType}
+          </p>
+        )}
+
+        {airport.address && (
+          <p className="mt-1 flex items-start gap-1 text-white text-[11px] leading-snug line-clamp-2">
+            <MdOutlineLocationOn className="mt-[1px] shrink-0 text-xs" />
+            {airport.address}
+          </p>
+        )}
+        </div>
       </div>
 
-      <div className="flex-1">
-        <p className="text-sm uppercase tracking-widest text-gray-500 font-semibold">
-          {label}
-        </p>
+      {/* FACTS */}
+      <div className="p-3 grid grid-cols-2 gap-2">
+        <Fact
+          icon={<FaClock />}
+          label="Operating Hours"
+          full
+          empty={hoursItems.length === 0}
+        >
+          <CollapsibleList items={hoursItems} />
+        </Fact>
 
-        {isLink ? (
+        {/* 2 per row */}
+        <Fact
+          icon={<FaPassport />}
+          label="Customs / Immig."
+          empty={isEmpty(airport.customsImmigration)}
+          tone={yesNoTone(airport.customsImmigration)}
+        >
+          {prettyYesNo(airport.customsImmigration)}
+        </Fact>
+
+        <Fact
+          icon={<FaUtensils />}
+          label="Catering"
+          empty={isEmpty(airport.catering)}
+          tone={yesNoTone(airport.catering)}
+        >
+          {airport.catering}
+        </Fact>
+
+        <Fact
+          icon={<BsAirplane />}
+          label="Entry / CIQ & Slots"
+          full
+          empty={isEmpty(ciq)}
+          tone={yesNoTone(ciq)}
+        >
+          <CollapsibleText text={ciq} />
+        </Fact>
+
+        <Fact
+          icon={<FaRulerHorizontal />}
+          label="Runway"
+          full
+          empty={isEmpty(airport.runwayDimensions)}
+        >
+          <CollapsibleText text={String(airport.runwayDimensions || "")} />
+        </Fact>
+
+        <Fact
+          icon={<MdOutlineBlock />}
+          label="Restrictions"
+          full
+          empty={isEmpty(restriction)}
+          tone={restrictionTone}
+        >
+          <CollapsibleText text={restriction} />
+        </Fact>
+
+        {airport.remarks && (
+          <p className="col-span-2 text-[10px] italic text-gray-500 px-1">
+            Note: {airport.remarks}
+          </p>
+        )}
+      </div>
+
+      {/* ACTIONS */}
+      <div className="mt-auto px-3 pb-3 grid grid-cols-2 gap-2">
+        {airport.visa ? (
           <a
-            href={value}
+            href={airport.visa}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-semibold font1 text-color2 hover:text-yellow-500 transition"
+            className="flex items-center justify-center gap-1.5 py-2 rounded-lg
+                       bg-gradient-to-r from-color2 to-yellow-400 text-white
+                       text-xs font-semibold hover:opacity-90 transition"
           >
-            Click Here ↗
+            <MdOutlineFlightTakeoff className="text-sm" />
+            Visa Info
           </a>
         ) : (
-          <p className="text-sm text-black font-semibold font1 leading-relaxed">
-            {value}
-          </p>
+          <span />
+        )}
+
+        {mapUrl ? (
+          <a
+            href={mapUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-1.5 py-2 rounded-lg
+                       border border-gray-300 text-gray-700 text-xs font-semibold
+                       hover:bg-gray-50 transition"
+          >
+            <MdOutlineMap className="text-sm" />
+            View Map
+          </a>
+        ) : (
+          <span />
         )}
       </div>
     </div>
   );
 }
 
-/* ──────────────────────────────────────────
-   Premium Airport Card
-────────────────────────────────────────── */
-export function AirportCard({ airport }: { airport: any }) {
-  const [expanded, setExpanded] = useState(false);
-
-  const parts = airport.airportName.split(" / ");
-  const icao = parts[0] || "";
-  const iata = parts[1] || "";
-  const name = parts.slice(2).join(" ");
-
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-      viewport={{ once: true }}
-      whileHover={{ y: -8 }}
-      className="bg-white rounded-3xl overflow-hidden
-                 border border-gray-200 max-h-max
-                 shadow-[0_15px_50px_rgba(0,0,0,0.08)]
-                 hover:shadow-[0_25px_70px_rgba(0,0,0,0.15)]
-                 transition-all duration-500 flex flex-col"
-    >
-      {/* IMAGE SECTION */}
-      <div className="relative h-56">
-        <Image
-          src={airport.img}
-          alt={name}
-          fill
-          className="object-cover"
-        />
-
-        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent" />
-
-        {/* ICAO / IATA */}
-        <div className="absolute top-4 left-4 flex gap-2">
-          <span className="px-3 py-1.5 bg-color2 text-white text-xs font-bold rounded-lg shadow-md">
-            {icao}
-          </span>
-          <span className="px-3 py-1.5 bg-black/20 backdrop-blur-md text-white text-xs font-bold rounded-lg border border-white/30">
-            {iata}
-          </span>
-        </div>
-
-        {/* Fire Category */}
-        <div className="absolute top-4 right-4">
-          <span className="flex items-center gap-1 px-3 py-1.5 bg-red-500/90 text-white text-xs font-bold rounded-lg shadow-md">
-            <FaFire className="text-[10px]" />
-            CAT {airport.airportFireCategory}
-          </span>
-        </div>
-
-        {/* Airport Name */}
-        <div className="absolute bottom-5 left-5 right-5">
-          <div className="flex items-center gap-2 text-white/70 text-xs mb-1 uppercase tracking-widest">
-            <MdOutlineLocationCity />
-            {airport.city}
-          </div>
-
-          <h3 className="text-white text-lg font-bold leading-snug drop-shadow">
-            {name}
-          </h3>
-        </div>
-      </div>
-
-      {/* STATUS STRIP */}
-      <div className="px-5 py-3 bg-gray-50 border-b border-gray-100 flex flex-wrap gap-3 text-xs">
-        <span className="flex items-center gap-1 bg-green-100 text-green-700 px-3 py-1 rounded-full font-semibold">
-          <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-          Operational
-        </span>
-
-        <span className="flex items-center gap-1 bg-blue-100 text-blue-700 px-3 py-1 rounded-full font-semibold">
-          <FaPassport className="text-[10px]" />
-          CIQ: {airport.customsImmigration}
-        </span>
-
-        <span className="flex items-center gap-1 bg-amber-100 text-amber-700 px-3 py-1 rounded-full font-semibold">
-          <BsAirplane className="text-[10px]" />
-          Slots: {airport.slotsRequired}
-        </span>
-      </div>
-
-      {/* MAIN INFO */}
-      <div className="px-5 py-4">
-        <InfoRow
-          icon={<FaClock />}
-          label="Operating Hours"
-          value={airport.airportOperatingHours}
-        />
-
-        <InfoRow
-          icon={<FaGasPump />}
-          label="Fuel (Jet A1)"
-          value={airport.fuelJetA1Availability}
-        />
-
-        <InfoRow
-          icon={<FaUtensils />}
-          label="Catering"
-          value={airport.catering}
-        />
-
-        <AnimatePresence>
-          {expanded && (
-            <motion.div
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
-              transition={{ duration: 0.35 }}
-              className="overflow-hidden"
-            >
-              <InfoRow
-                icon={<MdOutlineBlock />}
-                label="Airport Restrictions"
-                value={airport.airportRestrictions}
-              />
-              <InfoRow
-  icon={<FaFire />}
-  label="Airport Fire Category"
-  value={`Category ${airport.airportFireCategory}`}
-/>
-<InfoRow
-  icon={<FaPassport />}
-  label="Customs / Immigration"
-  value={airport.customsImmigration}
-/>
-              <InfoRow
-                icon={<MdOutlineFlightTakeoff />}
-                label="Slots Required"
-                value={airport.slotsRequired}
-              />
-
-              <InfoRow
-                icon={<FaPassport />}
-                label="Visa Information"
-                value={airport.visa}
-                isLink
-              />
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
-
-      {/* TOGGLE BUTTON */}
-      <button
-        onClick={() => setExpanded(!expanded)}
-        className="mx-5 mb-5 mt-2 py-3 rounded-xl
-                   bg-gradient-to-r from-color2 to-yellow-400
-                   text-white text-sm font-semibold
-                   shadow-md hover:opacity-90 transition"
-      >
-        <div className="flex items-center justify-center gap-2">
-          {expanded ? "Show Less Details" : "View Full Airport Details"}
-          <motion.span
-            animate={{ rotate: expanded ? 180 : 0 }}
-            transition={{ duration: 0.3 }}
-          >
-            <FaChevronDown />
-          </motion.span>
-        </div>
-      </button>
-    </motion.div>
-  );
-}
+export const AirportCard = memo(AirportCardBase);
