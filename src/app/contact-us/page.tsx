@@ -74,8 +74,8 @@ export default function Page() {
       ))}
       <Banner
         img={contactBanner?.img}
-        title="Let's plan your next operation"
-        para="Send us your flight details and we'll reply with requirements, timelines and a quote. For urgent requests, call or WhatsApp +91 88262 92951."
+        title="Contact Us"
+        para="Get in touch with our team for support, inquiries, and seamless aviation services tailored to your operational needs."
         slug={contactBanner.slug}
       />
       <Contactform />

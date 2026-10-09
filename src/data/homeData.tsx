@@ -1766,25 +1766,25 @@ export const Aboutabout = {
   title1: "Safe and Reliable ",
   title2: "Aviation Services",
   para:
-    "Leading and reliable aviation support, possesses in-dept knowledge of local regulations and procedures, ensuring a smooth process towards  comprehensive ground handling services with our extensive network and experience, designed to elevate experiences with precision, safety and responsibility, ensuring seamless flight operations. ",
+    "Leading reliable, innovative aviation solutions connecting people, businesses, and opportunities worldwide. We deliver safe, efficient, and seamless air services designed to elevate travel experiences and support global growth with precision and responsibility.",
   vision: [
     {
       heading: "Our Vision",
       icon: <FaEye />,
       text:
-        "To be a globally trusted aviation partner, recognized for safety and service quality. We envision connecting people and businesses globally while setting new benchmarks in operational excellence, innovation, and reliability, while strengthening our presence in the international aviation ecosystem, as a responsible and sustainable trip support agency.",
+        "To become a trusted aviation partner recognized for safety, innovation, and service quality. We envision connecting people and businesses globally while setting new benchmarks in responsible and sustainable air services.",
     },
     {
       heading: "Our Mission",
       icon: <GoGoal />,
       text:
-        "To deliver safe, reliable, and efficient aviation support services while maintaining the highest standards of professionalism. ",
+        "To deliver safe, reliable, and efficient aviation services while maintaining the highest standards of professionalism. We aim to create seamless travel experiences that prioritize customer satisfaction, operational excellence, and long-term trust.",
     },
     {
       heading: "Our Goals",
       icon: <GoGoal />,
       text:
-        "We aim to grow responsibly, innovate continuously, our commitment to excellence and customer satisfaction, ensuring a seamless and hassel-free experience, maintaining the highest standards of safety and service. ",
+        "To expand our network, enhance service quality, and adopt advanced aviation technologies. We strive to build lasting client relationships, maintain strict safety compliance, and continuously improve operational performance across all services.",
     },
   ],
   // process: [

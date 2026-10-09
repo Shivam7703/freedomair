@@ -127,7 +127,7 @@ export default function Footer({ footer }: any) {
                     href="mailto:ops@freedomair.aero"
                     className="hover:text-color2 transition-colors duration-300 break-all"
                   >
-                    ops@freedomair.aero, 
+                    ops@freedomair.aero 
                   </a>,  <a
                     href="mailto:ops@freedomair.in"
                     className="hover:text-color2 transition-colors duration-300 break-all"
@@ -138,7 +138,7 @@ export default function Footer({ footer }: any) {
                     className="hover:text-color2 transition-colors duration-300 break-all"
                   >
                       ops.freedomair@gmail.com
-                  </a>,
+                  </a>
                 </p>
                 <p className="text-base text-gray-200 flex items-start gap-2">
                   <strong className="text-white/90 shrink-0">Address:</strong>

@@ -62,10 +62,10 @@ export default function CEOMessage() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-white leading-tight">
-                        Jonathan A. Mercer
+                        Deepak Rimal
                       </h3>
                       <p className="text-zinc-400 text-xs tracking-widest uppercase">
-                        Founder & Chairman
+                        Founder & Managing Director
                       </p>
                     </div>
                   </div>
@@ -105,42 +105,17 @@ export default function CEOMessage() {
               </span>
 
               <p className="text-xl font1  md:text-2xl font-semibold text-white leading-snug mb-7">
-                "At Freedom Air Services, we started with one simple belief—aviation support should be safe, reliable, and accessible. Our journey is built on dedication, discipline, and a commitment to delivering excellence every single operations."
+                "At Freedom Air Services, we started with one simple belief—aviation should be safe, reliable, and accessible. Our journey is built on dedication, discipline, and a commitment to delivering excellence every single day."
               </p>
 
               <div className="space-y-5 text-zinc-200 leading-relaxed">
                 <p>
-                  Our goal is not just to assist flights, but to build trust in every operations. We aim to grow responsibly, innovate continuously, and create opportunities while maintaining the highest standards of safety and service.
+Our goal is not just to operate flights but to build trust in every journey. We aim to grow responsibly, innovate continuously, and create opportunities while maintaining the highest standards of safety and service.
                 </p>
 
               </div>
 
-              {/* Stats row — added hover glow + animated divider line */}
-              {/* <div className="grid grid-cols-3 gap-3 my-8">
-                {[
-                  { value: "150+", label: "Projects" },
-                  { value: "30+", label: "Years" },
-                  { value: "98%", label: "Satisfaction" },
-                ].map((s, i) => (
-                  <div key={i}
-                    className="relative text-center rounded-2xl py-5 px-3 overflow-hidden
-                               border border-white/5 bg-white/[0.03]
-                               hover:border-color2/40 hover:bg-color2/5
-                               transition-all duration-300 group"
-                  >
-                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500
-                                    bg-[radial-gradient(ellipse_80%_80%_at_50%_110%,rgba(139,90,43,0.15),transparent)]" />
-                    <p className="text-2xl font-black bg-gradient-to-br from-color2 to-color3
-                                  bg-clip-text text-transparent relative z-10">
-                      {s.value}
-                    </p>
-                    <div className="h-px w-6 mx-auto bg-color2/30 my-1.5 group-hover:w-10 transition-all duration-300 rounded-full" />
-                    <p className="text-[10px] text-zinc-300 uppercase tracking-widest relative z-10">
-                      {s.label}
-                    </p>
-                  </div>
-                ))}
-              </div> */}
+             
 
               <div className="border-l-2 border-color2 pl-5 py-1 mb-8 bg-color2/[0.03] rounded-r-xl">
                 <p className="text-white/80 text-sm italic leading-relaxed">
@@ -153,10 +128,10 @@ export default function CEOMessage() {
                 <div className="h-[2px] w-16 bg-gradient-to-r from-color2 to-transparent rounded-full" />
                 <div>
                   <p className="text-white font-bold text-xl font2 leading-tight">
-                    Jonathan A. Mercer
+                    Deepak Rimal
                   </p>
                   <p className="text-zinc-500 text-[11px] uppercase tracking-[0.2em] mt-0.5">
-                    Founder & Chairman
+                    Founder & Managing Director
                   </p>
                 </div>
               </div>

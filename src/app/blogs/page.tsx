@@ -48,8 +48,8 @@ export default function Page() {
       />
       <Banner
         img={aboutBanner?.img}
-        title="Aviation Insights & News"
-        para="Practical guides and updates on flight permits, airspace, fuel and ground handling in India."
+        title="Latest Blogs"
+        para="Explore the latest aviation news, tips, and insights to stay updated on flight operations worldwide."
         slug="blogs"
       />
       <Blogs isHome={false} />

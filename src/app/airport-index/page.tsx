@@ -52,7 +52,7 @@ export default function Page() {
       <Banner
         img={aboutBanner?.img}
         title="Airport Index"
-        para="Operating hours, CIQ, slot, fuel and catering details for major Indian airports, to help you plan flights with confidence."
+        para="Key airport information, codes, facilities, and operational details to ensure smooth and efficient flight operations across destinations."
         slug="airport-index"
       />
       <AirportIndex airports={airport} />

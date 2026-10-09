@@ -52,8 +52,11 @@ export default function Page() {
       />
       <Banner
         img={aboutBanner?.img}
-        title="Responsible aviation support"
-        para="Efficient planning and well-timed ground handling that reduce waste and unnecessary fuel use where we can."
+        title="
+Sustainability
+"
+        para="Promoting Sustainable Aviation Practices for Efficient and Responsible Air Operations"
+
         slug="sustainability"
       />
       <Homeoxes />
