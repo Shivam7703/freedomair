@@ -4,6 +4,7 @@ import Contactform from "@/components/contact/form";
 import Banner from "@/components/global/banner";
 import { contactBanner } from "@/data/homeData";
 import React from "react";
+import RequestQuoteForm from "@/components/contact/finalform";
 
 const TITLE = "Contact Freedom Air Services – New Delhi";
 const DESCRIPTION =
@@ -79,6 +80,8 @@ export default function Page() {
         slug={contactBanner.slug}
       />
       <Contactform />
+                <RequestQuoteForm/>
+
     </>
   );
 }

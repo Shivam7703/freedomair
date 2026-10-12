@@ -1818,7 +1818,7 @@ export const contactData = {
       para: "Contact Numbers",
       data: [
         { text: "Operations: +91 88262 92951", slug: "tel:+918826292951" },
-        { text: ": +911166606104", slug: "tel:+911166606104" },
+        { text: " +911166606104", slug: "tel:+911166606104" },
         { text: "Accounts: +911146546209", slug: "tel:+911146546209" },
       ],
     },

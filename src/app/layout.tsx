@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/Footer";
 import { footer } from "@/data/homeData";
+import Popups from "@/components/global/pop";
 
 
 const  noto_serif = Noto_Serif({
@@ -26,7 +27,7 @@ export default function RootLayout({
       <body
         className={`${noto_serif.variable} text-black bg-white`}
       >
-        <Header />
+        <Header /><Popups/>
         {children}
         <Footer footer={footer} />
       </body>
