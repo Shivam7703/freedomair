@@ -24,14 +24,9 @@ const sectionTitleClass =
 export default function RequestQuoteForm() {
   return (
     <div className="relative text-gray-900 bg-color1 px-4 py-8 sm:px-6 md:p-12 lg:px-24">
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.15 }}
-        variants={slideIn("right")}
+      <div
         className="relative overflow-hidden max-w-6xl mx-auto bg-white rounded-3xl p-5 sm:p-8 md:p-10 shadow-[0_8px_40px_rgba(0,0,0,0.3)]"
       >
-
         {/* Form header */}
         <div className="mb-8">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-color2/30 bg-color2/10 mb-4">
@@ -284,7 +279,7 @@ export default function RequestQuoteForm() {
             </motion.button>
           </div>
         </form>
-      </motion.div>
+      </div>
     </div>
   );
 }
