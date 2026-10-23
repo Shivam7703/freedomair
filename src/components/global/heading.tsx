@@ -6,7 +6,7 @@ import React from 'react'
 function Heading({title1, title2, title3, para}:any) {
   return (
     <motion.div
-          className="text-center flex flex-col items-center gap-4 mb-16 md:mb-20"
+          className="text-center flex flex-col items-center gap-4 mb-8 md:mb-12"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.4 }}

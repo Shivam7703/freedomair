@@ -108,7 +108,7 @@ export const navItemsArray = [
     label: "More",
     href: "#",
     subNav: [
-      { id: 1, label: "Sustainability", href: "/sustainability" },
+      // { id: 1, label: "Sustainability", href: "/sustainability" },
       { id: 2, label: "Privacy Policy", href: "/privacy-policy" },
       { id: 3, label: "Blogs", href: "/blogs" },
       { id: 4, label: "Gallery", href: "/gallery" },

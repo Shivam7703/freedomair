@@ -12,7 +12,7 @@ function AboutSection({ data, isHome }: Props) {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <section className="relative lg:px-28 md:px-24 sm:px-16 px-6 py-20 md:py-28 bg-color1 overflow-hidden">
+    <section className="relative lg:px-28 md:px-24 sm:p-16 px-6 py-8  bg-color1 overflow-hidden">
       {/* Ambient glow */}
       <div className="pointer-events-none absolute top-0 left-1/4 w-[600px] h-[600px] rounded-full bg-color2/8 blur-[120px]" />
       <div className="pointer-events-none absolute bottom-0 right-1/4 w-[400px] h-[400px] rounded-full bg-color2/5 blur-[100px]" />
@@ -26,7 +26,7 @@ function AboutSection({ data, isHome }: Props) {
             <div className="absolute -bottom-4 -right-4 w-20 h-20 border-b-2 border-r-2 border-color2/60 z-10" />
 
             {/* Main Image */}
-            <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden group">
+            <div className="relative w-full aspect-[8/9] rounded-2xl overflow-hidden group">
               <Image
                 src={data.img2}
                 alt="About"
@@ -34,14 +34,14 @@ function AboutSection({ data, isHome }: Props) {
                 priority
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+              {/* <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" /> */}
             </div>
 
             {isHome && (
               <div className="absolute z-20 bottom-8 left-8">
-                <div className="relative px-6 py-5 rounded-xl border border-white/60 bg-[#0F0E0C]/70 backdrop-blur-xl shadow-[0_8px_40px_rgba(0,0,0,0.4)] before:absolute before:inset-0 before:rounded-xl before:shadow-[inset_0_1px_0_rgba(200,169,110,0.15)] before:pointer-events-none">
-                  <div className="text-5xl font-black leading-none tracking-tight bg-gradient-to-br from-[#C8A96E] via-[#E8D5A3] to-[#C8A96E] bg-clip-text text-transparent">
-                    30+
+                <div className="relative px-6 py-5 rounded-xl border border-white/60 bg-[#0C111D] ">
+                  <div className="text-5xl font-black leading-none text-white">
+                    27+
                   </div>
 
                   <p className="text-xs text-color2 font-medium tracking-[0.15em] uppercase mt-1">

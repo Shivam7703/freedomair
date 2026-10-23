@@ -7,6 +7,7 @@ import AboutSection from '@/components/home/AboutSection'
 import WhyChoose from '@/components/home/whychoose'
 import { Aboutabout } from '@/data/homeData'
 import React from 'react'
+import CountDown from '@/components/global/Contdown'
 
 export const metadata: Metadata = {
   title: 'About Us – Freedom Air Services, New Delhi since 1997',
@@ -53,6 +54,7 @@ export default function Page() {
       <AboutBanner />
       <AboutSection data={Aboutabout} isHome={false} />
       <CEOMessage />
+                  <CountDown/>
       <Journey />
       <WhyChoose />
     </>

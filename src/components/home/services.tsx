@@ -14,8 +14,7 @@ import { ProCard } from "../service/cards";
 
 export default function ServiceSlider() {
   return (
-    <section className="lg:p-24 xl:px-28 md:p-20 sm:p-16 px-3 py-8 plane-bg relative overflow-hidden">
-      {/* Background Decorative Elements */}
+    <section className="lg:px-24 xl:px-28 md:p-20 sm:p-16 px-3 py-8 plane-bg relative overflow-hidden">
 
       {/* Heading Section */}
       <div className="w-full text-white text-center flex flex-col items-center gap-6 mb-6 px-5 md:mb-16">

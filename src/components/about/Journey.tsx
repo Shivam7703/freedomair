@@ -1,5 +1,5 @@
 "use client";
-import {banner2, banner3, banner4, bhk } from "@/assets";
+import {banner2, banner3, banner4, bhk, journey1, journey2, journey3, ser3 } from "@/assets";
 import React from "react";
 import { FaAngleDoubleDown, FaWpforms } from "react-icons/fa";
 import { LuHandshake } from "react-icons/lu";
@@ -10,32 +10,39 @@ import { fadeUp, nodePop, slideIn } from "@/utils/motion";
 
 const data = [
   {
-    img: bhk,
+    img: journey1,
     icon: <FaWpforms />,
-    heading: "Planning & Assessment",
-    year: "2012",
-    text: "Understanding project requirements, site conditions, timelines, and execution feasibility thoroughly.",
+    heading: "Founded in New Delhi",
+    year: "1997",
+    text: "Deepak Rimal starts Freedom Air Services to give international operators one reliable partner on the ground in India.",
   },
   {
-    img: banner2,
+    img: journey2,
     icon: <MdOutlineSettings />,
-    heading: "Design & Engineering",
-    year: "2015",
-    text: "Understanding project requirements, site conditions, timelines, and execution feasibility thoroughly.",
+    heading: "Freedom Air Services Pvt. Ltd.",
+    year: "2002",
+    text: "The business becomes a private limited company, with Deepak Rimal and Munu Rimal as directors, from its office in Lajpat Nagar II.",
   },
   {
-    img: banner3,
+    img: journey3,
     icon: <MdOutlineEngineering />,
-    heading: "Execution & Supervision",
-    year: "2018",
-    text: "Executing construction activities with strict supervision, safety compliance, and quality control.",
+    heading: "India and Nepal",
+    year: "2009",
+    text: "Support extends to every Indian airport and to airports in Nepal, through one team in New Delhi .",
   },
   {
     img: banner4,
     icon: <LuHandshake />,
-    heading: "Completion & Handover",
-    year: "2024",
-    text: "Final inspections, documentation, and smooth project handover within committed timelines.",
+    heading: "A full trip-support service",
+    year: "2019",
+    text: "Fuel, crew support, catering and charter solutions join permits and ground handling, backed by a 24/7 operations desk.",
+  },
+  {
+    img: banner2, // apni image import karke yaha lagao
+    icon: <LuHandshake />, // chaho to koi aur icon use kar lo
+    heading: "The next chapter",
+    year: "2026",
+    text: "A new website with a live Indian airport index and permit guides for operators.",
   },
 ];
 
@@ -89,10 +96,10 @@ function TimelineRow({ item, i }: { item: (typeof data)[0]; i: number }) {
           </div>
         </div>
         <motion.div
-          className="mt-2 px-3 py-0.5 rounded-full bg-color2/10 border border-color2/30"
+          className="mt-2 px-3 py-0.5 rounded-full backdrop-blur-sm "
           variants={{ hidden: { opacity: 0, y: 6 }, visible: { opacity: 1, y: 0, transition: { delay: 0.5, duration: 0.4 } } }}
         >
-          <span className="text-color2 text-lg font-bold tracking-widest">{item.year}</span>
+          <span className="text-color2  text-lg font-bold tracking-widest">{item.year}</span>
         </motion.div>
       </motion.div>
 
@@ -183,7 +190,7 @@ function TimelineRow({ item, i }: { item: (typeof data)[0]; i: number }) {
           />
 
           <motion.p
-            className="text-zinc-300 text-sm leading-relaxed max-w-sm"
+            className="text-zinc-300 text-sm sm:text-lg leading-relaxed max-w-sm"
             variants={fadeUp}
             custom={2}
           >
@@ -198,10 +205,8 @@ function TimelineRow({ item, i }: { item: (typeof data)[0]; i: number }) {
 export default function WorkProcess() {
   return (
     <div
-      className="lg:px-20 sm:px-12 px-6 py-20 md:py-28 relative overflow-hidden"
-      style={{
-        background: "linear-gradient(180deg, #050505 0%, #0a0a14 35%, #08080f 70%, #050505 100%)",
-      }}
+      className="lg:px-24 md:p-16 sm:p-12 px-6 py-8 relative overflow-hidden bg-[#0D1421]"
+      
     >
       {/* ── Layered background gradients ── */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[550px]

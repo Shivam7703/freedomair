@@ -64,7 +64,7 @@ function HomeBanner() {
             into, out of and over India – arranged by one team in New Delhi.
           </motion.p>
 
-          <motion.div variants={item} className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <motion.div variants={item} className="mt-9 flex flex-wrap gap-3 flex-row sm:items-center">
                        <Buttonmain text="Explore More" href="/about-us" />
             <a
               href={WHATSAPP_HREF}
@@ -269,23 +269,23 @@ function createScene(cv: HTMLCanvasElement, W: number, H: number, dpr: number): 
     ctx.fillStyle = gl; ctx.fillRect(0, 0, W, H);
   };
 
-  const grid = () => {
-    ctx.save(); ctx.lineWidth = U;
-    for (let lon = 20; lon <= 140; lon += 5) {
-      ctx.strokeStyle = C.grid + (lon % 10 === 0 ? 0.1 : 0.04) + ")";
-      const [x] = proj(0, lon); ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke();
-    }
-    for (let lat = -30; lat <= 70; lat += 5) {
-      ctx.strokeStyle = C.grid + (lat % 10 === 0 ? 0.1 : 0.04) + ")";
-      const [, y] = proj(lat, 0); ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke();
-    }
-    ctx.fillStyle = C.grid + "0.25)";
-    for (let lon = 20; lon <= 140; lon += 10)
-      for (let lat = -30; lat <= 70; lat += 10) {
-        const [x, y] = proj(lat, lon); ctx.fillRect(x - 1.5 * U, y - 1.5 * U, 3 * U, 3 * U);
-      }
-    ctx.restore();
-  };
+  // const grid = () => {
+  //   ctx.save(); ctx.lineWidth = U;
+  //   for (let lon = 20; lon <= 140; lon += 5) {
+  //     ctx.strokeStyle = C.grid + (lon % 10 === 0 ? 0.1 : 0.04) + ")";
+  //     const [x] = proj(0, lon); ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke();
+  //   }
+  //   for (let lat = -30; lat <= 70; lat += 5) {
+  //     ctx.strokeStyle = C.grid + (lat % 10 === 0 ? 0.1 : 0.04) + ")";
+  //     const [, y] = proj(lat, 0); ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke();
+  //   }
+  //   ctx.fillStyle = C.grid + "0.25)";
+  //   for (let lon = 20; lon <= 140; lon += 10)
+  //     for (let lat = -30; lat <= 70; lat += 10) {
+  //       const [x, y] = proj(lat, lon); ctx.fillRect(x - 1.5 * U, y - 1.5 * U, 3 * U, 3 * U);
+  //     }
+  //   ctx.restore();
+  // };
 
   const stars = (t: number) => {
     const n = PORTRAIT ? 80 : 140;
@@ -375,7 +375,8 @@ function createScene(cv: HTMLCanvasElement, W: number, H: number, dpr: number): 
     render: (t: number) => {
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       ctx.globalAlpha = 1;
-      background(); stars(t); grid();
+      background(); stars(t); 
+      // grid();
       routes.forEach((r) => {
         const reps = r.type === "dom" ? 2 : 1;
         const cyc = ((t / LOOP) * reps + r.off) % 1;

@@ -15,6 +15,10 @@ import blog3 from "@/assets/home/blog3.jpg";
 import blog4 from "@/assets/home/blog4.jpg";
 
 
+import journey1 from "@/assets/home/journey1.jpg";
+import journey2 from "@/assets/home/journey2.jpg";
+import journey3 from "@/assets/home/journey3.jpg";
+
 import sus from "@/assets/home/sus.jpg";
 
 // service
@@ -60,6 +64,6 @@ import air19 from "@/assets/airport/19.jpg";
 import air20 from "@/assets/airport/20.jpg";
 
 
-export {
+export {journey1, journey2, journey3,
     ceo, banner, banner2, banner3, banner4 ,blog1, blog2, blog3, blog4, cl1, cl2,cl3,cl4,logo2, logo ,sus, civil,ser1,ser2,ser3,ser4,ser5, drainage, horiculture, bg, bhk,about, air1, air10,air11,air12,air13,air14,air15,air16,air17,air18,air19,air2,air20,air3,air4,air5,air6,air7,air8,air9
    }

@@ -50,7 +50,7 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
-      <Banner
+      {/* <Banner
         img={aboutBanner?.img}
         title="
 Sustainability
@@ -60,7 +60,7 @@ Sustainability
         slug="sustainability"
       />
       <Homeoxes />
-      <Sustainability />
+      <Sustainability /> */}
     </>
   );
 }

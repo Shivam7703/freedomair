@@ -17,10 +17,10 @@ function Faq({ data }: { data: { id: number; que: string; ans: string }[] }) {
         return (
           <div
             key={item.id}
-            className={`group relative rounded-2xl border transition-all duration-300 overflow-hidden
+            className={`group relative rounded-2xl border transition-all duration-300 overflow-hidden p-5 shadow-black/20 shadow-md
               ${isOpen
-                ? "border-color2/50 bg-white shadow-[0_4px_30px_rgba(200,169,110,0.12)]"
-                : "border-zinc-200 bg-white/70 hover:border-color2/30 hover:shadow-md"
+                ? "border-color2/50 bg-white shadow-lg"
+                : "border-zinc-200 bg-white/70 hover:border-color2/30"
               }`}
           >
             {/* Left accent bar */}
@@ -32,21 +32,17 @@ function Faq({ data }: { data: { id: number; que: string; ans: string }[] }) {
             {/* Question row */}
             <button
               onClick={() => toggle(item.id)}
-              className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left"
+              className="w-full flex items-center justify-between gap-4 text-left"
             >
               {/* Number + Question */}
-              <div className="flex items-center gap-4">
-                <span
-                  className={`text-xs font-black tracking-widest shrink-0 transition-colors duration-300
-                    ${isOpen ? "text-color2" : "text-zinc-300 group-hover:text-color2/50"}`}
-                >
-                  0{index + 1}
-                </span>
+              <div className="flex items-center gap-2">
+                
                 <h3
                   className={`text-base md:text-lg font-semibold transition-colors duration-300 leading-snug
                     ${isOpen ? "text-color2" : "text-zinc-800"}`}
                 >
-                  {item.que}
+                                   0{index + 1}.{" "}
+ {item.que}
                 </h3>
               </div>
 
@@ -66,9 +62,9 @@ function Faq({ data }: { data: { id: number; que: string; ans: string }[] }) {
                 ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
             >
               <div className="overflow-hidden">
-                <div className="px-6 pb-6 pl-14">
-                  <div className="w-full h-px bg-color3 mb-4" />
-                  <p className="text-zinc-600 md:text-base leading-relaxed">
+                <div className=" pt-3">
+                  <div className="w-full h-px bg-color3" />
+                  <p className="text-zinc-600 md:text-base mt-2 leading-relaxed">
                     {item.ans}
                   </p>
                 </div>

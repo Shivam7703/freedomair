@@ -7,13 +7,10 @@ import MenuMobile from "./MenuMobile";
 import { VscChromeClose } from "react-icons/vsc";
 import { IoMenu} from "react-icons/io5";
 import Image from "next/image";
-import { logo } from "@/assets";
+import { logo, logo2 } from "@/assets";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { usePathname } from "next/navigation";
-import { MdAttachEmail, MdPayment,  } from "react-icons/md";
-import { FaClockRotateLeft,  FaLocationDot } from "react-icons/fa6";
-import { social } from "@/data/homeData";
-import Buttonmain from "../global/button";
+import { MdPayment } from "react-icons/md";
 import { motion } from "framer-motion";
 
 const Header = ({ header }: any) => {
@@ -38,7 +35,6 @@ const Header = ({ header }: any) => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-
       if (currentScrollY < 10) {
         setIsAtTop(true);
         setIsVisible(true);
@@ -46,7 +42,6 @@ const Header = ({ header }: any) => {
         setIsAtTop(false);
         setIsVisible(currentScrollY < lastScrollY || currentScrollY < 50);
       }
-
       setLastScrollY(currentScrollY);
     };
 
@@ -72,16 +67,16 @@ const Header = ({ header }: any) => {
 
   return (
     <>
-      <div className="h-20 md:h-24 w-full bg-color1"></div>
+      <div className="h-20 md:h-24 w-full bg-[#14193E]"></div>
       <header
-        className={`fixed  top-0 left-0 w-screen z-50 transition-all font1 duration-300 
-        ${isVisible ? "translate-y-0 bg-color1" : "-translate-y-full bg-white"}`}
+        className={`fixed  top-0 left-0 w-screen z-50 transition-all font1 duration-300 bg-[#14193E] 
+        ${isVisible ? "translate-y-0 " : "-translate-y-full "}`}
       >
       
         <div className="hidden md:flex md:py-7  items-center justify-between  h-24  px-5 py-3 lg:px-20">
           <Link href={header?.href || "/"}>
             <Image
-              src={logo}
+              src={logo2}
               alt="logo"
               className="w-[35vw] max-w-60 my-2 object-contain "
             />
@@ -170,7 +165,7 @@ function RightSide(onTop: any) {
       </motion.a>
 
       {/* ── Divider ── */}
-      <div className="w-px h-9 bg-gray-500 mx-1 hidden sm:block" />
+      <div className="w-px h-9 bg-gray-100 mx-1 hidden sm:block" />
 
       {/* ── Call Now ── */}
       <motion.a
@@ -196,10 +191,10 @@ function RightSide(onTop: any) {
 
         {/* Text */}
         <div className="hidden sm:flex flex-col font1">
-          <span className="text-xs text-gray-600 uppercase tracking-[0.18em] font-semibold ml-2  leading-none">
+          <span className="text-xs text-white uppercase tracking-[0.18em] font-semibold ml-2  leading-none">
             Call Us
           </span>
-          <span className="text-base font-extrabold text-gray-700 group-hover:text-color2
+          <span className="text-base font-extrabold text-white group-hover:text-color2
                transition-colors duration-300 leading-tight mt-1 whitespace-nowrap">
             +91 88262 92951
           </span>

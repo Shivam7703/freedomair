@@ -41,7 +41,7 @@ export default function Faqs() {
   };
 
   return (
-    <section className="relative lg:px-28 md:px-24 sm:px-16 px-6 py-20 md:py-28 bg-color1 overflow-hidden">
+    <section className="relative lg:px-28 md:px-24 sm:p-16 px-6 py-8 bg-color1 overflow-hidden">
       {/* Ambient glow blobs */}
       <div className="pointer-events-none absolute top-0 left-1/4 w-[600px] h-[600px] rounded-full bg-color2/8 blur-[120px]" />
       <div className="pointer-events-none absolute bottom-0 right-1/4 w-[400px] h-[400px] rounded-full bg-color2/5 blur-[100px]" />
@@ -72,25 +72,19 @@ export default function Faqs() {
             {data?.title1} <span className=" bg-gradient-to-r from-color2 to-yellow-500 bg-clip-text text-transparent">{data?.title2}</span>
           </h2>
 
-          {/* Divider */}
-          <div className="w-full h-px bg-gradient-to-r from-color2/70 via-color2/30 to-transparent" />
-
           {/* FAQ Accordion */}
           <Faq data={data?.faq} />
         </div>
 
         {/* IMAGE COLUMN */}
-        <div className="md:w-[44%] w-full md:sticky md:top-28">
+        <div className="md:w-[44%] w-full flex md:pt-10 flex-col gap-6 md:gap-8">
+          <p className="text-zinc-800 sm:text-xl text-base">Have questions about our aviation services? Find quick answers about flight permits, ground handling, fuel, and other services. Our team is always here to help you. We make the process simple and smooth for every client. If you need more information, feel free to get in touch with us.</p>
           <div className="relative">
             {/* Decorative corners */}
-            <div className="absolute -top-4 -left-4 w-20 h-20 border-t-2 border-l-2 border-color2/60 z-10" />
-            <div className="absolute -bottom-4 -right-4 w-20 h-20 border-b-2 border-r-2 border-color2/60 z-10" />
-
-            {/* Gold shimmer border */}
-            <div className="absolute -inset-[1px] rounded-2xl bg-gradient-to-br from-color2/40 via-transparent to-color2/20 z-0" />
+           
 
             {/* Main Image */}
-            <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden group z-10">
+            <div className="relative w-full aspect-[5/4] rounded-2xl overflow-hidden group z-10">
               <Image
                 src={data.img2}
                 alt="About"

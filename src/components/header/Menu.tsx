@@ -6,7 +6,7 @@ import { navItemsArray } from "@/data/homeData";
 
 const Menu = ({ activeItemId, onItemClick , onTop}: any) => {
   return (
-    <ul className={`hidden items-center xl:gap-x-3 w-max md:gap-x-0  text-zinc-800 md:flex`}>
+    <ul className={`hidden items-center xl:gap-x-3 w-max md:gap-x-0  text-zinc-50 md:flex`}>
       {navItemsArray?.map((item: any) => (
         <li key={item?.id} className="group relative transition-all">
           <Link
@@ -26,12 +26,12 @@ const Menu = ({ activeItemId, onItemClick , onTop}: any) => {
           </Link>
           {/* dropdown */}
           {item.subNav && (
-            <div className={`absolute left-0 top-[100%] z-30 hidden w-auto flex-col gap-1 rounded bg-white py-3 shadow-md transition-all group-hover:flex "bg-opacity-100 text-black`}>
+            <div className={`absolute left-0 top-[100%] z-30 hidden w-auto flex-col gap-1 rounded bg-[#252c61] py-3 shadow-md transition-all group-hover:flex "bg-opacity-100 text-white`}>
               {item.subNav.map((nav: any) => (
                 <Link
                   key={nav.id}
                   href={nav.href || "#"}
-                  className={`hover:bg-white bg-opacity-30 flex cursor-pointer items-center py-1 pl-2 pr-8 hover:text-color2 
+                  className={`hover:bg-[#14193E] flex cursor-pointer items-center py-1 pl-2 pr-8 hover:text-color2 
                    `}
                   onClick={() => onItemClick(nav.id, nav.href)}
                 >

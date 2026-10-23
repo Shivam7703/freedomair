@@ -17,8 +17,7 @@ export default function CEOMessage() {
 
         {/* ── Main Card ── */}
         <div className="relative rounded-3xl overflow-hidden
-                        shadow-[0_30px_70px_rgba(0,0,0,0.6)]"
-          style={{ background: "linear-gradient(135deg, #161616 0%, #111111 100%)" }}
+                        shadow-[0_30px_70px_rgba(0,0,0,0.6)] bg-[#0D1421]"
         >
           {/* Inner top accent */}
           <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-color2/50 to-transparent" />
@@ -27,7 +26,7 @@ export default function CEOMessage() {
 
             {/* ── Left: Image Panel ── */}
             <div className="lg:col-span-2 relative">
-              <div className="relative h-full min-h-[420px] lg:min-h-[680px]">
+              <div className="relative h-full min-h-[420px] lg:min-h-[570px]">
                 <Image
                   src={ceo}
                   alt="Founder"
@@ -48,7 +47,7 @@ export default function CEOMessage() {
                 {/* Experience badge — upgraded with gradient text & backdrop */}
                 <div className="absolute top-7 right-7 border border-color2/30 bg-black/60 backdrop-blur-md
                                 rounded-2xl px-4 py-3 text-center shadow-lg shadow-black/40">
-                  <p className="text-2xl font-black bg-gradient-to-br from-color2 to-color3 bg-clip-text text-transparent leading-none">30+</p>
+                  <p className="text-2xl font-black bg-gradient-to-br from-color2 to-color3 bg-clip-text text-transparent leading-none">27+</p>
                   <p className="text-[10px] text-zinc-400 uppercase tracking-widest mt-0.5">Years</p>
                 </div>
 
@@ -108,7 +107,7 @@ export default function CEOMessage() {
                 "At Freedom Air Services, we started with one simple belief—aviation should be safe, reliable, and accessible. Our journey is built on dedication, discipline, and a commitment to delivering excellence every single day."
               </p>
 
-              <div className="space-y-5 text-zinc-200 leading-relaxed">
+              <div className="space-y-5 text-zinc-200 leading-relaxed text-lg">
                 <p>
 Our goal is not just to operate flights but to build trust in every journey. We aim to grow responsibly, innovate continuously, and create opportunities while maintaining the highest standards of safety and service.
                 </p>
@@ -117,7 +116,7 @@ Our goal is not just to operate flights but to build trust in every journey. We 
 
              
 
-              <div className="border-l-2 border-color2 pl-5 py-1 mb-8 bg-color2/[0.03] rounded-r-xl">
+              <div className="border-l-2 border-color2 pl-5 py-1 mb-8 mt-3 bg-color2/[0.03] rounded-r-xl">
                 <p className="text-white/80 text-sm italic leading-relaxed">
                   “Connecting skies with trust, safety, and excellence in every journey we deliver.”
 

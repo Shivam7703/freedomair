@@ -10,7 +10,7 @@ import Heading from "../global/heading";
 
 export default function Blogs({ isHome }:any) {
   return (
-    <section className={`${isHome ? "lg:px-20 md:px-16 sm:p-12 p-6 " : "px-3 pb-5"} bg-color1 text-center relative w-full`}>
+    <section className={`${isHome ? "lg:px-20 md:px-16 sm:p-12 p-6 " : "px-3 pb-5"} bg-white text-center relative w-full`}>
            <Heading title1={data?.title1} title2={data?.title2} title3={data?.title3}  para={""} />
 
 

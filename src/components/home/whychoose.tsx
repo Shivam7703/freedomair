@@ -77,7 +77,7 @@ export default function WhyChoose() {
         {/* Heading */}
         <motion.div
           variants={fadeIn("right", "tween", 0.3, 1)}
-          className="z-10 sm:space-y-8 space-y-6 max-w-2xl"
+          className="z-10 space-y-6 max-w-2xl"
         >
           {data?.title1 && (
             <div className="flex items-center md:-mb-3 gap-3">
@@ -92,6 +92,9 @@ export default function WhyChoose() {
               {data?.title3}
             </span>
           </h2>
+          <p className="text-gray-800 text-lg leading-relaxed">
+            With years of aviation experience, we provide reliable and hassle-free solutions tailored to your needs. Our expert team ensures smooth operations, quick coordination, and dependable support at every step.
+          </p>
         </motion.div>
 
         {/* Swiper Slider */}
