@@ -6,7 +6,7 @@ const countData = [
   },
   {
     id: 2,
-    para: "Every Indian airport, plus Nepal",
+    para: "Airports supported",
     value: "India+Nepal",
   },
   {
@@ -16,8 +16,8 @@ const countData = [
   },
   {
     id: 4,
-    para: "Flights supported (real figure only)",
-    value: "[NUMBER]", // yaha asli figure daalo, jaise "5,000+"
+    para: "Flights supported",
+    value: "1000+", // yaha asli figure daalo, jaise "5,000+"
   },
 ];
 
