@@ -12,7 +12,7 @@ export default function CEOMessage() {
   return (
     <section className="relative md:px-20 sm:p-16 p-3 py-12 md:py-28 overflow-hidden bg-white">
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10">
 
 
         {/* ── Main Card ── */}
@@ -47,7 +47,7 @@ export default function CEOMessage() {
                 {/* Experience badge — upgraded with gradient text & backdrop */}
                 <div className="absolute top-7 right-7 border border-color2/30 bg-black/60 backdrop-blur-md
                                 rounded-2xl px-4 py-3 text-center shadow-lg shadow-black/40">
-                  <p className="text-2xl font-black bg-gradient-to-br from-color2 to-color3 bg-clip-text text-transparent leading-none">27+</p>
+                  <p className="text-2xl font-black bg-gradient-to-br from-color2 to-color3 bg-clip-text text-transparent leading-none">29+</p>
                   <p className="text-[10px] text-zinc-400 uppercase tracking-widest mt-0.5">Years</p>
                 </div>
 
@@ -109,7 +109,7 @@ export default function CEOMessage() {
 
               <div className="space-y-5 text-zinc-200 leading-relaxed text-lg">
                 <p>
-Our goal is not just to operate flights but to build trust in every journey. We aim to grow responsibly, innovate continuously, and create opportunities while maintaining the highest standards of safety and service.
+Our goal is not just to support flights but to build trust in every journey. We aim to grow responsibly, innovate continuously, and create opportunities while maintaining the highest standards of safety and service.
                 </p>
 
               </div>
@@ -123,7 +123,7 @@ Our goal is not just to operate flights but to build trust in every journey. We 
                 </p>
               </div>
 
-              <div className="flex items-center gap-5">
+              {/* <div className="flex items-center gap-5">
                 <div className="h-[2px] w-16 bg-gradient-to-r from-color2 to-transparent rounded-full" />
                 <div>
                   <p className="text-white font-bold text-xl font2 leading-tight">
@@ -133,7 +133,7 @@ Our goal is not just to operate flights but to build trust in every journey. We 
                     Founder & Managing Director
                   </p>
                 </div>
-              </div>
+              </div> */}
 
             </div>
           </div>

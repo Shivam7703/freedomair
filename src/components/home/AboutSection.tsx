@@ -32,7 +32,7 @@ function AboutSection({ data, isHome }: Props) {
                 alt="About"
                 fill
                 priority
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                className="object-cover object-left transition-transform duration-700 group-hover:scale-105"
               />
               {/* <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" /> */}
             </div>
@@ -40,8 +40,8 @@ function AboutSection({ data, isHome }: Props) {
             {isHome && (
               <div className="absolute z-20 bottom-8 left-8">
                 <div className="relative px-6 py-5 rounded-xl border border-white/60 bg-[#0C111D] ">
-                  <div className="text-5xl font-black leading-none text-white">
-                    27+
+                  <div className="md:text-5xl text-3xl font-black leading-none text-white">
+                    29+
                   </div>
 
                   <p className="text-xs text-color2 font-medium tracking-[0.15em] uppercase mt-1">

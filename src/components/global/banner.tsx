@@ -3,7 +3,7 @@
 // Import required modules
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { banner } from "@/assets";
+import { allbanner, banner } from "@/assets";
 import { sliderText } from "@/utils/motion";
 import Link from "next/link";
 
@@ -17,7 +17,7 @@ export default function Banner({ title, para, img, slug }: any) {
           <div className="w-full  overflow-hidden h-max relative">
             <Image
               className="w-full h-[44vh] md:h-[40vh] min-h-[440px] lg:h-[32vw] object-cover object-center"
-              src={ banner}
+              src={ allbanner}
               alt="sliding image"
               loading="lazy"
             />

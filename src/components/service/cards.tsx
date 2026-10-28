@@ -62,7 +62,7 @@ export const ProCard = ({ service, index }: any) => {
             {service?.title}
           </h3>
 
-         <p className="text-white/90 mt-3 text-lg leading-tight">    {service?.text}</p>
+         <p className="text-white/90 mt-3 text-lg leading-tight line-clamp-5">    {service?.text}</p>
 
           {/* Bottom */}
           <div className="mt-auto flex flex-col items-center gap-2">

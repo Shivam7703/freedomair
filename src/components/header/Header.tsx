@@ -194,7 +194,7 @@ function RightSide(onTop: any) {
           <span className="text-xs text-white uppercase tracking-[0.18em] font-semibold ml-2  leading-none">
             Call Us
           </span>
-          <span className="text-base font-extrabold text-white group-hover:text-color2
+          <span className="text-base font-extrabold text-white group-hover:text-color3
                transition-colors duration-300 leading-tight mt-1 whitespace-nowrap">
             +91 88262 92951
           </span>

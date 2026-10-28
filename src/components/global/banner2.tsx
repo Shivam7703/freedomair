@@ -585,22 +585,7 @@ function AboutBanner({ mode = "welcome", children, className = "" }: AboutBanner
       <div ref={wrapRef} className="absolute inset-0" aria-hidden="true">
         <canvas ref={canvasRef} className="block h-full w-full" />
       </div>
-
       {children && <div className="relative z-10 h-full w-full">{children}</div>}
-
-      {/* Controls: show on hover/focus, always visible on touch devices */}
-      {/* <div
-        className="absolute bottom-4 right-4 z-20 flex translate-y-2 gap-2 opacity-0 transition duration-300
-                   focus-within:translate-y-0 focus-within:opacity-100 group-hover:translate-y-0 group-hover:opacity-100
-                   [@media(hover:none)]:translate-y-0 [@media(hover:none)]:opacity-100"
-      >
-        <button type="button" onClick={togglePause} aria-label={paused ? "Play animation" : "Pause animation"} className={ctrl}>
-          {paused ? <FaPlay /> : <FaPause />}
-        </button>
-        <button type="button" onClick={restart} aria-label="Replay animation" className={ctrl}>
-          <FaRedo />
-        </button>
-      </div> */}
     </section>
   );
 }

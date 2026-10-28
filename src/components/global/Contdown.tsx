@@ -17,7 +17,7 @@ const countData = [
   {
     id: 4,
     para: "Flights supported",
-    value: "1000+", // yaha asli figure daalo, jaise "5,000+"
+    value: "1000+",
   },
 ];
 

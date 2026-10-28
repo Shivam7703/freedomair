@@ -28,11 +28,7 @@ export default function Popups() {
 
   const pathname = usePathname();
 
-  useEffect(() => {
-    setIsFormOpen(false);
-    const t = setTimeout(() => setIsFormOpen(true), 5000);
-    return () => clearTimeout(t);
-  }, [pathname]);
+ 
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -130,10 +126,10 @@ export default function Popups() {
                       <input id="name" name="name" required placeholder="Your name" className={inputClass} />
                     </div>
 
-                    <div>
+                    {/* <div>
                       <label className={labelClass} htmlFor="company">Company / Operator *</label>
                       <input id="company" name="company" required placeholder="Company name" className={inputClass} />
-                    </div>
+                    </div> */}
 
                     <div>
                       <label className={labelClass} htmlFor="email">Email *</label>
@@ -175,7 +171,7 @@ export default function Popups() {
                       <input id="route" name="route" placeholder="e.g. VIDP → OMDB (optional)" className={inputClass} />
                     </div>
 
-                    <div className="sm:col-span-2">
+                    <div>
                       <label className={labelClass} htmlFor="date">Date of Operation</label>
                       <input id="date" name="date" type="date" className={inputClass} />
                     </div>

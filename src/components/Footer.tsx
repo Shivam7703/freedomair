@@ -127,24 +127,14 @@ export default function Footer({ footer }: any) {
                     className="hover:text-color2 transition-colors duration-300 break-all"
                   >
                     ops@freedomair.aero 
-                  </a>,  <a
-                    href="mailto:ops@freedomair.in"
-                    className="hover:text-color2 transition-colors duration-300 break-all"
-                  >
-                    ops@freedomair.in
-                  </a>,  <a
-                    href="mailto:ops.freedomair@gmail.com"
-                    className="hover:text-color2 transition-colors duration-300 break-all"
-                  >
-                      ops.freedomair@gmail.com
                   </a>
                 </p>
-                <p className="text-base text-gray-200 flex items-start gap-2">
+                <p className="text-base text-gray-200 space-x-2">
                   <strong className="text-white/90 shrink-0">Address:</strong>
                   <a
                     href="https://www.google.com/maps/place/Freedom+Air+Services/@28.5714385,77.2339782,17z/data=!4m10!1m2!2m1!1sC-49,+III+Floor,+Lajpat+Nagar+%E2%80%93+II,+New+Delhi+%E2%80%93+110024,+INDIA!3m6!1s0x390ce30077e0858d:0xc798ac10cb1c9112!8m2!3d28.5714385!4d77.2383556!15sCkFDLTQ5LCBJSUkgRmxvb3IsIExhanBhdCBOYWdhciDigJMgSUksIE5ldyBEZWxoaSDigJMgMTEwMDI0LCBJTkRJQZIBE2F2aWF0aW9uX2NvbnN1bHRhbnTgAQA!16s%2Fg%2F11x6wn3qz3?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
                     className="hover:text-color2 transition-colors duration-300 capitalize leading-relaxed"
-                  >
+                  ><strong>Freedom Air Services Pvt. Ltd.</strong>
                     C-49, III Floor, Lajpat Nagar – II, New Delhi – 110024, INDIA
                   </a>
                 </p>

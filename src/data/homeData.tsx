@@ -7,13 +7,10 @@ import {
   cl2,
   cl3,
   cl4,
-  air1, air10, air11, air12, air13, air14, air15, air16, air17, air18, air19, air2, air20, air3, air4, air5, air6, air7, air8, air9,
   logo2,
   drainage,
-  civil,
   horiculture,
-  bg,
-  bhk,
+ 
   ser1,
   ser2,
   ser3,
@@ -23,6 +20,8 @@ import {
   blog2,
   blog3,
   blog4,
+  about2,
+  choose,
 } from "@/assets";
 import { BsFillFuelPumpFill } from "react-icons/bs";
 
@@ -136,7 +135,7 @@ export const social = [
 ];
 // homeabout
 export const Homeabout = {
-  img2: banner,
+  img2: about2,
   title: "About us",
   title1: "Leading Aviation Service ",
   title2: " Provider",
@@ -670,7 +669,7 @@ export const crafting = {
     {
       id: 3,
       heading: "Seamless Coordination",
-      img: banner4,
+      img: choose,
       text:
         "Managing every detail with smooth professional coordination",
     },
@@ -1760,8 +1759,8 @@ export const aboutBanner = {
 };
 
 export const Aboutabout = {
-  img: banner3,
-  img2: banner,
+  img: choose,
+  img2: choose,
   title: "About us",
   title1: "Safe and Reliable ",
   title2: "Aviation Services",

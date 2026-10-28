@@ -155,7 +155,7 @@ export default function InfoRegulation() {
               "Noise Certificate",
               "Complete flight Schedule with ETD/ETA, ATS Routes, Entry/Exit Points & Timings",
               "Authorization letter from Operator for local representation in India",
-              "PIC Name and Nationaly",
+              "PIC Name and Nationality",
               "Number of Crew and Passengers"
             ].map((doc, i) => (
               <div key={i} className="flex items-center gap-2 text-sm text-slate-600 py-1.5 border-b border-slate-50">
@@ -187,7 +187,7 @@ export default function InfoRegulation() {
                 icon: <FaShieldAlt />,
                 title: "Military / Defense Airports",
                 time: "15 Days",
-                content: "Operations through Indian Military/Defense based airports require approx. 12-15 working days. Complete passport details of all crew members and ATS Route over Indian airspace must be submitted to Defence authorities.",
+                content: "Operations through Indian Military/Defense based airports require approx. 10-15 working days. Complete passport details of all crew members and ATS Route over Indian airspace must be submitted to Defence authorities.",
                 color: "text-orange-600",
                 bg: "bg-orange-50",
                 border: "border-orange-100"
@@ -204,8 +204,8 @@ export default function InfoRegulation() {
               {
                 icon: <MdOutlineWater />,
                 title: "Territorial Waters",
-                time: "No Clearance Required",
-                content: "No flight clearances are required for aircraft operating outside Indian territory, including territorial waters, but within the Indian Flight Information Regions (FIRs).",
+                time: "Clearance Depends on Location",
+                content: "Flights over Indian territorial waters may require clearance. Operations outside Indian territory but within Indian FIRs generally do not require clearance solely due to FIR coverage.",
                 color: "text-sky-600",
                 bg: "bg-sky-50",
                 border: "border-sky-100"
@@ -276,7 +276,7 @@ export default function InfoRegulation() {
             <h2 className="text-xl font-bold text-slate-800">DGR Clearance Procedure</h2>
           </div>
           <p className="text-slate-500 leading-relaxed mb-4">
-            Submit an application online through the eGCA web portal, Specifying type of Dangerous Goods under UN number and Class specification. Request needs to be submitted by Operating Airlines, Consigner, or Consignee — under the service:{" "}
+            Submit an application online through the eGCA web portal, Specifying type of Dangerous Goods under UN number and Class specification. Request needs to be submitted by Operating Airlines, Consignor, or Consignee — under the service:{" "}
             <span className="text-slate-700 font-medium">"Permission for Carriage of Dangerous Goods by Air from/to/over India"</span>.
             CAA India requires approx. 15-20 days time to issue DGR Approval to carry DGR by Air to and through Indian Airspace.
           </p>
