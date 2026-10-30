@@ -41,7 +41,7 @@ const Page = ({ params }: Props) => {
     <>
       <Banner
         img=""
-        title={`${singleBlog.title.slice(0, 20)}...`}
+        title={`${singleBlog.title}`}
         para=""
         slug={`blogs / ${singleBlog.title.toLowerCase()}`}
       />

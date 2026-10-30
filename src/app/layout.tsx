@@ -13,8 +13,8 @@ const  noto_serif = Noto_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "FreedomeAirServices",
-  description: "Developed in Next.js",
+  title: "Freedom Air Services",
+  description: "Freedom Air Services has supported airlines, charter and diplomatic flights in India since 1997. Meet the team behind our trip-support operations.",
 };
 
 export default function RootLayout({

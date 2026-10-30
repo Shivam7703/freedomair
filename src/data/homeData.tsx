@@ -1683,7 +1683,7 @@ export const footer = {
     linkedin: "https://www.linkedin.com/",
     youtube: "https://www.youtube.com/",
   },
-  copyrightText: "Copyright © 2026 . Designed and Managed by ",
+  copyrightText: "Copyright © 2026 Freedome Air Services Pvt. Ltd. All rights reserved. Designed and Managed by ",
   list1: {
     title: "Quick Links",
     links: [

@@ -12,14 +12,7 @@ export default function Footer({ footer }: any) {
   return (
     <>
       <footer className="relative w-full z-20 text-white overflow-hidden bg-[#14193E]"
-        // style={{ background: "linear-gradient(160deg, #18181b 0%, #09090b 60%, #0f172a 100%)" }}
       >
-        {/* Decorative top accent line */}
-        {/* <div className="h-[3px] w-full bg-gradient-to-r from-transparent via-color2 to-transparent opacity-80" /> */}
-
-        {/* Subtle background glow */}
-        {/* <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full
-                        bg-color2/5 blur-[120px] pointer-events-none" /> */}
 
         <div className="md:px-20 sm:px-16 px-6 pt-14 pb-8">
           <div className="grid grid-cols-3 pb-5 sm:grid-cols-6 gap-8 lg:grid-cols-12">
@@ -143,9 +136,9 @@ export default function Footer({ footer }: any) {
           </div>
 
           {/* Copyright */}
-          <div className="flex flex-col sm:flex-row items-center justify-between
+          <div className="flex flex-col sm:flex-row items-center justify-center
                           border-t border-white/10 max-sm:mt-4 sm:pt-7 pt-5 gap-3">
-            <p className="text-xs text-gray-200 text-center">
+            <p className="max-md:text-xs text-gray-200 text-center">
               {footer?.copyrightText}{" "}
               <a
                 href="https://skywarddigitalsolutions.com"
@@ -154,10 +147,7 @@ export default function Footer({ footer }: any) {
                 Skyward Digital Solutions
               </a>
             </p>
-            <div className="flex items-center gap-1.5 text-xs text-gray-200">
-              <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-              All Rights Reserved
-            </div>
+           
           </div>
         </div>
       </footer>

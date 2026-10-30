@@ -94,7 +94,7 @@ export default function Blogs({ isHome }:any) {
     <Link
       href={`/blogs/${encodeURIComponent(
         blogs.title.toLowerCase()
-  .replace(/[^a-z0-9\s-]/g, "")  
+   .replace(/[^a-z0-9\s-]/g, "")  // remove punctuation
   .trim()
   .replace(/\s+/g, "-")
       )}`}
@@ -116,7 +116,9 @@ export default function Blogs({ isHome }:any) {
     {/* Read More */}
     <Link
       href={`/blogs/${encodeURIComponent(
-        blogs.title.toLowerCase().replace(/\s+/g, "-")
+        blogs.title.toLowerCase().replace(/[^a-z0-9\s-]/g, "")  
+  .trim()
+  .replace(/\s+/g, "-")
       )}`}
       className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest
                  text-color2 relative pb-0.5 mt-1
