@@ -10,7 +10,7 @@ import {
   logo2,
   drainage,
   horiculture,
- 
+
   ser1,
   ser2,
   ser3,
@@ -118,7 +118,7 @@ export const navItemsArray = [
 export const social = [
   {
     icon: <FaFacebookSquare />,
-    href: "https://www.facebook.com/FreedomeAirServicesdelhi",
+    href: "https://www.facebook.com/FreedomAirServicesdelhi",
   },
   {
     icon: <FaInstagram />,
@@ -126,11 +126,11 @@ export const social = [
   },
   {
     icon: <FaXTwitter />,
-    href: "https://www.facebook.com/FreedomeAirServicesdelhi",
+    href: "https://www.facebook.com/FreedomAirServicesdelhi",
   },
   {
     icon: <FaLinkedinIn />,
-    href: "https://www.facebook.com/FreedomeAirServicesdelhi",
+    href: "https://www.facebook.com/FreedomAirServicesdelhi",
   },
 ];
 // homeabout
@@ -1683,7 +1683,7 @@ export const footer = {
     linkedin: "https://www.linkedin.com/",
     youtube: "https://www.youtube.com/",
   },
-  copyrightText: "Copyright © 2026 Freedome Air Services Pvt. Ltd. All rights reserved. Designed and Managed by ",
+  copyrightText: "Copyright © 2026 Freedom Air Services Pvt. Ltd. All rights reserved. Designed and Managed by ",
   list1: {
     title: "Quick Links",
     links: [
@@ -1765,7 +1765,7 @@ export const Aboutabout = {
   title1: "Safe and Reliable ",
   title2: "Aviation Services",
   para:
-    "Leading reliable, innovative aviation solutions connecting people, businesses, and opportunities worldwide. We deliver safe, efficient, and seamless air services designed to elevate travel experiences and support global growth with precision and responsibility.",
+    "Freedom Air Services is a New Delhi trip-support company. Since 1997 we have arranged permits, slots, ground handling, fuel and crew support for airlines, charter operators and business aviation flying into, out of and over India.",
   vision: [
     {
       heading: "Our Vision",

@@ -8,7 +8,7 @@ export default function Faqs() {
     img2: banner4,
     title1: "Frequently Asked",
     title2: "Questions",
-  faq: [
+    faq: [
       {
         id: 1,
         que:
@@ -81,13 +81,13 @@ export default function Faqs() {
           <p className="text-zinc-800 sm:text-xl text-base">Have questions about our aviation services? Find quick answers about flight permits, ground handling, fuel, and other services. Our team is always here to help you. We make the process simple and smooth for every client. If you need more information, feel free to get in touch with us.</p>
           <div className="relative">
             {/* Decorative corners */}
-           
+
 
             {/* Main Image */}
             <div className="relative w-full aspect-[5/4] rounded-2xl overflow-hidden group z-10">
               <Image
                 src={data.img2}
-                alt="About"
+                alt="Freedom Air Services"
                 fill
                 priority
                 className="object-cover transition-transform duration-700 group-hover:scale-105"

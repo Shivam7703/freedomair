@@ -5,7 +5,7 @@ import Link from "next/link";
 import Menu from "./Menu";
 import MenuMobile from "./MenuMobile";
 import { VscChromeClose } from "react-icons/vsc";
-import { IoMenu} from "react-icons/io5";
+import { IoMenu } from "react-icons/io5";
 import Image from "next/image";
 import { logo, logo2 } from "@/assets";
 import { BiSolidPhoneCall } from "react-icons/bi";
@@ -72,12 +72,12 @@ const Header = ({ header }: any) => {
         className={`fixed  top-0 left-0 w-screen z-50 transition-all font1 duration-300 bg-[#14193E] 
         ${isVisible ? "translate-y-0 " : "-translate-y-full "}`}
       >
-      
+
         <div className="hidden md:flex md:py-7  items-center justify-between  h-24  px-5 py-3 lg:px-20">
           <Link href={header?.href || "/"}>
             <Image
               src={logo2}
-              alt="logo"
+              alt="Freedom Air Services"
               className="w-[35vw] max-w-60 my-2 object-contain "
             />
           </Link>
@@ -99,11 +99,11 @@ const Header = ({ header }: any) => {
             <Link href={header?.href || "/"}>
               <Image
                 src={logo}
-                alt="logo"
+                alt="Freedom Air Services"
                 className="w-[170px] object-contain"
-              />         
+              />
             </Link>
-                           <RightSide onTop={isAtTop} />
+            <RightSide onTop={isAtTop} />
 
             {isMobileMenuOpen ? (
               <VscChromeClose

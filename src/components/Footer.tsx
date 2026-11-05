@@ -21,7 +21,7 @@ export default function Footer({ footer }: any) {
             <div className="col-span-3 md:pr-5 pb-4 flex flex-col">
               <Image
                 src={logo}
-                alt="logo"
+                alt="Freedom Air Services"
                 className="max-w-52 w-[80vw] object-contain"
                 width={150}
                 height={50}
@@ -108,9 +108,9 @@ export default function Footer({ footer }: any) {
                   <a href="tel:+91 8826292951" className="hover:text-color2 transition-colors duration-300">
                     +91 88262 92951
                   </a>,  <a href="tel:+91 1166606104" className="hover:text-color2 transition-colors duration-300">
-                     +91 1166 606104
+                    +91 1166 606104
                   </a>, <a href="tel:+91 1146546209" className="hover:text-color2 transition-colors duration-300">
-                     +91 1146 546209
+                    +91 1146 546209
                   </a>
                 </p>
                 <p className="text-base text-gray-200  space-x-2">
@@ -119,7 +119,7 @@ export default function Footer({ footer }: any) {
                     href="mailto:ops@freedomair.aero"
                     className="hover:text-color2 transition-colors duration-300 break-all"
                   >
-                    ops@freedomair.aero 
+                    ops@freedomair.aero
                   </a>
                 </p>
                 <p className="text-base text-gray-200 space-x-2">
@@ -147,7 +147,7 @@ export default function Footer({ footer }: any) {
                 Skyward Digital Solutions
               </a>
             </p>
-           
+
           </div>
         </div>
       </footer>

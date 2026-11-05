@@ -59,7 +59,7 @@ const businessJsonLd = {
   },
   geo: { "@type": "GeoCoordinates", latitude: 28.5714385, longitude: 77.2383556 },
   areaServed: { "@type": "Country", name: "India" },
-  sameAs: ["https://www.facebook.com/FreedomeAirServicesdelhi"], // confirm the real page URL
+  sameAs: ["https://www.facebook.com/FreedomAirServicesdelhi"], // confirm the real page URL
 };
 
 // Must match the visible FAQ text in components/home/Faqs

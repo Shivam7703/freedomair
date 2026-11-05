@@ -29,7 +29,7 @@ function AboutSection({ data, isHome }: Props) {
             <div className="relative w-full aspect-[8/9] rounded-2xl overflow-hidden group">
               <Image
                 src={data.img2}
-                alt="About"
+                alt="Freedom Air Services"
                 fill
                 priority
                 className="object-cover object-left transition-transform duration-700 group-hover:scale-105"
@@ -62,12 +62,12 @@ function AboutSection({ data, isHome }: Props) {
             {!isHome && (
               <div className="absolute z-20 top-6 ">
                 <Image
-                src={data.img}
-                alt="About"
-                fill
-                priority
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
-              />              </div>
+                  src={data.img}
+                  alt="Freedom Air Services"
+                  fill
+                  priority
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />              </div>
             )}
           </div>
         </div>
@@ -104,10 +104,9 @@ function AboutSection({ data, isHome }: Props) {
                   key={index}
                   onClick={() => setActiveTab(index)}
                   className={`flex-1 py-2.5 px-4 rounded-lg text-sm font-semibold tracking-wide transition-all duration-300
-                    ${
-                      activeTab === index
-                        ? "bg-color3 text-black shadow-[0_4px_15px_rgba(200,169,110,0.3)]"
-                        : "bg-transparen text-black font-bold"
+                    ${activeTab === index
+                      ? "bg-color3 text-black shadow-[0_4px_15px_rgba(200,169,110,0.3)]"
+                      : "bg-transparen text-black font-bold"
                     }`}
                 >
                   {item.heading}
@@ -145,10 +144,10 @@ function AboutSection({ data, isHome }: Props) {
           } */}
 
           {/* CTA */}
-          {isHome && 
-          <div className="pt-2">
-            <Buttonmain text="Learn More" href="/about-us" />
-          </div>
+          {isHome &&
+            <div className="pt-2">
+              <Buttonmain text="Learn More" href="/about-us" />
+            </div>
           }
         </div>
       </div>

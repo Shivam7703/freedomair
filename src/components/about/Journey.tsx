@@ -152,7 +152,7 @@ function TimelineRow({ item, i }: { item: (typeof data)[0]; i: number }) {
 
       {/* Content */}
       <motion.div
-        className={`${isLeft ? "lg:pl-20" : "lg:pr-20"} flex flex-col justify-center relative`}
+        className={`${isLeft ? "lg:pl-iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii20" : "lg:pr-20"} flex flex-col justify-center relative`}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
@@ -251,9 +251,9 @@ export default function WorkProcess() {
             variants={fadeUp}
             custom={1}
           >
-            Redefining Luxury Aviation{" "}
+            Our Journey:{" "}
             <span className="bg-gradient-to-r from-color2 via-yellow-400 to-color2 bg-clip-text text-transparent">
-              Our Path to Excellence
+              Since 1997
             </span>
           </motion.h2>
 

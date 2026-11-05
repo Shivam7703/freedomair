@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "@/utils/motion";
 import { civil } from "@/assets";
-import { HiOutlineBriefcase, HiOutlineClock, HiOutlineCurrencyDollar, HiOutlineFlag, HiOutlineLightBulb, HiOutlineUsers } from "react-icons/hi2";
+import { HiOutlineBriefcase, HiOutlineClock, HiOutlineCurrencyDollar, HiOutlineUsers } from "react-icons/hi2";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -44,7 +44,7 @@ export const data = {
     },
     {
       icon: HiOutlineCurrencyDollar,  // Changed from Flag to CurrencyDollar for "Cost-Effective"
-      heading: "Cost-Effective Service Model, meeting the authorities guidelines.",
+      heading: "Transparent, competitive pricing",
       para:
         "Our pricing structure is competitive and transparent, delivering high-quality aviation solutions while maintaining cost efficiency for international operators.",
       gradient: "from-amber-500 to-orange-600",
@@ -183,4 +183,4 @@ export default function WhyChoose() {
       </div>
     </motion.div>
   );
-}
+};
