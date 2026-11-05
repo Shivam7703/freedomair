@@ -152,7 +152,7 @@ function TimelineRow({ item, i }: { item: (typeof data)[0]; i: number }) {
 
       {/* Content */}
       <motion.div
-        className={`${isLeft ? "lg:pl-iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii20" : "lg:pr-20"} flex flex-col justify-center relative`}
+        className={`${isLeft ? "lg:pl-20" : "lg:pr-20"} flex flex-col justify-center relative`}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
